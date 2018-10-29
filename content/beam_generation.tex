@@ -741,30 +741,187 @@ and mesoscale effects and obtained ideas are then applied to the TBEAM mooring o
 %spatial 
 %structure, though magnitude of latter was roughly half smaller.}
 
-%\section{Discussion}
-%The spatial-temporal characteristics present a complication for direct interpretation of 
-%diagnosed energy quantities in describing the tidal beam. Its properties are obscured due to 
-%interference and hence, needs additional inferences. This is related to variability. It is unclear 
-%what can produce beam's energy levels and its orientation/position. Two reasons could be named as 
-%accumulating interaction with mesoscale field and generation producing.\\
-%Now comparison of the decomposed planar beam can be made 
-%with factual observations made by \citep{waterhouse2018observations, zhao2018satellite}. \\
-%
-%\begin{table}
-%	\caption{Internal tidal energy flux properties in the far field}
-%	\begin{tabular}{ |p{7cm}||p{4cm}|p{4cm}|  }
-%		\hline
-%		Source & Flux magnitude [$kW/m$] & Heading [$^\circ$] \\
-%		\hline
-%		This study - all experiments & ~ & No mesoscale \\
-%		This study - only field period & ~ & No mesoscale \\
-%		Altimetry observations \citep{zhao2018satellite} & $3.9 \pm 2.2$ & $141 \pm 2$ \\
-%		Field observations \citep{waterhouse2018observations} &   $3.4 \pm 1.4$ & $149 \pm 3$ \\
-%		\hline
-%	\end{tabular}
-%	\label{ch2:table_exp}
-%\end{table}
-%\section{Conclusions}
+\newpage
+\section{Discussion}
+For purposes of energetic description of the Tasman Sea tidal beam one is primarily concerned 
+with the planar beam. Previous results unequivocally pointed to some variations in the system (Fig 
+NW). Here we would like to reason different mechanisms that are in play to produce such behavior. 
+We mainly focus on the long run simulation since a) it provides continuous point of view on the 
+system adjustments; b) it can be related to the field measurements.\\
+The two only mechanisms possible is quite large variations in generation (section 2.1 and Fig. ) 
+and internal tide interaction with dynamical ocean.
+\subsection{Analytical model for generation at a knife-edge ridge}
+At first, generation is assessed through a simple analytical model. It can be thought as an 
+extension of previous work by \citep{rainville2010interference} but where ad-hoc parameters such as 
+angular swath of the radiated 
+field are not used, as well a blow-up of point-wise source is circumvented. In the appendix A it is 
+given a solution for problem of field radiated into rotating ocean of mode-1 equivalent depth by a 
+plunger making oscillatory motion. This is an extension of a problem considered by 
+\citep{morse1946methods} to a rotating ocean. To assess applicability of the simple solution to 
+real generation complimentary numerical experiments in MITgcm were carried out. There a knife edge 
+topography was placed against a semidiurnal barotropic tide. The generated baroclinic field was 
+then diagnosed by the same methods as before. The comparison between numerical experiments and 
+analytical solution are presented on Fig. Overall, the analytical solution is representative of a 
+radiated spatial pattern. This is absolutely true when Coriolis parameter is set to 0. Further when 
+rotation is present the overall pattern is skewed towards left (Coriolis force is to the left since 
+generation takes place in the Southern Hemisphere). This a direct result of extended boundary 
+condition since in the rotating ocean not only normally radiated component has to satisfy no-flow 
+condition, but also along-ridge flow is impacted. In this setting differences between numerical 
+solution of primitive equations and shallow-water equations solution are noticeable. These are 
+mainly due to shortcomings of using only one mode. In full description with infinite number of 
+modes used there are terms presenting intermodal coupling. In non-rotating case they only 
+show vertical coupling \citep{st2003generation} and this will impact only magnitude of emitted 
+modes. But with rotation the coupling now extends into spatial patterns as well. This is again due 
+to boundary conditions and also due to asymmetry of the problem. Mathematically this is expressed 
+as basis functions are not orthonormal in the curvilinear system since metric is spatially 
+changing, yet variables are separable because of orthogonality. Physically, spatial coupling arises 
+from the skewed generation pattern and hence, variation of per-mode current. So at each point of 
+the ridge there should be different vertical modal representation, i.e. different magnitude of the 
+modes, to equilibrate forcing barotropic current. Then, generally speaking, this suggests spatial 
+structure in the emitted internal tidal ``sheets" \citep{johnston2015standing} not only due to 
+topographic inhomogeneities in the generating ridge but also due to Coriolis force. This further 
+lead to a spatial structure in high mode breaking \citep{buhler2007instability}. Currently, the 
+work in progress to build full model of three dimensional generation at a knife-edge ridge. The 
+other interesting feature of the analytical model is developing of wave trapping as Coriolis 
+force is increasing. So that as generation region lies equatorward close to critical latitude there 
+is almost no energy emitted. Here the analytical solution are less representative from the MITgcm 
+results. It is again believed that absence of the high modes is one to blame. Surprising result 
+is that high modes seem to break full trapping of mode-1 and provide some energy leakage into the 
+open ocean.\\
+MUST MENTION PARAMETER ON WHICH THESE EFFECTS DEPEND ON\\
+ADD THAT ALONG SLOPE FLOW CAN ALSO LEAD TO SOME VARIABILITY IN THE EXPERIMENTS\\
+REFERENCE DECOMPOSITION\\
+SIMILARITY TO AMUKTA PASS BEAM\\
+The internal tidal beams are a result of large-scale interference of many sources 
+\citep{rainville2010interference}. And the Tasman Sea beam is not an exception 
+\citep{klymak2016reflection}. Let reconstruct the Tasman beam by application of the analytical 
+solution. So let place the shallow-water plungers along the Macquarie ridge. First necessary  
+parameter is their orientation that is found from local curvature of $3000$ m isobath. 
+And the second parameter is an actual magnitude.  These magnitudes are found by iteratively 
+minimizing difference between fields of the energy flux composed from interference of the 
+analytical solutions and ROMS simulated field. This is a nonlinear problem. So at each iteration a 
+small perturbation is found and then plungers' magnitudes are updated as well as the resultant 
+analytical field. And when the differences between the analytical field and the numerical 
+simulation are less than some tolerance, procedure is stopped. The result is given on Figure ... 
+and can be compared with .... The obtained far-field structure is unambiguously corresponds to the 
+planar field described previously. Secondary, there is a remarkable correspondence in magnitude and 
+location between internal tide production sites and the iterative solution. This result leads 
+confidence in interference as a mechanism responsible for the concise structure of the Tasman 
+beam.\\
+Though to establish link between variability of the tidal beam and generation a forward solution is 
+necessary. For this purpose only the central part is considered and three plungers are introduced. 
+They are placed at the same locations as northern seamount, sill and southern seamount () and their 
+orientation are taken ... to represent change in the orientation of the generation. Than the 
+spatially averaged magnitudes of conversion that were diagnosed from the numerical experiments () 
+are substituted after taking a square root since $Energy \sim magnitude^2$. An example of the 
+resultant is shown on Fig. It is apparent that spatial finiteness of the beam is lost and the 
+emitted field is quite similar to a point generation. Two regions quite clearly can separated. 
+First is near the generation site where generation has strong directional characteristic. In the 
+far-field orientation of the fluxes is more uniform, nevertheless spatially energy is still has 
+some structure and not spread everywhere. These two regions are similar to Fresnel and Fraunhofer 
+zones from optics. In the former the wave field shows presence of diffraction, while the latter is 
+characterized by plane wave.\\
+So now we are in position to investigate effects of the inhomogeneous generation on the tidal beam. 
+The conversion rates from the field period experiments were set into the analytical model. The 
+obtained wave field were then subject to the same analysis as the numerical experiments. Figure ... 
+shows comparison of the mean energy flux direction and integrated flux in case of each realization. 
+The first conclusion comes right away. The marked turning of the beam is a direct result of the 
+generation or more precisely Coriolis effect on the generation. This is the before observed skewed 
+pattern of the emitted field. Secondary, obvious result of the increased generation leading to 
+more energy carried by the beam. And at the third, the mean flux orientation can be described by 
+generation model in the first $~300~km$ of the propagation. It should be noted even that 
+the changes are small in orientation of the flux, in the far-field this produces large spatial 
+shifts in position of the beam. For example, under small angle approximation change in $5^{\circ}$ 
+by the Macquarie Ridge lead to $100~km$ shift in position of the beam's center by Tasmania. 
+Nevertheless, there are apparent differences between the analytical model and the numerical results 
+in the basin. Hence, additional mechanisms such as mesoscale are in hand. This is discussed in 
+the following section.
+
+\subsection{Variability of the Tasman Sea beam}
+As the internal tide propagates non uniform ocean conditions its travel is affected. On most part 
+it is manifested in refraction by localized inhomogeneities in stratification. Additionally, 
+currents arising from spatial pressure gradients lead to Doppler effects and shift of internal tide 
+frequency as manifestation of nonlinear terms. These processes are the most important. And 
+refraction seems to be the major player. Refraction is a well-known phenomena in surface gravity 
+waves. In respective theoretical works the directional spectrum plays a pivotal role. Here these 
+approaches are used to diagnose the spectrum. This is carried out by computing two spectral moments,
+\begin{align}
+\label{C3:eq.m.spectra}
+\bar{\theta} = \arctan \frac{\int_{\pi/2}^{\pi} d \theta S \sin \theta}{\int_{\pi/2}^{\pi} 
+d \theta S \cos \theta }\\
+\sigma_\theta = 2\bigg[ 1 - \sqrt{\Big( \frac{\int_{\pi/2}^{\pi} d \theta S \sin 
+\theta}{\int_{\pi/2}^{\pi} d 
+\theta S} \Big)^2 + \Big( \frac{\int_{\pi/2}^{\pi} d \theta S \cos \theta 
+}{\int_{\pi/2}^{\pi} d \theta S}\Big)^2}  \bigg]
+\end{align}
+where $S=S(\theta)$ - directional spectrum at each grid point obtained previously. These moments 
+simply show mean direction in the spectrum and the spreading of waves around the mean. Clearly, if 
+there is any refraction than the mean direction will undergo changes. But the spectrum spreading 
+will also change as close-to-each wavenumbers will experience slightly different adjustments 
+leading either to more spreading as wave group propagates travels into a region with 
+higher phase speeds than surrounding or focusing in the opposite case.\\
+Additionally the environmental conditions are diagnosed by obtaining deviation in phase speed due 
+to spatial density variation, current advection and shift in the inertial frequency due to vortical 
+motions \citep{zaron2014time}. Respectively, 
+\begin{align}
+\frac{\delta c_p}{c_p} \approxeq \frac{\delta c_0}{c_0} + \frac{|\bar{u}|}{c_p} + \frac{1}{2} 
+\frac{f^2}{\omega^2} Ro
+\end{align}
+The background currents are vertically averaged, so that effect of shear is not accounted for.\\
+Over the field period simulation there was a continuous change in the beam as mesoscale field was 
+evolving. Over the first period, Januaries 10-15, 2015 (Fig), the beam underwent the most striking 
+adjustment. Clearly, some of the waves were refracted equatorward, this portion then interfered 
+with the rest producing a horizontal reorientation of the fluxes. Similar phenomena was observed in 
+numerical experiments of \citep{dunphy2014focusing}. The region is characterized by northward 
+orientation of spectra and high spreading. The waves cross a complex mesoscale field consisting of 
+two closely located eddies. They have signature in the increased eigenspeed and strong currents. 
+Vorticity effects were smaller. Overall, the eigenspeed was locally increased by $~10\%$. This 
+diverted further north already more northward oriented beam.\\
+The further development are shown on Fig. where the fields are given for mid-February, 10th - 15th. 
+The previous discussed eddies have merged producing a feature at (155, -46.5). 
+This time it has no effect on the tidal beam. On part because of weak signature in the eigenspeed, 
+but also since the strongest currents are southward and hence, leading to advection in poleward 
+which is seen in the spectrum orientation. Nevertheless, there are two regions that cause some 
+effects. One eddy is located at (158, 48) where again northward refraction happens. Since this a 
+dipole of two oppositely oriented rotating eddies, there are strong gradients in eigenspeed. This 
+produces high spreading in the spectrum. Fluxes again show a localized horizontal reorientataion. 
+Nevertheless, due to small lengthscales this does not have a substantial effect on the beam. 
+Oppositely to the region by ETP (152, -44) here a region with large cross-beam currents, strong 
+imprint in eigenspeed. This leading to diverting portion of the beam northward.\\
+Thence, two major effects were found one when currents are in cross-beam leading to diverting the 
+beam, scattering by mesoscale eddies and refraction. 
+half-month in  
+later
+But later developments 
+lead to further 
+Over the next we 
+Combined two effects lead 
+Here it is presented two cases that shows how complex such interactions can be (Fig.). In the first 
+case due to a region of abnormal 
+
+The spatial-temporal characteristics complicates direct interpretation of diagnosed energy 
+quantities in describing the tidal beam. Its properties are obscured due to 
+interference and hence, needs additional inferences. This is related to variability. It is unclear 
+what can produce beam's energy levels and its orientation/position. Two reasons could be named as 
+accumulating interaction with mesoscale field and generation producing.\\
+Now comparison of the decomposed planar beam can be made 
+with factual observations made by \citep{waterhouse2018observations, zhao2018satellite}. \\
+
+\begin{table}
+	\caption{Internal tidal energy flux properties in the far field}
+	\begin{tabular}{ |p{7cm}||p{4cm}|p{4cm}|  }
+		\hline
+		Source & Flux magnitude [$kW/m$] & Heading [$^\circ$] \\
+		\hline
+		This study - all experiments & ~ & No mesoscale \\
+		This study - only field period & ~ & No mesoscale \\
+		Altimetry observations \citep{zhao2018satellite} & $3.9 \pm 2.2$ & $141 \pm 2$ \\
+		Field observations \citep{waterhouse2018observations} &   $3.4 \pm 1.4$ & $149 \pm 3$ \\
+		\hline
+	\end{tabular}
+	\label{ch2:table_exp}
+\end{table}
+\section{Conclusions}
 
 %\newpage
 %\iftoggle{only_Chapter} {
