@@ -821,91 +821,174 @@ far-field orientation of the fluxes is more uniform, nevertheless spatially ener
 some structure and not spread everywhere. These two regions are similar to Fresnel and Fraunhofer 
 zones from optics. In the former the wave field shows presence of diffraction, while the latter is 
 characterized by plane wave.\\
-So now we are in position to investigate effects of the inhomogeneous generation on the tidal beam. 
-The conversion rates from the field period experiments were set into the analytical model. The 
-obtained wave field were then subject to the same analysis as the numerical experiments. Figure ... 
-shows comparison of the mean energy flux direction and integrated flux in case of each realization. 
-The first conclusion comes right away. The marked turning of the beam is a direct result of the 
-generation or more precisely Coriolis effect on the generation. This is the before observed skewed 
-pattern of the emitted field. Secondary, obvious result of the increased generation leading to 
-more energy carried by the beam. And at the third, the mean flux orientation can be described by 
-generation model in the first $~300~km$ of the propagation. It should be noted even that 
-the changes are small in orientation of the flux, in the far-field this produces large spatial 
-shifts in position of the beam. For example, under small angle approximation change in $5^{\circ}$ 
-by the Macquarie Ridge lead to $100~km$ shift in position of the beam's center by Tasmania. 
-Nevertheless, there are apparent differences between the analytical model and the numerical results 
-in the basin. Hence, additional mechanisms such as mesoscale are in hand. This is discussed in 
-the following section.
+From this it is suggested that generation will have effects on the magnitude of the beam and its 
+initial direction. During the field period there was a shift in generation from the southern 
+position towards north (fig). It was accompanied with the overall increase of mode-1 production by 
+$30\%$. To investigate this effects on beam position a new diagnostic introduced to show the beam 
+position identified as ''center of mass",
+\begin{equation}
+L_{C} = \frac{\int_0^{L} dr r |F(r)|}{\int_0^{L} dr |F(r)|}
+\end{equation}
+where $L_{C}$ is a position of the beam's center of mass in the cross beam direction, $L$ - length 
+of the cross-beam transect, $|F(r)|$ - magnitude of the energy flux. This procedure is carried out 
+for the Northwest quadrant (planar beam) and the analytical solutions. To emphasize the shift the 
+results were averaged over equal two periods: 10 January to 10 February and 10 February - March. 
+The results clearly show that there was a shift in the position by 5 km, this is well captured by 
+the analytical model. Hence, suggesting that the inhomogeneous generation lead to shift in the 
+beam's initial characteristics. Nevertheless, they are relatively weak as it seems, 
+though outliers deviated from the field-period mean by 20 km. From Fig it is apparent that soon 
+after leaving near-ridge region these differences become less apparent and further superposed with 
+interaction with variable oceanographic media. At second, unsurprisingly, the magnitude of the beam 
+also has increased following larger conversion rates (Fig). But this signal only weakly reflected 
+in the far-field by Tasmania. These results apparently suggest that generation has effect on the 
+beam location only near ridge, but as soon as the beam leaves Fresnel zone and as effects of 
+mesoscale accumulates the beam is becoming less and less linked with generation history. But this 
+is not true for the magnitude which seems to be kept. This is probably due to interactions with 
+mesoscale without pronounced energy transfers.\\
+
+%So now we are in position to investigate effects of the inhomogeneous generation on the tidal 
+%beam. 
+%The conversion rates from the field period experiments were set into the analytical model. The 
+%obtained wave field were then subject to the same analysis as the numerical experiments. Figure 
+%... 
+%shows comparison of the mean energy flux direction and integrated flux in case of each 
+%realization. 
+%The first conclusion comes right away. The marked turning of the beam is a direct result of the 
+%generation or more precisely Coriolis effect on the generation. This is the before observed skewed 
+%pattern of the emitted field. Secondary, obvious result of the increased generation leading to 
+%more energy carried by the beam. And at the third, the mean flux orientation can be described by 
+%generation model in the first $~300~km$ of the propagation. It should be noted even that 
+%the changes are small in orientation of the flux, in the far-field this produces large spatial 
+%shifts in position of the beam. For example, under small angle approximation change in $5^{\circ}$ 
+%by the Macquarie Ridge lead to $100~km$ shift in position of the beam's center by Tasmania. 
+%Nevertheless, there are apparent differences between the analytical model and the numerical 
+%results 
+%in the basin. Hence, additional mechanisms such as mesoscale are in hand. This is discussed in 
+%the following section.
 
 \subsection{Variability of the Tasman Sea beam}
 As the internal tide propagates non uniform ocean conditions its travel is affected. On most part 
 it is manifested in refraction by localized inhomogeneities in stratification. Additionally, 
 currents arising from spatial pressure gradients lead to Doppler effects and shift of internal tide 
-frequency as manifestation of nonlinear terms. These processes are the most important. And 
-refraction seems to be the major player. Refraction is a well-known phenomena in surface gravity 
-waves. In respective theoretical works the directional spectrum plays a pivotal role. Here these 
-approaches are used to diagnose the spectrum. This is carried out by computing two spectral moments,
-\begin{align}
-\label{C3:eq.m.spectra}
-\bar{\theta} = \arctan \frac{\int_{\pi/2}^{\pi} d \theta S \sin \theta}{\int_{\pi/2}^{\pi} 
-d \theta S \cos \theta }\\
-\sigma_\theta = 2\bigg[ 1 - \sqrt{\Big( \frac{\int_{\pi/2}^{\pi} d \theta S \sin 
-\theta}{\int_{\pi/2}^{\pi} d 
-\theta S} \Big)^2 + \Big( \frac{\int_{\pi/2}^{\pi} d \theta S \cos \theta 
-}{\int_{\pi/2}^{\pi} d \theta S}\Big)^2}  \bigg]
-\end{align}
-where $S=S(\theta)$ - directional spectrum at each grid point obtained previously. These moments 
-simply show mean direction in the spectrum and the spreading of waves around the mean. Clearly, if 
-there is any refraction than the mean direction will undergo changes. But the spectrum spreading 
-will also change as close-to-each wavenumbers will experience slightly different adjustments 
-leading either to more spreading as wave group propagates travels into a region with 
-higher phase speeds than surrounding or focusing in the opposite case.\\
-Additionally the environmental conditions are diagnosed by obtaining deviation in phase speed due 
-to spatial density variation, current advection and shift in the inertial frequency due to vortical 
-motions \citep{zaron2014time}. Respectively, 
+frequency as manifestation of nonlinear terms. Overall these effects lead to changes in phase 
+speed. For the gravest mode when currents speed is omitted the dispersion relation is expressed as
+\citep{zaron2014time}. Respectively, 
 \begin{align}
 \frac{\delta c_p}{c_p} \approxeq \frac{\delta c_0}{c_0} + \frac{|\bar{u}|}{c_p} + \frac{1}{2} 
 \frac{f^2}{\omega^2} Ro
 \end{align}
-The background currents are vertically averaged, so that effect of shear is not accounted for.\\
-Over the field period simulation there was a continuous change in the beam as mesoscale field was 
-evolving. Over the first period, Januaries 10-15, 2015 (Fig), the beam underwent the most striking 
-adjustment. Clearly, some of the waves were refracted equatorward, this portion then interfered 
-with the rest producing a horizontal reorientation of the fluxes. Similar phenomena was observed in 
-numerical experiments of \citep{dunphy2014focusing}. The region is characterized by northward 
-orientation of spectra and high spreading. The waves cross a complex mesoscale field consisting of 
-two closely located eddies. They have signature in the increased eigenspeed and strong currents. 
-Vorticity effects were smaller. Overall, the eigenspeed was locally increased by $~10\%$. This 
-diverted further north already more northward oriented beam.\\
-The further development are shown on Fig. where the fields are given for mid-February, 10th - 15th. 
-The previous discussed eddies have merged producing a feature at (155, -46.5). 
-This time it has no effect on the tidal beam. On part because of weak signature in the eigenspeed, 
-but also since the strongest currents are southward and hence, leading to advection in poleward 
-which is seen in the spectrum orientation. Nevertheless, there are two regions that cause some 
-effects. One eddy is located at (158, 48) where again northward refraction happens. Since this a 
-dipole of two oppositely oriented rotating eddies, there are strong gradients in eigenspeed. This 
-produces high spreading in the spectrum. Fluxes again show a localized horizontal reorientataion. 
-Nevertheless, due to small lengthscales this does not have a substantial effect on the beam. 
-Oppositely to the region by ETP (152, -44) here a region with large cross-beam currents, strong 
-imprint in eigenspeed. This leading to diverting portion of the beam northward.\\
-Thence, two major effects were found one when currents are in cross-beam leading to diverting the 
-beam, scattering by mesoscale eddies and refraction. 
-half-month in  
-later
-But later developments 
-lead to further 
-Over the next we 
-Combined two effects lead 
-Here it is presented two cases that shows how complex such interactions can be (Fig.). In the first 
-case due to a region of abnormal 
+Additionally the environmental conditions are diagnosed by obtaining deviation in phase speed due 
+to spatial density variation, current advection and shift in the inertial frequency due to vortical 
+motions. The background currents are vertically averaged, so that effect of shear is not accounted 
+for.\\
+\fignm{C3.fig:fig_11_beam_mesoscale} gives an example of such. Oceanographic conditions consisted 
+of several eddies scattered the Tasman Sea. As the beam encounters it there is an apparent 
+refraction northward. At some point this leads to beam splitting with one branch leaving the basin. 
+This results in reorientation of the fluxes as beam self interferes.\\
+The eddies takes approximaly one third of the mode-1 wavelength and respective Rossby number is 
+about 0.1. Following \citep{dunphy2014focusing, dunphy2017low} this lies in regime where 
+interaction is predominantly consisting of refraction with only weak energy transfers. Indeed, 
+higher modes are almost non-observed in the deep ocean during this simulations. Additional 
+calculations consisted of Taylor-Goldstein equation suggested that eigenspeed deviates only by 
+$20\%$ from uniform calculations. This leads to impression that primary effect of the ocean 
+conditions in the deep Tasman Sea is time-variable refraction.\\
+The phase speed deviation from mean drives variations in the energy propagation. At first, we 
+consider largest semi axis of variance ellipses (Fig). The first region is located by the Macquarie 
+Ridge following previous discussion. Though further the regions of high variations appear to come 
+in slanted manner representative of self-interference between refracted portion of the beam 
+and non-affected. This reorientation than drive position of the beam (fig) where previously defined 
+center of mass is given. Here it is clearly seen that regions of large beam's change are collocated 
+with largest variability of the phase speed, i.e. highly variable oceanographic conditions. The 
+largest conclusion is that the beam accumulates influences of the variable conditions starting from 
+the generation region. Three regions can be distinguished right by the Macquarie ridge, then the 
+central basin and by Tasmania. in all of these places there are apparent interactions shaping the 
+beam. By Tasmania the beam position can deviate from the mean by 10 km with outliers being of ... 
+When included all the experiments the variability increases... (table?).\\
+In conclusion, the beam is affected by generation only in the near field and these variations can 
+be observed probably over the first wavelength. But further along its propagation the differences 
+are increasing. Though magnitude seems to repeat the cycle of variable generation.\\
 
-The spatial-temporal characteristics complicates direct interpretation of diagnosed energy 
-quantities in describing the tidal beam. Its properties are obscured due to 
-interference and hence, needs additional inferences. This is related to variability. It is unclear 
-what can produce beam's energy levels and its orientation/position. Two reasons could be named as 
-accumulating interaction with mesoscale field and generation producing.\\
-Now comparison of the decomposed planar beam can be made 
-with factual observations made by \citep{waterhouse2018observations, zhao2018satellite}. \\
+\subsection{Comparison with altimetry observations and TBEAM observations}
+WE intend to compare with two datasets available. Satelite altimetry emphasizes highly temporal and 
+spatially smoothed observations. But field observations highly hetergoneous point-wise 
+observations.\\
+At first, satelite altimetry shows more northward located beam compared to the numerical 
+experiments. 
+%Further, the phase speed deviations were superposed with the position of the beam (Fig). 
+%The previous result on \fignm{C3.fig:beam_dcmp_cm} can now be discussed further. Now it is shown 
+%distribution of semi major axis of variance ellipse \fignm{C3.fig:fig_12_beam_var_cp}. Here it is 
+%clearly seen that primary variations are concentrated in regions downstream that are affected by 
+%mesoscale. Additional region is next to the Macquarie Ridge due to generation. But further it is 
+%impossible to propagation quite rapidly becomes affected by variable ocean conditions. There are 
+%three regions one next to the ridge, than in the basin. And also by the ETP there is strong 
+%interaction causing beam to deflect.\\
+%
+%
+%
+%This rein
+%In the current 
+%These processes are the most important. And 
+%refraction seems to be the major player. Refraction is a well-known phenomena in surface gravity 
+%waves. In respective theoretical works the directional spectrum plays a pivotal role. Here these 
+%approaches are used to diagnose the spectrum. This is carried out by computing two spectral 
+%moments,
+%\begin{align}
+%\label{C3:eq.m.spectra}
+%\bar{\theta} = \arctan \frac{\int_{\pi/2}^{\pi} d \theta S \sin \theta}{\int_{\pi/2}^{\pi} 
+%d \theta S \cos \theta }\\
+%\sigma_\theta = 2\bigg[ 1 - \sqrt{\Big( \frac{\int_{\pi/2}^{\pi} d \theta S \sin 
+%\theta}{\int_{\pi/2}^{\pi} d 
+%\theta S} \Big)^2 + \Big( \frac{\int_{\pi/2}^{\pi} d \theta S \cos \theta 
+%}{\int_{\pi/2}^{\pi} d \theta S}\Big)^2}  \bigg]
+%\end{align}
+%where $S=S(\theta)$ - directional spectrum at each grid point obtained previously. These moments 
+%simply show mean direction in the spectrum and the spreading of waves around the mean. Clearly, if 
+%there is any refraction than the mean direction will undergo changes. But the spectrum spreading 
+%will also change as close-to-each wavenumbers will experience slightly different adjustments 
+%leading either to more spreading as wave group propagates travels into a region with 
+%higher phase speeds than surrounding or focusing in the opposite case.\\
+%
+%Over the field period simulation there was a continuous change in the beam as mesoscale field was 
+%evolving. Over the first period, Januaries 10-15, 2015 (Fig), the beam underwent the most striking 
+%adjustment. Clearly, some of the waves were refracted equatorward, this portion then interfered 
+%with the rest producing a horizontal reorientation of the fluxes. Similar phenomena was observed 
+%in 
+%numerical experiments of \citep{dunphy2014focusing}. The region is characterized by northward 
+%orientation of spectra and high spreading. The waves cross a complex mesoscale field consisting of 
+%two closely located eddies. They have signature in the increased eigenspeed and strong currents. 
+%Vorticity effects were smaller. Overall, the eigenspeed was locally increased by $~10\%$. This 
+%diverted further north already more northward oriented beam.\\
+%The further development are shown on Fig. where the fields are given for mid-February, 10th - 
+%15th. 
+%The previous discussed eddies have merged producing a feature at (155, -46.5). 
+%This time it has no effect on the tidal beam. On part because of weak signature in the eigenspeed, 
+%but also since the strongest currents are southward and hence, leading to advection in poleward 
+%which is seen in the spectrum orientation. Nevertheless, there are two regions that cause some 
+%effects. One eddy is located at (158, 48) where again northward refraction happens. Since this a 
+%dipole of two oppositely oriented rotating eddies, there are strong gradients in eigenspeed. This 
+%produces high spreading in the spectrum. Fluxes again show a localized horizontal reorientataion. 
+%Nevertheless, due to small lengthscales this does not have a substantial effect on the beam. 
+%Oppositely to the region by ETP (152, -44) here a region with large cross-beam currents, strong 
+%imprint in eigenspeed. This leading to diverting portion of the beam northward.\\
+%Thence, two major effects were found one when currents are in cross-beam leading to diverting the 
+%beam, scattering by mesoscale eddies and refraction. 
+%half-month in  
+%later
+%But later developments 
+%lead to further 
+%Over the next we 
+%Combined two effects lead 
+%Here it is presented two cases that shows how complex such interactions can be (Fig.). In the 
+%first 
+%case due to a region of abnormal 
+%
+%The spatial-temporal characteristics complicates direct interpretation of diagnosed energy 
+%quantities in describing the tidal beam. Its properties are obscured due to 
+%interference and hence, needs additional inferences. This is related to variability. It is unclear 
+%what can produce beam's energy levels and its orientation/position. Two reasons could be named as 
+%accumulating interaction with mesoscale field and generation producing.\\
+%Now comparison of the decomposed planar beam can be made 
+%with factual observations made by \citep{waterhouse2018observations, zhao2018satellite}. \\
 
 \begin{table}
 	\caption{Internal tidal energy flux properties in the far field}
@@ -1300,6 +1383,21 @@ with factual observations made by \citep{waterhouse2018observations, zhao2018sat
 	Between experiments is given by respective variance ellipses. And standard deviation in the 
 	spatially averaged characteristics is summarized on insets in top right corners.}
 	\label{C3.fig:beam_dcmp_cm}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale = 
+0.75]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_11_example_beam_mesoscale}
+\caption{Example of refraction. }
+\label{C3.fig:fig_11_beam_mesoscale}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.75]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_12_beam_var_cp}
+\caption{}
+\label{C3.fig:fig_12_beam_var_cp}
 \end{figure}
 
 %\begin{figure}
