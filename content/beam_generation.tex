@@ -786,7 +786,7 @@ number of wavelengths aligned along extent of the ridge or as a non-dimensional 
 0.99 
 \omega_{tide}$) where spatial structure was observed as well, but the waves are trapped near the 
 ridge.}\\
-The Macquarie Ridge consists of multiple sources distributed along the ridge which constructively 
+The Macquarie Ridge has multiple sources distributed along the ridge which constructively 
 interfere to produce the Tasman tidal beam \citep{rainville2010interference, 
 klymak2016reflection}. This principle will be applied here in reverse, i.e. from the distribution 
 of energy in the beam let obtain magnitude of single sources represented by the shallow-water 
@@ -887,46 +887,69 @@ tidal beam as its magnitude correlates with conversion rates at the ridge quite 
 %the following section.
 
 \subsection{Variability of the Tasman Sea beam}
-As the internal tide propagates non uniform ocean conditions its travel is affected. On most part 
-it is manifested in refraction by localized inhomogeneities in stratification. Additionally, 
-currents arising from spatial pressure gradients lead to Doppler effects and shift of internal tide 
-frequency as manifestation of nonlinear terms. Overall these effects lead to changes in phase 
-speed. For the gravest mode when currents speed is omitted the dispersion relation is expressed as
-\citep{zaron2014time}. Respectively, 
+The Tasman beam is inevitably affected by mesoscale circulation in the region. 
+\fignml[C3.fig:meso_exampe]{a} gives an example of oceanograhpic conditions. The 
+deep ocean of the Tasman Sea is dissected by southern subtropical frontal zone. Its meandering 
+produce vortices. These features are relatively weak and do not have significant kinetic energy in 
+comparison to Tasmania with strong currents and eddies associated with EAC 
+\citep{zhao2018satellite}. Nevertheless, the basin vortices have Rossby number of $Ro \sim O(0.1)$ 
+and scales close to baroclinic Rossby number, i.e. $\sim 40~km$. Scaling performed by 
+\citep{dunphy2017low} showed that in such regime tide-mesoscale interaction terms will scale as Ro 
+and major phenomena will restrain to refraction with negligibly small energy scattering and 
+transfers. This is further diagnosed by application of the dispersion relation in presence of 
+background circulation \citep{zaron2014time},
 \begin{align}
-\frac{\delta c_p}{c_p} \approxeq \frac{\delta c_0}{c_0} + \frac{|\bar{u}|}{c_p} + \frac{1}{2} 
-\frac{f^2}{\omega^2} Ro
+\omega_{obs} = f_e^2 + \frac{\omega_{obs}}{\omega} gD |k|^2\\
+c_{obs}^2 = \big( \frac{\omega_{obs}}{|k|} \big)^2 = \frac{\omega_{obs}}{\omega} \frac{gD}{1 - 
+\frac{f_e^2}{\omega^2}}
 \end{align}
-Additionally the environmental conditions are diagnosed by obtaining deviation in phase speed due 
-to spatial density variation, current advection and shift in the inertial frequency due to vortical 
-motions. The background currents are vertically averaged, so that effect of shear is not accounted 
-for.\\
-\fignm{C3.fig:fig_11_beam_mesoscale} gives an example of such. Oceanographic conditions consisted 
-of several eddies scattered the Tasman Sea. As the beam encounters it there is an apparent 
-refraction northward. At some point this leads to beam splitting with one branch leaving the basin. 
-This results in reorientation of the fluxes as beam self interferes.\\
-The eddies takes approximaly one third of the mode-1 wavelength and respective Rossby number is 
-about 0.1. Following \citep{dunphy2014focusing, dunphy2017low} this lies in regime where 
-interaction is predominantly consisting of refraction with only weak energy transfers. Indeed, 
-higher modes are almost non-observed in the deep ocean during this simulations. Additional 
-calculations consisted of Taylor-Goldstein equation suggested that eigenspeed deviates only by 
-$20\%$ from uniform calculations. This leads to impression that primary effect of the ocean 
-conditions in the deep Tasman Sea is time-variable refraction.\\
-The phase speed deviation from mean drives variations in the energy propagation. At first, we 
-consider largest semi axis of variance ellipses (Fig). The first region is located by the Macquarie 
-Ridge following previous discussion. Though further the regions of high variations appear to come 
-in slanted manner representative of self-interference between refracted portion of the beam 
-and non-affected. This reorientation than drive position of the beam (fig) where previously defined 
-center of mass is given. Here it is clearly seen that regions of large beam's change are collocated 
-with largest variability of the phase speed, i.e. highly variable oceanographic conditions. The 
-largest conclusion is that the beam accumulates influences of the variable conditions starting from 
-the generation region. Three regions can be distinguished right by the Macquarie ridge, then the 
-central basin and by Tasmania. in all of these places there are apparent interactions shaping the 
-beam. By Tasmania the beam position can deviate from the mean by 10 km with outliers being of ... 
-When included all the experiments the variability increases... (table?).\\
-In conclusion, the beam is affected by generation only in the near field and these variations can 
-be observed probably over the first wavelength. But further along its propagation the differences 
-are increasing. Though magnitude seems to repeat the cycle of variable generation.\\
+where $\omega_{obs} = \omega + \vec{k}\cdot \vec{U}$ - observed, Eulerian frequency which is 
+Doppler shifted intrinsic frequency, $f_e = f(1 + \frac{1}{2} \frac{\zeta}{f})$ - effective 
+Coriolis frequency adjusted by rotation in vortical flow of $\zeta$, $c_0^2 = gD$ - phase speed of 
+internal tide in non-rotating ocean with effective depth of $D$. The latter term will encompass 
+variations in stratification. The dispersion relation was then used to occur respective phase 
+speeds. To do so, three dimensional currents from the numerical experiments were temporally and 
+vertically averaged. And since Doppler shift depends on alignment between wave propagation and 
+currents, a bulk beam orientation of $150^\circ$ was used in calculations.\\
+Results \fignmlp[C3.fig:meso_exampe]{b} show that major regions of variations are confined to the 
+meanders. The deviations due to stratification on average describe 50\% of anomaly, due to 
+background currents 30\% and due to vorticity - 20\%. The phase speed diverts by $0.2~m/s$ or 
+$\sim5\%$ from the mean. Even though these changes appear to be small they can substantially divert 
+beam's propagation. This can be estimated using shallow-water gravity theory of refraction 
+(citation) as
+\begin{align}
+\frac{\Delta \theta}{\Delta s} = \frac{1}{c} \frac{\delta c}{\Delta n}
+\end{align}
+where $\Delta s$ and $\Delta n$ are distances in along-beam and cross-beam directions. Setting them 
+equal and $\delta c/c = 10\%$ (gradient between positive and negative anomalies) produce 
+reorientation of the beam by $\Delta \theta 5^{\circ}$.\footnote{ These calculations were supported 
+by ray 
+tracing that is not given.} This corresponds to the results presented previously (Section). Now as 
+waves refracted, they interfere with non-interacted portion of the beam leading to 
+obscure patterns as illustrated on \fignml[C3.fig:meso_examp]{b}. The beam seems to be separated in 
+two parts with a portion actually leaving the Tidal beam strongly northward.\\
+The phase speed deviations drive variations in the beam propagation. These were studied by variance 
+ellipses \fignmlp[C3.fig:beam_dcmp_cm]{a}. Since the corresponding semi-minor axis are small, it is 
+worth investigating only semi-major axis. Such characteristic is mainly associated with directional 
+variance. The first region is located by the Macquarie Ridge in accordance with the previous 
+section on generation. Further regions of high directional variability appear to come in slanted 
+manner representative of self-interference. It originates after internal tide passage over regions 
+of high phase speed variance or active mesoscale circulation \fignmlp[C3.fig:beam_dcmp_cm]{b}. 
+Clearly that direction variability leads to shift in position of the beam. And as the beam arrives 
+to Tasmania this could lead different location of the beam. During the field period simulation the 
+beam was constantly southward within $30~km$ from 'uniform'-experiment. This was mainly due to 
+located near ETP warm-core eddy \fignmlp[C3.fig:beam_dcmp_cm]{b}. Over all experiments the 
+deviations could be much larger that position shifted in meridional direction by $\pm 30~km$.\\
+The numerical experiments clearly presented large scale variability in the beam incidence on Tasman 
+continental slope as a result of interaction with mesoscale circulation. It seems that changes can 
+appear on different time scales. Analysis has not shown any seasonal trends, but rather turbulent 
+behavior resulted as refractive effects accumulate as the beam transverse the Tasman basin. These 
+interactions seem not to redistribute energy and only divert it since mesoscale currents are 
+relatively weak and driven mainly by small frontal zone instabilities. This is probably different 
+near Tasmania where strong East Australian Current can shed eddies of high vertical shear and 
+significant spatial extent.
+
+
 
 \subsection{Comparison with altimetry observations and TBEAM observations}
 WE intend to compare with two datasets available. Satelite altimetry emphasizes highly temporal and 
@@ -1434,6 +1457,27 @@ experiments.
 	beam's center in the near field. (c) Change in total conversion rates and beam's strength. The 
 	realizations in the field experiment are color coded throughout the figure (see panel (a)).}
 	\label{C3.fig:gen_var_beam}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale = 
+	0.75]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_14_example_beam_mesoscale.png}
+	\caption{(a) Averaged distribution of sea surface height and vorticity in the Tasman Sea in 
+	period between 10th - 15th January. Each contour line discerns 0.1 Rossby number. And 	
+	distribution of total flux vectors. (b) Phase speed anomaly for the same dates and the planar 
+	beam.}
+	\label{C3.fig:meso_examp}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale = 
+	0.75]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_15_mesoscale_variability.png}
+	\caption{(a) Semi-major axis of variance ellipses. (b) StDev in phase speed anomaly during the 	
+	field experiment. And variation in beam's center color coded same as on 
+	\fignm{C3.fig:gen_var_beam}}
+	\label{C3.fig:var_meso}
 \end{figure}
 
 %\begin{figure}
