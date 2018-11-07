@@ -743,108 +743,128 @@ and mesoscale effects and obtained ideas are then applied to the TBEAM mooring o
 
 \newpage
 \section{Discussion}
-For purposes of energetic description of the Tasman Sea tidal beam one is primarily concerned 
-with the planar beam. Previous results unequivocally pointed to some variations in the system (Fig 
-NW). Here we would like to reason different mechanisms that are in play to produce such behavior. 
-We mainly focus on the long run simulation since a) it provides continuous point of view on the 
-system adjustments; b) it can be related to the field measurements.\\
-The two only mechanisms possible is quite large variations in generation (section 2.1 and Fig. ) 
-and internal tide interaction with dynamical ocean.
+The given results detailed variability in the internal tide production at the Macquarie ridge 
+and in the deep-ocean characteristics of the gravest mode tidal beam. The latter inevitably 
+affects internal tide reflection from the Tasmania continental slope. Hence, a special attention 
+should be given for causes of such baroclinic tide variability. Additionally, this will provide a 
+valuable setting for the satelite altimetry and the field observations. So this discussion is 
+focused on the field period experiment. At first, the tidal beam properties are related to 
+magnitude and heterogeneity of its generation. Then, importance of oceanographic conditions in the 
+Tasman Sea is discriminated. And at final, the numerical results are compared with the observations.
+
 \subsection{Analytical model for generation at a knife-edge ridge}
-At first, generation is assessed through a simple analytical model. It can be thought as an 
-extension of previous work by \citep{rainville2010interference} but where ad-hoc parameters such as 
-angular swath of the radiated 
-field are not used, as well a blow-up of point-wise source is circumvented. In the appendix A it is 
-given a solution for problem of field radiated into rotating ocean of mode-1 equivalent depth by a 
-plunger making oscillatory motion. This is an extension of a problem considered by 
-\citep{morse1946methods} to a rotating ocean. To assess applicability of the simple solution to 
-real generation complimentary numerical experiments in MITgcm were carried out. There a knife edge 
-topography was placed against a semidiurnal barotropic tide. The generated baroclinic field was 
-then diagnosed by the same methods as before. The comparison between numerical experiments and 
-analytical solution are presented on Fig. Overall, the analytical solution is representative of a 
-radiated spatial pattern. This is absolutely true when Coriolis parameter is set to 0. Further when 
-rotation is present the overall pattern is skewed towards left (Coriolis force is to the left since 
-generation takes place in the Southern Hemisphere). This a direct result of extended boundary 
-condition since in the rotating ocean not only normally radiated component has to satisfy no-flow 
-condition, but also along-ridge flow is impacted. In this setting differences between numerical 
-solution of primitive equations and shallow-water equations solution are noticeable. These are 
-mainly due to shortcomings of using only one mode. In full description with infinite number of 
-modes used there are terms presenting intermodal coupling. In non-rotating case they only 
-show vertical coupling \citep{st2003generation} and this will impact only magnitude of emitted 
-modes. But with rotation the coupling now extends into spatial patterns as well. This is again due 
-to boundary conditions and also due to asymmetry of the problem. Mathematically this is expressed 
-as basis functions are not orthonormal in the curvilinear system since metric is spatially 
-changing, yet variables are separable because of orthogonality. Physically, spatial coupling arises 
-from the skewed generation pattern and hence, variation of per-mode current. So at each point of 
-the ridge there should be different vertical modal representation, i.e. different magnitude of the 
-modes, to equilibrate forcing barotropic current. Then, generally speaking, this suggests spatial 
-structure in the emitted internal tidal ``sheets" \citep{johnston2015standing} not only due to 
-topographic inhomogeneities in the generating ridge but also due to Coriolis force. This further 
-lead to a spatial structure in high mode breaking \citep{buhler2007instability}. Currently, the 
-work in progress to build full model of three dimensional generation at a knife-edge ridge. The 
-other interesting feature of the analytical model is developing of wave trapping as Coriolis 
-force is increasing. So that as generation region lies equatorward close to critical latitude there 
-is almost no energy emitted. Here the analytical solution are less representative from the MITgcm 
-results. It is again believed that absence of the high modes is one to blame. Surprising result 
-is that high modes seem to break full trapping of mode-1 and provide some energy leakage into the 
-open ocean.\\
-MUST MENTION PARAMETER ON WHICH THESE EFFECTS DEPEND ON\\
-ADD THAT ALONG SLOPE FLOW CAN ALSO LEAD TO SOME VARIABILITY IN THE EXPERIMENTS\\
-REFERENCE DECOMPOSITION\\
-SIMILARITY TO AMUKTA PASS BEAM\\
-The internal tidal beams are a result of large-scale interference of many sources 
-\citep{rainville2010interference}. And the Tasman Sea beam is not an exception 
-\citep{klymak2016reflection}. Let reconstruct the Tasman beam by application of the analytical 
-solution. So let place the shallow-water plungers along the Macquarie ridge. First necessary  
-parameter is their orientation that is found from local curvature of $3000$ m isobath. 
-And the second parameter is an actual magnitude.  These magnitudes are found by iteratively 
-minimizing difference between fields of the energy flux composed from interference of the 
-analytical solutions and ROMS simulated field. This is a nonlinear problem. So at each iteration a 
-small perturbation is found and then plungers' magnitudes are updated as well as the resultant 
-analytical field. And when the differences between the analytical field and the numerical 
-simulation are less than some tolerance, procedure is stopped. The result is given on Figure ... 
-and can be compared with .... The obtained far-field structure is unambiguously corresponds to the 
-planar field described previously. Secondary, there is a remarkable correspondence in magnitude and 
-location between internal tide production sites and the iterative solution. This result leads 
-confidence in interference as a mechanism responsible for the concise structure of the Tasman 
-beam.\\
-Though to establish link between variability of the tidal beam and generation a forward solution is 
-necessary. For this purpose only the central part is considered and three plungers are introduced. 
-They are placed at the same locations as northern seamount, sill and southern seamount () and their 
-orientation are taken ... to represent change in the orientation of the generation. Than the 
-spatially averaged magnitudes of conversion that were diagnosed from the numerical experiments () 
-are substituted after taking a square root since $Energy \sim magnitude^2$. An example of the 
-resultant is shown on Fig. It is apparent that spatial finiteness of the beam is lost and the 
-emitted field is quite similar to a point generation. Two regions quite clearly can separated. 
-First is near the generation site where generation has strong directional characteristic. In the 
-far-field orientation of the fluxes is more uniform, nevertheless spatially energy is still has 
-some structure and not spread everywhere. These two regions are similar to Fresnel and Fraunhofer 
-zones from optics. In the former the wave field shows presence of diffraction, while the latter is 
-characterized by plane wave.\\
-From this it is suggested that generation will have effects on the magnitude of the beam and its 
-initial direction. During the field period there was a shift in generation from the southern 
-position towards north (fig). It was accompanied with the overall increase of mode-1 production by 
-$30\%$. To investigate this effects on beam position a new diagnostic introduced to show the beam 
-position identified as ''center of mass",
+The generation is assessed through an analytical model (appendix A) which is an extension of 
+previous work by \citep{rainville2010interference} but with no ad-hoc parameters necessary. The 
+model provides a wave field radiated into rotating ocean of mode-1 equivalent depth by 
+a piston making oscillatory motion \citep{morse1946methods}. To assess its applicability a set of 
+complimentary numerical experiments in MITgcm were carried out. There a knife edge topography was 
+placed against a semidiurnal barotropic tide (Table). The emitted baroclinic field was then 
+diagnosed by the same methods as before. The 
+comparison between the numerical experiments and analytical solution are presented on 
+\fignm{C3.fig:anlt_sol}. Overall, the analytical model is well representative of spatial pattern of 
+the radiated waves. Its primary feature is a wavefront curvature. The model of 
+\citep{rainville2010interference} represents it by convex shape that is reminiscent of underlying 
+single pole generation. It is shown here that in the near field wavefronts at first perturbed by 
+diffraction and are convex, then they flatten and over only several wavelengths become akin to 
+the single pole model. Similar effect was produced by calculations of \citep{zhang2011three} who 
+summed wave fields emitted by point sources. Nevertheless of the near field, as extent of 
+generating topography becomes indiscernible, the solutions are similar in the far field.\\
+Now in presence of Coriolis force along-ridge flow as well becomes subject to no-flow boundary 
+condition. This spatially redistributes the emitted energy leading to asymmetry. Such that the 
+tideward and leeward wave fields are shifted one to another. The produced flow across the ridge 
+will be non-uniform and in order to be satisfied the generated higher modes will inevitably also 
+spatially modulated. It suggests further that breaking will also have some along-ridge 
+irregularity \citep{buhler2007instability}. This has not been explored in detail as the analytical 
+solution does not incorporate inter-modal coupling and left for future investigations. The other 
+effect is that initially energy flux vectors have orientation that is slanted to the ridge. This 
+phenomena is seen in the Tasman tidal beam that shows marked turning in the near-field 
+\fignmp{C3.fig:beam_prms} and was diagnosed by the angular spectrum decomposition as Southwestern 
+waves \fignmp{C3.fig:beam_dcmp}. Such wave propagation then develops phase lags and organizes into  
+spirally emitting waves \citep{baines2007internal}. All of these effects highly dependable on 
+number of wavelengths aligned along extent of the ridge or as a non-dimensional parameter $k L/2$. 
+\footnote{As well the given analytical solution is valid near the critical latitude (e.g., $f = 
+0.99 
+\omega_{tide}$) where spatial structure was observed as well, but the waves are trapped near the 
+ridge.}\\
+The Macquarie Ridge consists of multiple sources distributed along the ridge which constructively 
+interfere to produce the Tasman tidal beam \citep{rainville2010interference, 
+klymak2016reflection}. This principle will be applied here in reverse, i.e. from the distribution 
+of energy in the beam let obtain magnitude of single sources represented by the shallow-water 
+pistons. They are described by their orientation that is found from localized curvature of $3000$ m 
+isobath. And their size is set constant to be $30~km$. Respective strengths are found by minimizing 
+mismatch in flux vectors between composed analytical solution and ROMS experiments. This is a 
+nonlinear problem that is solved iteratively (computational details are given in Appendix A). 
+For 'uniform' experiment the result is presented on \fignm{C3.fig:beam_inv} and can be compared 
+with \fignm{C3.fig:beam}. The synthesized far-field structure agrees well with the planar field. 
+And the inversely found source magnitude and location has strong correlation with the actual 
+internal tide production sites. To study effect of variable generation only the major part of the 
+Macquarie Ridge is examined \fignmlp[C3.fig:gen]{b}. There pistons adjusted to be representative of 
+the previously considered primary production sites \fignmlp[C3.fig:gen]{c}. The averaged conversion 
+rates are directly substituted as $magnitude \sim Conversion^{1/2}$ into the piston model. An 
+example is given on \fignml[C3.fig:beam_inv]{b}. The beam's spatial finiteness is lost and the 
+emitted field is quite similar to a point source generation, but lead to more feasible analysis of 
+generation effects on the beam.\\
+During the field period generation intensified in the northern part of the ridge 
+\fignmlp[C3.fig:gen_var_beam]{a}. Its effect on beam position is diagnosed by identifying beam's 
+''center of mass",
 \begin{equation}
-L_{C} = \frac{\int_0^{L} dr r |F(r)|}{\int_0^{L} dr |F(r)|}
+L_{C} = \frac{\int_0^{L} dr |F(r)|r}{\int_0^{L} dr |F(r)|}
 \end{equation}
 where $L_{C}$ is a position of the beam's center of mass in the cross beam direction, $L$ - length 
-of the cross-beam transect, $|F(r)|$ - magnitude of the energy flux. This procedure is carried out 
-for the Northwest quadrant (planar beam) and the analytical solutions. To emphasize the shift the 
-results were averaged over equal two periods: 10 January to 10 February and 10 February - March. 
-The results clearly show that there was a shift in the position by 5 km, this is well captured by 
-the analytical model. Hence, suggesting that the inhomogeneous generation lead to shift in the 
-beam's initial characteristics. Nevertheless, they are relatively weak as it seems, 
-though outliers deviated from the field-period mean by 20 km. From Fig it is apparent that soon 
-after leaving near-ridge region these differences become less apparent and further superposed with 
-interaction with variable oceanographic media. At second, unsurprisingly, the magnitude of the beam 
-also has increased following larger conversion rates (Fig). But this signal only weakly reflected 
-in the far-field by Tasmania. These results apparently suggest that generation has effect on the 
-beam location only near ridge, but as soon as the beam leaves Fresnel zone and as effects of 
-mesoscale accumulates the beam is becoming less and less linked with generation history. But this 
-is not true for the magnitude which seems to be kept. This is probably due to interactions with 
-mesoscale without pronounced energy transfers.\\
+of the cross-beam transect, $|F(r)|$ - magnitude of energy flux along the transect. This procedure 
+is carried out for the Northwest quadrant (planar beam) and the analytical solutions. The 
+comparison of results confirm that the beam has moved its position by $20~km$ 
+northward \fignmlp[C3.fig:gen_var_beam]{b} following generation pattern. Two outliers, 'uniform' 
+and 
+'2014' \fignml[C3.fig:gen]{c} are included to further emphasize a dominant role  in the near-field 
+of inhomogeneous generation. Its effects can be discerned in the analytical solutions over 1-2 
+wavelengths after which the model becomes similar to uniform point-wise generation. While the 
+numerical experiments become irrespective to generation much faster as effects of interaction with 
+mesoscale are building up.\\
+Another consequence of the variable generation is alterations in the beam magnitude. Over the 
+considered period mode-1 production increased by $30\%$ \fignmlp[C3.fig:gen_var_beam]{c}. Unlike to 
+previous this characteristic seems to be consistent throughout the whole Tasman basin. This is 
+shown by considering temporal variability in the integrated flux in the near-field, mid-field and 
+far-field. Note that the far-field record was shifted in color to account for time lag necessary to 
+energy propagation ($\sim 6.7~days$). All the time series show similar pattern of modulation that 
+follows the total conversion. But character declines with distance, but at rates slower than 
+as $1/r$ predicted by the analytical models \citep{zaron2014time}[e.g.] or given here. To account 
+for the unknown spreading law, the analytical results are scaled by mean magnitude of the numerical 
+experiments in the far field and given by diamonds on \fignmlp[C3.fig:gen_var_beam]{c}. The 
+correlation is surprisingly good.\\
+In conclusion, the given before changes in beam's heading and consequently, beam's position are 
+related to generation in the near-field and it quite rapidly becomes obscured by effect of variable 
+oceanographic conditions on the beam. These interactions seem to proceed without energy loss in the 
+tidal beam as its magnitude correlates with conversion rates at the ridge quite good.
+
+%strength of the beam  
+%where $L_{C}$ is a position of the beam's center of mass in the cross beam direction, $L$ - length 
+%of the cross-beam transect, $|F(r)|$ - magnitude of the energy flux. This procedure is carried out 
+%for the Northwest quadrant (planar beam) and the analytical solutions. To emphasize the shift the 
+%results were averaged over equal two periods: 10 January to 10 February and 10 February - March. 
+%The results clearly show that there was a shift in the position by 5 km, this is well captured by 
+%the analytical model. Hence, suggesting that the inhomogeneous generation lead to shift in the 
+%beam's initial characteristics. Nevertheless, they are relatively weak as it seems, 
+%though outliers deviated from the field-period mean by 20 km. From Fig it is apparent that soon 
+%after leaving near-ridge region these differences become less apparent and further superposed with 
+%interaction with variable oceanographic media. At second, unsurprisingly, the magnitude of the 
+%beam 
+%also has increased following larger conversion rates (Fig). But this signal only weakly reflected 
+%in the far-field by Tasmania. These results apparently suggest that generation has effect on the 
+%beam location only near ridge, but as soon as the beam leaves Fresnel zone and as effects of 
+%mesoscale accumulates the beam is becoming less and less linked with generation history. But this 
+%is not true for the magnitude which seems to be kept. This is probably due to interactions with 
+%mesoscale without pronounced energy transfers.\\
+
+\footnote{ Two 
+	regions quite 
+	clearly 
+	can separated. First is near the generation site where generation has strong directional 
+	characteristic. In the far-field orientation of the fluxes is more uniform, nevertheless 
+	spatially 
+	energy is still has some structure and not spread everywhere. These two regions are similar to 
+	Fresnel and Fraunhofer zones from optics. In the former the wave field shows presence of 
+	diffraction, while the latter is characterized by plane wave.}\\
 
 %So now we are in position to investigate effects of the inhomogeneous generation on the tidal 
 %beam. 
@@ -1386,19 +1406,50 @@ experiments.
 \end{figure}
 
 \begin{figure}
-\centering
-\includegraphics[scale = 
-0.75]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_11_example_beam_mesoscale}
-\caption{Example of refraction. }
-\label{C3.fig:fig_11_beam_mesoscale}
+	\centering
+	\includegraphics[scale = 
+	0.75]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_11_anlt_result_comparison.png}
+	\caption{Internal tide generated by a knife-edge ridge in the numerical model (upper row). The 
+	field solved by the given analytical model in Appendix A (lower row). Three different regimes 
+	are explored with no rotation present ($f = 0$, the left column), with Coriolis force 
+	representative of the Macquarie Ridge ($f = 10^{-4}$, the middle column) and strong Coriolis 
+	force ($f = 0.8 \omega_{M_2}$, the right column).}
+	\label{C3.fig:anlt_sol}
 \end{figure}
 
 \begin{figure}
-\centering
-\includegraphics[scale=0.75]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_12_beam_var_cp}
-\caption{}
-\label{C3.fig:fig_12_beam_var_cp}
+	\centering
+	\includegraphics[scale = 
+	0.75]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_12_beam_models.png}
+	\caption{(a) The flux map generated from sources having magnitude scaled by size of points. (b) 
+	The field generated only by the central Macquarie Ridge section.}
+	\label{C3.fig:beam_inv}
 \end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale = 
+	0.75]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_13_generation_variability.png}
+	\caption{(a) Variation of conversion rates along the Macquarie ridge. (b) Comparison of the 
+	beam's center in the near field. (c) Change in total conversion rates and beam's strength. The 
+	realizations in the field experiment are color coded throughout the figure (see panel (a)).}
+	\label{C3.fig:gen_var_beam}
+\end{figure}
+
+%\begin{figure}
+%\centering
+%\includegraphics[scale = 
+%0.75]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_11_example_beam_mesoscale}
+%\caption{Example of refraction. }
+%\label{C3.fig:fig_11_beam_mesoscale}
+%\end{figure}
+%
+%\begin{figure}
+%\centering
+%\includegraphics[scale=0.75]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_12_beam_var_cp}
+%\caption{}
+%\label{C3.fig:fig_12_beam_var_cp}
+%\end{figure}
 
 %\begin{figure}
 %	\centering
