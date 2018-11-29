@@ -950,33 +950,47 @@ near Tasmania where strong East Australian Current can shed eddies of high verti
 significant spatial extent.
 
 \subsection{Comparison with altimetry observations and TBEAM observations}
-Results of the presented investigation are compared here with satelite altimetry observations 
-\citep{zhao2018satellite} and TBEAM observations \citep{waterhouse2018observations}. The aim of 
-such comparison is to provide insight into actual beam parameters and variability.\\
-Overall comparison between 20-year average of satelite observations \citep{zhao2018satellite} 
-favorably compares with the obtained results here. The comparison of plan-view of the internal 
-tidal beam is provided by \fignm{C3.fig:cmp_sat_nexp}. Over the first half of the Tasman Basin both 
-beams are similar in position, travel direction and magnitude. By the inverse approach energy 
-sources were deduced and then compared to averaged distribution. The same part of the ridge was 
-identified as emittor of the Tasman sea beam. Though it appears that role of the seamounts 
-generation is greater compare to the numerical experiments. This could be due to smoothing of 
-bathymetry in ROMS. It produced 200-300 m deeper seamounts compare to actual bathymetry. So it 
-could be true that ROMS simulations underestimated generation at the seamounts. On the other hand, 
-the mechanism described in Section 2.1 seems to presented as Campbell Plateau emitted waves are 
-also found in satelite altrimetry observations.\\
-The major differences are found near Tasmania and as previously discussed interaction of the 
-internal tidal beam with variable ocean conditions lead to refraction and shift in position. And 
-due to a small number of realizations there might be a bias in averaging. These suggestions were 
-tested by calculating kinetic energy of background currents in the Tasman Basin. This is thought as 
-a measure of eddy presence and their strength, so that amount of refraction. Along with used here 
-experiments, the same metric was found for HYCOM. Both are presented on \fignmp{C3.fig:KE_beam}. 
-HYCOM results show a pronounced increase in Kinetic energy happened in February 2013. Since ROMS 
-was initialized from HYCOM, this change was well captured. Actual reason for this increase is not 
-known. But it is noted that there was a change in position of Southern Subtropic Frontal 
-zone defined by surface salinity of 34.4. Over the jump the surface isohaline shifted 
-0.5-1$^\circ$ northward. This does occur in the region, but it is unknown if such changes lead to 
-more unstable frontal zone and hence, stronger mesoscale circulation.\\
-\fignm{C3.fig:KE_beam} also gives how the beam was shifting its position relative to satelite 
+Results of the presented investigations are now compared  with satellite altimeter measurements  
+\citep{zhao2018satellite} and TBEAM's in-situ observations \citep{waterhouse2018observations} to 
+provide comprehensive picture of the beam parameters and their variability on different 
+spatiotemporal scales. The satellite investigations of \citep{zhao2018satellite} provide an average 
+viewpoint that is obtained from multiple satellite missions covering the recent 20 years. Results 
+from the numerical experiments compare favorably with seen from space internal-tide characteristics 
+as seen in a summary table 1. Further, plan-view comparison \fignmp{C3.fig:cmp_sat_nexp} provides 
+more details. Here over the first half of the Tasman Basin both beams are similar in position, 
+travel direction and magnitude. This is primarily because of consistency in geography of internal 
+tide production. This was tested by application of the inverse approach to satellite-derived beam 
+\fignmlp[C3.fig:cmp_sat_nexp]{Scaled by magnitude dots along the Macquarie Ridge}. The same part of 
+the ridge was identified as the primary energy emitter. Yet it seems that conversion at the 
+seamounts was undervalued in the numerical experiments because of performed topography smoothing. 
+This led to 200-300 m deeper seamounts compare to actual bathymetry and hence, production of  
+internal wave took place in less stratified waters as the seamounts were located deeper away from 
+thermocline. This also suggests that variability of stratification might have higher influence on 
+the internal tide conversion than reported here. On the other hand, the primary variability 
+mechanism (Section 3.1) associated with shoaling remote baroclinic tide seems to be present as 
+Campbell Plateau emitted waves can be clearly identified in the altimeter observations.\\
+
+Major differences are found away from the generating ridge, near Tasmania. As previously discussed 
+the internal tide appearance in the far-field is produced by refraction on inhomogeneities in 
+oceanic media. Then any biases in the simulated dynamical state of the Tasman sea will lead to 
+biases in the beam characteristics. As well small number and short temporal coverage of the 
+performed experiments are by no means sufficient to derive a statistically adequate mean. These 
+points are further illustrated by calculating kinetic energy of barotropic background currents in 
+the Tasman Basin in the ROMS experiments and HYCOM simulations (which were used as an initial 
+state estimate and boundary forcing in the ROMS experiment) \fignmp{C3.fig:KE_beam}. Overall, 
+ROMS shows a good skill in reproducing prescribed ocean states. Nevertheless, salient 
+feature of the time series is in a growth of the energy level happened in February 2013. Actual 
+reason for this jump is unclear and was not investigated in a detail, but two factors were 
+considered. At first, in August 2013 HYCOM atmospheric forcing was modified with consequent surface 
+winds having smoother curl. Thus, different behavior of the upper ocean is expected. At second, 
+physical implications involve repositioning of the Subtropical Frontal Zone (STFZ) that separates  
+subtropical from subantarctic water masses. Averages of sea surface salinity used as definiton of 
+the STFZ showed a 1$^{\circ}$ equatorward displacement of the southern boundary. Such 
+repositioning is a feature of the Tasman Sea and periodically occurs. But it is unknown how this 
+relates to the Tasman Basin dynamics.\\
+
+Inevitably, different strength of mesoscale currents will \fignm{C3.fig:KE_beam} also gives how the 
+beam was shifting its position relative to satelite 
 altimetry. The first period with weaker currents is found to be closer to the altimetry result. 
 While later where eddies are more persistent in the region, there is stronger refraction southward, 
 away from the altimetry. It follows that in the considered numerical experiments there is bias 
