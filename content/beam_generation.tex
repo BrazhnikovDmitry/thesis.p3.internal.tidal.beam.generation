@@ -950,14 +950,15 @@ near Tasmania where strong East Australian Current can shed eddies of high verti
 significant spatial extent.
 
 \subsection{Comparison with altimetry observations and TBEAM observations}
-Results of the presented investigations are now compared  with satellite altimeter measurements  
+Results of the presented investigations are placed together with satellite altimeter measurements  
 \citep{zhao2018satellite} and TBEAM's in-situ observations \citep{waterhouse2018observations} to 
-provide comprehensive picture of the beam parameters and their variability on different 
+provide comprehensive picture of the beam parameters and their variability on diverse 
 spatiotemporal scales. The satellite investigations of \citep{zhao2018satellite} provide an average 
 viewpoint that is obtained from multiple satellite missions covering the recent 20 years. Results 
-from the numerical experiments compare favorably with seen from space internal-tide characteristics 
-as seen in a summary table 2. Further, plan-view comparison \fignmp{C3.fig:cmp_sat_nexp} provides 
-more details. Here over the first half of the Tasman Basin both beams are similar in position, 
+from the numerical experiments compare favorably with observed from space internal-tide 
+characteristics as seen in a summary \ref{C3:tab.prms}. Further, plan-view comparison 
+\fignmp{C3.fig:cmp_sat_nexp} provides more details. Here over the first half of the Tasman Basin 
+both beams are similar in position, 
 travel direction and magnitude. This is primarily because of consistency in geography of internal 
 tide production. This was tested by application of the inverse approach to satellite-derived beam 
 \fignmlp[C3.fig:cmp_sat_nexp]{Scaled by magnitude dots along the Macquarie Ridge}. The same part of 
@@ -967,166 +968,235 @@ This led to 200-300 m deeper seamounts compare to actual bathymetry and hence, p
 internal wave took place in less stratified waters as the seamounts were located deeper away from 
 thermocline. This also suggests that variability of stratification might have higher influence on 
 the internal tide conversion than reported here. On the other hand, the primary variability 
-mechanism (Section 3.1) associated with shoaling remote baroclinic tide seems to be present as 
+mechanism (Section 3.1) associated with passing of non-local baroclinic tides is realistic as 
 Campbell Plateau emitted waves can be clearly identified in the altimeter observations.\\
 
 Major differences are found away from the generating ridge, near Tasmania. As previously discussed 
 the internal tide appearance in the far-field is produced by refraction on inhomogeneities in 
 oceanic media. Then any biases in the simulated dynamical state of the Tasman sea will lead to 
 biases in the beam characteristics. As well small number and short temporal coverage of the 
-performed experiments are by no means sufficient to derive a statistically meaningful mean. These 
+performed experiments are by no means sufficient to derive a statistically adequate mean. These 
 points are further illustrated by calculating kinetic energy of subinertial, barotropic currents in 
 the Tasman Basin in the ROMS experiments and HYCOM simulations (which were used as an initial 
 state estimate and boundary forcing in the ROMS experiment) \fignmp{C3.fig:KE_beam}. Overall, 
 ROMS shows a good skill in reproducing prescribed ocean states. Nevertheless, salient 
-feature of the time series is in a growth of the energy level happened in February 2013. Actual 
-reason for this jump is unclear and was not investigated in a detail, but two factors were 
-considered. At first, in 2013 HYCOM atmospheric forcing was modified with consequent surface 
-winds having smoother curl. Thus, different behavior of the upper ocean is expected, but timing of 
-the increase does not coincide with the model forcing switchover (given by a mark). At second, 
-large-scale oceanographic implications involve repositioning of the Subtropical Frontal Zone (STFZ) 
-that separates subtropical from subantarctic water masses. Averages of sea surface salinity used as 
-definition of the STFZ showed a 1$^{\circ}$ equatorward displacement of the southern boundary. Such 
-repositioning is a feature of the Tasman Sea and periodically occurs. But it is unknown how this 
-relates to the Tasman Basin dynamics.\\
+feature of the time series is in a growth of the energy level happened after February 2013. Nature 
+of the increase is likely related to numerical parameters of HYCOM experiments. Additional 
+comparison between AVISO satellite product and the ROMS experiments led to conclusion that 
+important mesoscale features were similar, but amplified and accompanied with higher 
+horizontal shear. Inevitably, different strength of mesoscale currents will drive varying amount of 
+refraction. On \fignm{C3.fig:KE_beam} this is depicted by diamonds representing the beam southward 
+deviation from the satellite-derived beam. Over the first period with weaker currents, the beam was 
+found closer to the satellite altimeter. But after 2013 intensification the beam was situated 
+further poleward. Thus, the performed numerical experiments are biased towards poleward location 
+due to the considered sample of the oceanic conditions. Regardless of the average, during the field 
+period simulation \fignmlp[C3.fig:KE_beam]{inset} it is seen a growth of kinetic energy caused by 
+spinning up of an anticyclonic eddy near East Tasman Plateau. This process is consistent with 
+satellite observed changes in sea surface anomaly and geostrophic currents. And hence, the 
+numerical simulations can provide a valuable perspective on the TBEAM measurements.\\
 
-For any reason of the jump, different intensity of mesoscale currents will inevitably drive 
-varying amount of refraction. On \fignm{C3.fig:KE_beam} this is depicted by diamonds 
-representing the beam displacement relative to the satellite-derived beam that were all southward. 
-Over the first period with weaker currents, the beam is found in northward position and closer to 
-the satellite altimeter. And after 2013 austrial summer intensification the beam is located 
-poleward. Thus, the performed numerical experiments are biased towards poleward location due to the 
-considered sample of the oceanic conditions. This finding further opens a possibility for a bias in 
-the satellite investigation \citep{zhao2018satellite} that covered 1993-2012 and application of the 
-internal tides for deducing oceanic changes.\\
+\begin{table}
+	\caption{Comparison of internal tidal beam characteristics}
+	\begin{tabular}{ |p{4cm}||p{1.75cm}|p{1.75cm}||p{1.75cm}|p{1.75cm}||p{1.75cm}|p{1.75cm}| }
+		\toprule
+		\multirow{2}{*}[-3pt]{Results} & \multicolumn{2}{c}{The Macquarie ridge} & 		
+		\multicolumn{2}{c}{Tasmania} & \multicolumn{2}{c}{Plane wave}\\
 
-The TBEAM field program took place in January-March 2015 \fignmlp[C3.fig:KE_beam]{inset}. The field 
-period simulation diagnosed southward beam position with $\pm 15~km$ shifts and overall baroclinic 
-tide intensification \fignmlp[C3.fig:gen_var_beam]. These prepositions will be assessed against the 
-in-situ observations \citep{waterhouse2018observations}. The TBEAM program comprised a stationary, 
-moored measurements over period of 49 days (A1 mooring) 
+		\cmidrule{2-7}
+		 & \scriptsize{Integrated flux [$GW$]} & \scriptsize{Mean Heading [$^\circ$]}  & 
+		 \scriptsize{Integrated flux [$GW$]} &  \scriptsize{Mean Heading [$^\circ$]} & 
+		 \scriptsize{Magnitude [$kW/m$]} & \scriptsize{Heading [$^\circ$]}\\
+		\midrule
+		Numerical simulations & $1.6 \pm 0.2$ & $163 \pm 3$ & $0.95 \pm 0.1$ & $151 \pm 4.5$ & 
+		$2.9 \pm 1.1$ & $156 \pm 9$ \\
+		Field period only & & & & & $2.5 \pm 0.6$ & $162 \pm 8$ \\ 
+%		Field period sim. & asas & asas & asas &as \\
+		Altimetry &  $1.2$ & $161$ & $0.9$ & $142$ & $3.9 \pm 2.2$ & $141 \pm 2$ \\
+		TBEAM &   \textit{~} & \textit{N/A} & \textit{N/A} & \textit{N/A} & $3.4 \pm 1.4$ & $149 
+		\pm 3$ \\
+		\bottomrule
+	\end{tabular}
+	\label{C3:tab.prms}
+\end{table}
+
+
+In overall, the field period simulation diagnosed southward beam position with $\pm 15~km$ shifts 
+and baroclinic tide intensification \fignmlp[C3.fig:gen_var_beam]. These prepositions will be 
+assessed against the in-situ observations \citep{waterhouse2018observations}. The TBEAM program 
+comprised a stationary, moored measurements over period of 49 days (A1 mooring) 
 and short-term spatial sampling across the beam by yoyoing CTD rosette with mounted upward/downward 
 looking ADCPs (F2 - F9, LADCP stations)  (see \fignm{C3.fig:cmp_sat_nexp} and 
 \fignm{C3.fig:TBEAM_sp}). The 
-A1 mooring measured a convoluted, highly variable history of the baroclinic tide at a single 
-location, and the LADCP stations gave a perspective on spatial extent and structure of the beam. 
+A1 mooring revealed a convoluted, highly variable history of the baroclinic tide at a single 
+location, and the LADCP stations gave a glimpse into spatial extent and structure of the beam. 
 But the latter observations have to be considered with caution due to contamination by 
 energetic near-inertial currents followed major storm events. More on data processing, 
-uncertainties and analysis is to be found in \citep{waterhouse2018observations}. Part of the  
-investigation included fitting a plane wave providing an estimate on the bulk beam parameters 
-(table). All three approaches, altimetry, in-situ and numerical modeling, compare well and combined 
-provide the averaged internal tide characteristics. Yet the differences are valuable in order to 
-gain further insights. So let consider the total field for the gravest mode 
-\fignml[C3.fig:TBEAM_sp]{Panel A}. There is a large contrast between the in-situ observations and 
-the ROMS experiment \fignmlp[C3.fig:TBEAM_sp]{Panel a, pink and red arrows}. At the stations 
-closest to ETP (F2-F5 and A1) the simulated energy fluxes are oriented towards south. This 
-disparity comes from interference between the beam component (blue arrows) and oppositely traveling 
-reflected waves (green arrows). If the beam component is considered only, then the comparison is 
-more favorable and was emphasized by the table. In fact, at location of A1 the simulated beam 
-coincides with the mean energy flux at the mooring. Overall, this leads to conclusion that the 
-simulated total field has different characteristics of interference than it was observed in-situ. 
-This point is emphasized by examining a numerical experiment where the beam was closest to the 
-satellite-derived one \fignmlp[C3.fig:TBEAM_sp]{Panel b}. Now the total field (pink arrows) 
-corresponds to the observations much better at F2-F5, A1. Nevertheless, at other stations mismatch 
-is still large. This is not surprising because of superposition with the waves emerging from South 
-Tasman Rise. If that signal is removed, the comparison is better (not shown). Hence, the actual 
-observations are less influenced by internal tidal swell.\\
-\fignml[C3.fig:TBEAM_sp]{Panel a and b} emphasize that the total wave field is highly variable 
-because of changeable beam and reflection. This is then augmented by a partial standing wave and 
-spatial distribution of HKE and APE. On average \fignmlp[C3.fig:TBEAM_KE2PE]{Panel a} the TBEAM 
-stations are found in different locations characterized both by an excess of kinetic or 
-potential energies. Similar trends are observed in the in-situ observations, but direct comparison 
-for LADCP stations is not feasible because of near-inertial wave energy contamination. On the other 
-hand, the moored observations at A1 provides time-series of the ratio HKE to APE 
-\fignmlp[C3.fig:TBEAM_KE2PE]{Panel d}. In the first period of observation APE was much larger than 
-kinetic part, this is thought as a node was located nearby. In the later period the ratio was 
-tending towards a plane wave value, and hence, the node magnitude was lessen either because of 
-change in position or diminish of interference phenomena. The numerical simulation shows less 
-magnitude of variability and different time history. Nevertheless, it is used to exemplify 
-standing wave behavior \fignmlp[C3.fig:TBEAM_KE2PE]{Panel b, c}. Two regimes are presented when the 
-anti-node is relatively weak and located away from A1 and the opposite situation when interference 
-is strongly developed. It is seen that such shifts are primarily driven by proportion and spatial 
-distribution of the reflected energy. Further, note that even variability concerns the anti-node 
-strength and position, potential energy is more stationary, i.e. its relative change is smaller 
-than one in kinetic energy. This is simply because any change in relatively low levels of kinetic 
-energy will be more noticeable. This can be illustrated in a one-dimensional problem 
-\citep{martini2007diagnosing} where 
+uncertainties and analysis is to be found in \citep{waterhouse2018observations}. Part of their   
+investigation included fitting a plane wave and an estimate on the bulk beam parameters 
+\ref{C3:tab.prms}. All three approaches, altimetry, field measurements and numerical modeling, 
+compare well and combined yield the averaged internal tidal wave of $\sim 3.4 kW/m$ incident on 
+Tasmania from the direction of $150^{\circ}$. Disparities in the results are further evaluated to 
+gain additional insights.\\
+The total field for the gravest mode \fignml[C3.fig:TBEAM_sp]{Panel A} reveals a large contrast 
+between the in-situ observations and averaged the field period experiment 
+\fignmlp[C3.fig:TBEAM_sp]{Panel a, black and red arrows}. At the stations closest to ETP (F2-F5 and 
+A1) the simulated energy fluxes are oriented towards south. Such property is induced by 
+interference between the beam component (blue arrows) and oppositely traveling reflected waves 
+(green arrows). If the planar beam component \fignmp{C3.fig:beam_dcmp} is considered alone, then 
+the contrast is less pronounced. In fact, at location 
+of A1 mooring the simulated beam coincides with the mean energy flux during the measurement period. 
+Thence, the simulations have different characteristics of the interfering fields than it was 
+observed in-situ. This fact is emphasized by examining a numerical experiment where the beam was 
+closest to the satellite-derived one \fignmlp[C3.fig:TBEAM_sp]{Panel b}. Now the total field at 
+F2-F5, A1 corresponds to the observations much better. Nevertheless, at other stations mismatch 
+is still large. This is not surprising due to superposition with the waves emerging from South 
+Tasman Rise. If that signal is removed, the comparison improves (not shown). These facts indicate 
+the TBEAM observations were also less influenced by internal tidal swell. \\
+\fignml[C3.fig:TBEAM_sp]{Panel a and b} emphasize variability of the total wave field due to 
+alterations in incidence and reflection. This is further augmented in a partial standing wave and 
+chiefly in spatial distributions of HKE and APE. On average \fignmlp[C3.fig:TBEAM_KE2PE]{Panel 
+a} locations of the TBEAM stations are characterized both by an excess of kinetic 
+or potential energy. Similar pattern is observed in the in-situ observations, but direct 
+comparison for LADCP stations is not feasible because of contamination by near-inertial wave 
+energy. But the observations at A1 furnish a time-series of the ratio HKE to APE 
+\fignmlp[C3.fig:TBEAM_KE2PE]{Panel d}. Over the first period APE was much larger 
+than kinetic part that is speculated as an anti-node was located nearby. In the later period the 
+ratio was tending towards a plane wave value, and hence, the anti-node magnitude was lessen either 
+because of change in position or diminish of interference phenomena. Whilst the numerical 
+simulation 
+demonstrates less magnitude of variability and different temporal evolution. Nevertheless, it is 
+used to exemplify standing wave behavior \fignmlp[C3.fig:TBEAM_KE2PE]{Panel b, c}. Two regimes are 
+presented when the 
+anti-node is relatively weak and located away from A1, and the opposite situation when presence of 
+interference is stronger. Such perturbation are primarily driven by proportion and spatial 
+distribution of the reflected energy. It is surprising to note that even variability involves 
+mainly the anti-node strength and position, potential energy is more stationary, i.e. its relative 
+change is smaller than one in kinetic part. This is simply because any change in relatively low 
+levels of kinetic energy is more noticeable and further can be illustrated by a one-dimensional 
+example \citep{martini2007diagnosing} where 
 \begin{align}
 E_{KE} \sim (1 - r)^2 + 4r \sin^2{k x},~E_{PE} \sim (1 - r)^2 + 4r \cos^2{k x}
 \end{align}
-taking differential will lead to
+Application of differential yields
 \begin{align}
 \frac{\delta E_{KE}}{E_{KE}}\big|_{kx = 0} = \delta r \frac{2}{1 - r},~\frac{\delta 
 	E_{PE}}{E_{PE}}\big|_{kx = 0} = \delta r \frac{2}{1 + r}
 \end{align}
-where $\delta r$ - a small perturbation in amplitude ratio of two interfering waves. Now at the 
-anti-node locations ($kx = 0$) any changes in wave content will be amplified in the kinetic energy. 
-The amplification factor becomes increasingly large as $r \rightarrow 1$ and a pure standing wave 
-develops. In the numerical experiments A1 showed ... \\
-During the TBEAM observation measurements of potential energy were more stable than kinetic energy. 
-This lends additional confidence that the A1 mooring was located close to anti-node and variability 
-in the energy flux was caused by interference pattern adjustments. These inferences can be further 
-tested by spectral decomposing. Since it is a point-wise observation the used method previously can 
+where $\delta r$ - a small perturbation in the amplitude ratio of two interfering waves. Then at 
+the anti-node locations ($kx = 0$) any changes in wave content will be amplified in the kinetic 
+part. The amplification factor becomes infinitely large as $r \rightarrow 1$ and a pure standing 
+wave develops. In the numerical experiments location A1 exhibited higher variability in kinetic 
+energy since $\sigma_{APE}/<E_{APE}> = 33\%$ and $\sigma_{HKE}/<E_{HKE}> = 81\%$.\\
+During the TBEAM program measurements of potential energy ($91\%$) were more stationary as well 
+than kinetic energy ($67\%$). This lends additional confidence that the A1 mooring was located 
+close to the anti-node and variability in tidal energetics was caused by adjustments in 
+interference pattern. Further these inferences are tested by spectral decomposition. Since the 
+moored measurement provides only a point-wise observation, the used previously method can 
 not be directly applied. But if it is assumed that interfering waves do not have any phase lags or 
-that cross-terms in energy quantities are negligible, then non-deterministic decomposition can be 
-applied. The actual signals will not be back-synthesized and only some energy characteristics could 
-be deduced. The assumption is fulfilled in position between node and anti-node where two 
-interfering waves are in quadrature. So A1 location makes it possible to deduce parameters of the 
-wave components taken part in interference.\\
-The details of the non-deterministic decomposition are given in Appendix A.2 and an example 
-is shown on \fignm{C3.fig:ex_spectra}. The fit can obtain only 5 Fourier circular components which 
-leads to low angular resolution, only waves separated by $180^{\circ}$ can be separated. In more 
-complicated wave field this might lead to some wrongly identified direction. This is seen in 
-comparison between application of the pointwise method and the decomposition based on antenna in 
-case of the numerical experiment. Here incident direction was wrongly identified. To further assess 
-applicability, numerical simulation results from a half wavelength window surrounding A1 location 
-were separated by ratio in HKE and APE. Then the point-wise decomposition was applied and compared 
-to the antenna analysis \fignmp{C3.fig:test_spectra}. Clearly depending on position importance of 
-phase lags and hence, cross-terms either decrease or increase leading to biases as the ratio in HKE 
-to APE is increasing. The worst case is for when measurements are made near a node. But 
-surprisingly, the best result is found for locations close to anti-node when the ratio is less than 
-1. Here energy of the incident wave was identified correctly as well as its bearing. The reflected 
-portion on the other hand was underestimated, and its travel direction is absolutely incorrect. 
-Overall, the point-wise decomposition provides a conservative estimate of the incident wave field 
-and a qualitative picture of the reflected wave.\\
-Now the point-wise decomposition is applied to the TBEAM observations \fignmp{fig_22_A1_comp.png}, 
-for comparison the numerical results are added. The amount of incident energy closely follows 
-total signal and there were two periods of intensification. In the numerical simulations this 
-happened because of growth in the baroclinic tide production at the Macquarie Ridge. There is a 
-remarkable resemblance with the field observations \fignmlp[C3.fig:dcmp_A1]{Panels a, c}. So 
-that non-stationary generation can be considered as a possible reason for change in magnitude of 
-flux observed in the TBEAM time series. Secondary, the bearing of the incident wave also varied. 
-This probably was produced as a result of refraction by an anticyclonic eddy that was present 
-during the field period. The ROMS model had a moderate skill in simulating mesoscale dynamics. 
-Though eddy was situated a half degree south $\sim 70~km$ in comparison either to AVISO or HYCOM, 
+that cross-terms in energy quantities can be omitted, then a non-deterministic decomposition is 
+applicable. It implies that the actual signals can not be back-synthesized and only magnitude or 
+energy parameters could be obtained. The assumption is theoretically fulfilled in position between 
+a node and an anti-node where two interfering waves are in quadrature. So A1 location makes it 
+possible to deduce parameters of wave components taken part in interference.\\
+The details of the non-deterministic decomposition are expressed in Appendix A.2 and an example 
+is demonstrated on \fignm{C3.fig:ex_spectra}. The fit seeks only 5 circular Fourier components 
+which leads to low angular resolution, only opposite traveling waves can be separated. In more 
+complicated sees this produces wrongly identified direction such as in example for the numerical 
+experiment. Main energy lobe is off by $\sim 30 \%$ in comparison to decomposition based on antenna 
+(Appendix A.1). To further assess applicability, numerical simulation results from a wavelength 
+window centered at A1 were divided following the ratio in HKE and APE. Then the point-wise 
+decomposition was applied and compared to the antenna analysis \fignmp{C3.fig:test_spectra}. The 
+results highlight importance of interference cross-terms in relation to a position in the standing 
+wave. The worst case is when measurements are made near a node, so that phase lags lead to large 
+bias. But unlike to theoretical implications, the best performance is found near locations close to 
+an anti-node or when the ratio is less than 1. The contradiction arises due to Poincare wave 
+dynamics that involve appearance of phase lags between pressure and currents via Coriolis force. 
+Hence, in the current formulation the point-wise decomposition considers interference of 
+non-rotating waves. Regardless this caveat, energy of the incident wave was estimated 
+correctly as well as its bearing \fignmlp[C3.fig:test_spectra]{a, b}. The reflected portion on the 
+other hand was underestimated, and its travel direction is never correctly diagnosed. Overall, the 
+point-wise decomposition provides a conservative estimate of the incident wave field and a 
+qualitative picture on the reflected wave.\\
+Now the point-wise decomposition is applied to the TBEAM observations \fignmp{C3.fig:dcmp_A1} 
+that were harmonically analyzed over 5-day running window. To aid comparison the 
+numerical simulation are plotted along. In both results amount of incident energy is similar to the 
+total signal. Overall there was a growth intermittent with a short period of decline. Considering 
+the the numerical experiments growth was driven in part by increase in the baroclinic-tide 
+production at the Macquarie Ridge. But primary variation arises 
+from the time-variable refraction causing spatial energy redistribution seen as 
+movement of the beam and/or its focusing. To estimate these contributions consider the beam to 
+be of a Gaussian-bell shape in transect, $F(x_n) = A e^{-\frac{(x_n - a)^2}{2w^2}}$, where $n$ - 
+across beam coordinate, $a$ - location of the beam's maximum, $w$ - width defined where intensity 
+falls to 2/3 of maximum. From the numerical experiments an average width is $70~km$ and mean 
+distance to A1 is $d_{A1} = x_n - a = 90~km$. Further taking differential produces,
+\begin{align}
+\frac{\delta F(x_n)}{F(x_n)} = \frac{\delta A}{A} + \frac{\delta d_{A1}}{w} \frac{d_{A1}}{w} + 
+\frac{\delta w}{w} \frac{d_{A1}^2}{w^2}
+\end{align}
+The terms represent variation in point-wise observation due to change in beam's overall magnitude, 
+in position relative to the mooring and width of the beam. Using values from the numerical 
+experiments, average contributions are estimated as $\sim 10\%$, $\sim 50\%$ and $\sim 40\%$ 
+respectively, \fignmlp[C3.fig:gen_var_beam]{d} shows how the actual parameter varies and their 
+contributions in each particular case. It is apparent that overall increase is mainly associated 
+with beam becoming closer to the observational point \fignmlp[C3.fig:gen_var_beam]{d, black line}. 
+And then this is additionally modulated by width of the beam \fignmlp[C3.fig:gen_var_beam]{d, blue 
+line}. For instance, two extreme values at the start and the end of the field-period simulation  
+correspond to cases of focused beam when refraction caused beam's self-interference (e.g.)
+\fignmp{C3.fig:meso_examp}. In the first case, position and overall weak magnitude led to smaller 
+flux ($1.3~kW/m$), oppositely, closer position and stronger intensity produced higher value 
+($4.4~kW/m$). In other instances (between 20 and 30 day of year) the different contributions might 
+be of opposing effect leading to only small alterations in the flux magnitude. Further, let 
+consider an incidence angle \fignmlp[C3.fig:gen_var_beam]{d}. Its variations are closely related to 
+the changes in beam's bulk parameters. This is emphasized by any southward (angle is increasing) 
+deviation corresponding to beam location further away from the mooring and smaller flux magnitude. 
+And opposite holds for the northward orientation.\\
+Comparing the numerical experiment with the TBEAM observations a resemblance is observed 
+\fignmlp[C3.fig:dcmp_A1]{Panels a, c}. So that using the previous inferences it is speculated that 
+the A1 mooring recorded alterations in position of the beam that served as a primary reason for 
+flux magnitude decrease or increase and variability in the incident angle. Mechanism of this lies 
+in refraction by an anticyclonic eddy that was present during the field period. The ROMS model had 
+a moderate skill in simulating this mesoscale dynamics and so the point-wise obtained parameters 
+are in close correspondence to the factual measurements. Though the eddy in the numerical 
+experiments was situated a half degree south $\sim 70~km$ in comparison either to AVISO or HYCOM, 
 its center was over $A1$ and $F5$, while from the satellite altimetry - over $F3$. Nevertheless, 
 the timing was simulated correctly as most active interaction has taken place in February 2015. 
 This produced in the numerical experiment a southward shift of the beam and consequently, the 
-energy flux turned southward \fignmlp[C3.fig:dcmp_A1]{Panel d, dots}. Similar pattern of change is 
-observed in the total flux of the TBEAM (gray line) and point-wise decomposition (black line). Yet 
-if the total wave field in the numerical experiment is considered \fignmlp[C3.fig:dcmp_A1]{Panel 
-b}, then resemblance is poor. It suggests that reflected signals in reality are weaker and 
-modulations due to interference are less pronounced. This is envisaged from 
-\fignml[C3.fig:dcmp_A1]{Panel e} presenting reflected portion. The point-wise decomposition 
-clearly overestimates the magnitude by about 3-4 times as it was presented before. Thence, the 
-reflected wave was at maximum $0.5~kW/m$ during the TBEAM observations. This is much smaller in 
-comparison to the numerical simulations. The reason for this mismatch comes from scrutiny of 
-sources for the reflected wave. These are reflected waves from Tasmania, reflected waves from ETP 
-and the Cascade Seamount and local generation at the seamount. The latter constitutes the major 
-portion. Dynamics of generation at this location is similar to the Macquarie Ridge, i.e. phasing of 
-the incident beam relative to local barotropic tide will lead to either production of the internal 
-tide or destruction. And as the region is highly dynamical both in terms of internal tide dynamics 
-as many components of the wavefield interact with the seamount as well as local conditions of the 
-mesoscale. For example, in all the experiments with mesoscale currents there is an overall 
-generation at the seamount, but in the 'uniform' experiment the internal tides are destroyed. So it 
-seems likely that the ROMS experiments were not able to predict this part correctly. Nevertheless, 
-the pointwise decomposition seems to capture pattern of temporal variability in the reflected wave 
-correctly. More precisely, during January 2015 there was a considerable fraction of the reflected 
-wave present. And as a result the total flux was leaning towards West, the ratio KE/PE was below 1. 
-Similar notions can be applied to the burst of reflected energy during yearday 30-35 as the 
-ratio dipped \fignmp{C3.fig:TBEAM_KE2PE} as well as magnitude of the total flux. In the 
-later part of the observational period reflected wave is minuscule part of the signal and 
-hence, KE/PE tends towards the plane wave value.\\
+energy flux turned southward \fignmlp[C3.fig:dcmp_A1]{Panel c, dots} and later rebounded back by 
+$10^\circ$ northward.\\
+The point-wise decomposition also emphasizes that portion of the reflected energy was weaker in the 
+TBEAM measurements \fignmlp[C3.fig:dcmp_A1]{Panel b}. Following assessment of the method and result 
+for the numerical simulations the reflected part in the TBEAM is 3-4 times smaller than it was 
+calculated. Thence, the reflected wave was at maximum $0.5~kW/m$ during the TBEAM observations. It 
+was mostly present during January and ended with a short burst over the first week of February.  
+Later in the month the reflected wave was mostly absent. Such temporal history is strongly 
+supported by changes in the KE-PE ratio that was mostly below 1 during the first period 
+elucidatory of strong interference. As well presence of the reflected wave explains southward 
+orientation of the flux in the TBEAM time-series between 10-20 January and small overall flux. The 
+same observations hold for the burst in the first week of February. Note that the ratio 
+between the incident and reflected wave will largely shape the total field appearance. Meaning that 
+the variability of the incident signal is superposed on the reflected signal to produce convoluted 
+history of the total signal characterized by rapid temporal changes. Further, the ratio between 
+reflected and incident waves highlights the mismatch in the total field seen on 
+\fignmlp[C3.fig:TBEAM_sp]{a}. Adjusting for the bias in the reflected wave by calculating linear 
+regression from the assessment study \fignmlp[C3.fig:test_spectra]{a} it is obtained that during 
+the TBEAM study the reflected wave constituted on average $10\%$ with maximum of $30\%$ and in case 
+of the numerical experiments - $40(25)\%$ with upper limit - $60(47)\%$. In the parenthesis it is 
+given estimates calculated from the decomposition based on antenna. Hence, the point-wise 
+decomposition overestimates this ratio, mainly because of a small bias in the incident signal for 
+which adjustment was not undertaken. Thence, the numerical experiments have several times larger 
+reflected energy present at A1. Origin of this radiation located at in several locations, i.e. 
+Tasmania continental slope, reflected waves from the ETP and local generation at the 
+Cascade seamount. The latter source constitutes the major portion. Dynamics of barotropic energy 
+conversion at this location is similar to the Macquarie Ridge, i.e. phasing of the incident beam 
+relative to local barotropic tide will lead to either production of the internal tide or 
+destruction. However, dynamically the region is much more complex both in terms of internal tide 
+dynamics as many wave field components interact with the seamount, but also due to stronger 
+mesoscale currents. For example, in all the experiments with mesoscale currents there is an overall 
+generation at the seamount, but in the 'uniform' experiment the internal tides are mainly 
+destroyed with the reflected energy being minuscule at A1. So it seems likely that the ROMS 
+experiments were not able to predict this part of the internal tide dynamics correctly. 
+Nevertheless, it appears that amount of the reflected energy is partly depends on the beam 
+incidence parameters, but additional investigation was not performed.\\
 
 This discussion draws conclusion that information provided by the A1 mooring and LADCP stations 
 were well descriptive of the beam characteristics. Nevertheless, LADCP stations seem to 
@@ -1134,13 +1204,18 @@ largely overestimate fluxes because of aliasing with near-inertial internal wave
 variability observed at the A1 mooring appears to be a result of at least 3 processes including 
 long-period adjustments in baroclinic tide production at the Macquarie Ridge, refraction by 
 mesoscale eddies and reflection at Tasmania and the Cascade Seamount. All of these stipulate high 
-nonstationarity in the observations, so that flux magnitudes and direction can largely vary on 
-time scales compared to semidiurnal period. Energy transfer between mesoscale and tidal field was 
-not discussed here, but seems to be of negligible importance at least during the considered period. 
-For the purposes of providing boundary conditions for the reflection processes in Tasmania, 
-the presented variability will be inevitably exaggerated downstream, so that reflection process 
-is not a simplistic back-scatter of plane wave.
-
+nonstationarity in the observations, so that energy characteristics can largely vary on 
+time scales compared to the semidiurnal period. As well change in position of the beam relative to 
+the mooring can further complicate interpretation of the signal. So that extrapolation from a 
+single-moored observation does not necessarily produce a satisfactory estimate on the beam bulk 
+parameters such as intensity. Nevertheless, performed here comparison between the numerical 
+experiments and the factual observations conclusively shows that during the TBEAM observational 
+period the beam was located and oriented southward then the time-averaged picture provided 
+by satellite altimetry. This was emphasized by \ref{C3:tab.prms}. While the numerical experiment 
+might overestimate importance of refractive phenomena due to stronger mesoscale feature in the 
+region, it is also likely that the beam was shifting its location which is documented by energy 
+flux variability. These observations are pertinent to the beam reflection from Tasman continental 
+slope as they provide a necessary boundary condition for further investigations.
 
 \section{Conclusions}
 %Overall, combined discussion of the numerical experiments and field observations suggests that the 
@@ -1251,22 +1326,6 @@ is not a simplistic back-scatter of plane wave.
 %accumulating interaction with mesoscale field and generation producing.\\
 %Now comparison of the decomposed planar beam can be made 
 %with factual observations made by \citep{waterhouse2018observations, zhao2018satellite}. \\
-
-\begin{table}
-	\caption{Internal tidal energy flux properties in the far field}
-	\begin{tabular}{ |p{7cm}||p{4cm}|p{4cm}|  }
-		\hline
-		Source & Flux magnitude [$kW/m$] & Heading [$^\circ$] \\
-		\hline
-		This study - all experiments & ~ & No mesoscale \\
-		This study - only field period & ~ & No mesoscale \\
-		Altimetry observations \citep{zhao2018satellite} & $3.9 \pm 2.2$ & $141 \pm 2$ \\
-		Field observations \citep{waterhouse2018observations} &   $3.4 \pm 1.4$ & $149 \pm 3$ \\
-		\hline
-	\end{tabular}
-	\label{ch2:table_exp}
-\end{table}
-\section{Conclusions}
 
 %\newpage
 %\iftoggle{only_Chapter} {
