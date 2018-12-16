@@ -753,39 +753,81 @@ magnitude and heterogeneity of its generation. Then, importance of oceanographic
 Tasman Sea is discriminated. And at final, the numerical results are compared with the observations.
 
 \subsection{Analytical model for generation at a knife-edge ridge}
-The generation is assessed through an analytical model (appendix A) which is an extension of 
-previous work by \citep{rainville2010interference} but with no ad-hoc parameters necessary. The 
-model provides a wave field radiated into rotating ocean of mode-1 equivalent depth by 
-a piston making oscillatory motion \citep{morse1946methods}. To assess its applicability a set of 
-complimentary numerical experiments in MITgcm were carried out. There a knife edge topography was 
-placed against a semidiurnal barotropic tide (Table). The emitted baroclinic field was then 
-diagnosed by the same methods as before. The 
-comparison between the numerical experiments and analytical solution are presented on 
-\fignm{C3.fig:anlt_sol}. Overall, the analytical model is well representative of spatial pattern of 
-the radiated waves. Its primary feature is a wavefront curvature. The model of 
-\citep{rainville2010interference} represents it by convex shape that is reminiscent of underlying 
-single pole generation. It is shown here that in the near field wavefronts at first perturbed by 
-diffraction and are convex, then they flatten and over only several wavelengths become akin to 
-the single pole model. Similar effect was produced by calculations of \citep{zhang2011three} who 
-summed wave fields emitted by point sources. Nevertheless of the near field, as extent of 
-generating topography becomes indiscernible, the solutions are similar in the far field.\\
-Now in presence of Coriolis force along-ridge flow as well becomes subject to no-flow boundary 
-condition. This spatially redistributes the emitted energy leading to asymmetry. Such that the 
-tideward and leeward wave fields are shifted one to another. The produced flow across the ridge 
-will be non-uniform and in order to be satisfied the generated higher modes will inevitably also 
-spatially modulated. It suggests further that breaking will also have some along-ridge 
-irregularity \citep{buhler2007instability}. This has not been explored in detail as the analytical 
-solution does not incorporate inter-modal coupling and left for future investigations. The other 
-effect is that initially energy flux vectors have orientation that is slanted to the ridge. This 
-phenomena is seen in the Tasman tidal beam that shows marked turning in the near-field 
-\fignmp{C3.fig:beam_prms} and was diagnosed by the angular spectrum decomposition as Southwestern 
-waves \fignmp{C3.fig:beam_dcmp}. Such wave propagation then develops phase lags and organizes into  
-spirally emitting waves \citep{baines2007internal}. All of these effects highly dependable on 
-number of wavelengths aligned along extent of the ridge or as a non-dimensional parameter $k L/2$. 
-\footnote{As well the given analytical solution is valid near the critical latitude (e.g., $f = 
-0.99 
-\omega_{tide}$) where spatial structure was observed as well, but the waves are trapped near the 
-ridge.}\\
+Effect of generation variability on the beam is assessed through an analytical model (appendix B) 
+which is an extension of work by \citep{rainville2010interference} but with no ad-hoc parameters. 
+The model solves for a wave field radiated into rotating ocean of mode-1 equivalent depth by a 
+vibrating strip \citep{morse1946methods}. To evaluate its correctness a complimentary numerical 
+study was carried out with MITgcm model. There a knife edge topography was placed against a 
+semidiurnal barotropic tide. The forcing was prescribed as $U(t) = 0.01 \cos 
+\omega_{M_2} t$ and $V(t) = 0.01 \frac{f}{\omega_{M_2}} \sin \omega_{M_2} t$ along the western  
+boundary. All boundaries were of open type, but with sponges imposed to damp baroclinic fields. 
+All physical parameters of the experiments are given in Table \ref{C3:tab.gen.prms}. The emitted 
+baroclinic field was then diagnosed by the same methods as described before. The comparison between 
+the numerical experiments and analytical solution are presented on \fignm{C3.fig:anlt_sol}. 
+Overall, the analytical model is well representative of spatial pattern of the radiated waves. Its 
+salient feature is a wavefront curvature near the knife-edge ridge. The model of 
+\citep{rainville2010interference} represents it by convex shape that is reminiscent of 
+assumed by them a single pole generation. It is shown here that in the near field wavefronts at 
+first perturbed by diffraction and are concave, then they flatten and over only several wavelengths 
+become akin to the single pole model. The last transition happens as an extent of generating ridge 
+becomes indiscernible or $kr \ll 1$. Similar effect is seen in semi-analytical calculations of 
+\citep{zhang2014modeling} who summed contributions from point sources placed along topography.\\
+The previous investigations have not incorporated rotational effect. But in presence of Coriolis 
+force along-ridge transports as well become subject to no-flow boundary condition \eqref{C3.a2:bc}. 
+This spatially redistributes emitted radiation leading to asymmetry \fignmlp[C3.fig:anlt_sol]{Panel 
+b, c}. Such that the tideward and leeward wave fields are shifted one to another. Thence, the 
+resulting conversion and flow across the ridge for the gravest mode are spatially non-uniform 
+leading to modulation of higher-mode energy content. Then any calculation based on point-wise 
+approach \citep[e.g.][]{st2003generation} is misleading in presence of rotation. As well wave 
+breaking will also have a spatial pattern \citep{buhler2007instability} from this perspective. 
+These inferences have not been explored as the analytical solution does not incorporate 
+inter-modal coupling at this moment and left for future investigation.\\
+Another effect associated with Coriolis force is observed as energy flux vectors appear to be 
+slanted near ridge \fignmlp[C3.fig:anlt_sol]{Panel c}. Both effects are highly dependent on number 
+of wavelengths aligned along the ridge or as a non-dimensional parameter $q = k 
+L_{ridge}/4$. For the Macquarie Ridge $q \simeq 2\pi/180km \cdot 200km/4 = 1.6$, so the third 
+experiment was performed to explore radiation pattern in such setting. The similar poleward 
+slanting is seen in the Tasman tidal beam that showed marked turning in the near-field 
+\fignmp{C3.fig:beam_prms} and was also diagnosed by the angular decomposition as Southwestern 
+waves \fignmp{C3.fig:beam_dcmp}. This phenomena was originally identified by 
+\citep{zhao2018satellite} in the satellite-derived observations whose explanation was based 
+on phase lags in forcing barotropic wave. Though such argument can not be refuted, it seems to be 
+of the secondary importance since $M_2$-wave has phase difference of only $\sim 10^{\circ}$ 
+\fignmp{C3.fig:BT} at the Macquarie Ridge.\\
+Here presented explanation and analytical approach is of fundamental nature as its characteristic 
+of spiraling outward waves and spatial non-uniformity in radiation pattern was reported in 
+numerical experiments \citep{munroe2005topographic} and an analytical generation model 
+\citep{baines2007internal}. Further to highlight ubiquity of the physical mechanism the analytical 
+solution is taken to extreme of the critical latitude \fignmlp[C3.fig:anlt_sol]{Panel d}. In this 
+case the constraint on the along-ridge flow is comparable to normal transport and wave becomes 
+trapped by the ridge. The similar process and pattern was observed in the numerical studies of 
+trapping of diurnal baroclinic tide by Oahu \citep{smith2017coastal} and by a sill located in a 
+channel at latitude slightly above the critical \citep{hughes2018tidal} representative of the 
+Canadian Archipelago.\\
+ 
+response to  of 
+the 
+ridges in such regimes was also simulated by 
+
+ The trapping of 
+energy 
+of 
+
+ an analytical model 
+have 
+its roots to 
+ the 
+$200km$-ridge edges of the $200km$-ridge will have lags of $40^{\circ}$   , it 
+appears 
+that Coriolis effects have more fundamental importance 
+forcing. 
+
+Such wave propagation then 
+develops phase lags and organizes into spirally emitting waves \citep{baines2007internal}. 
+\footnote{As well the given analytical solution is valid near 
+the critical latitude (e.g., $f = 0.99 \omega_{tide}$) where spatial structure was observed as 
+well, but the waves are trapped near the ridge.}\\
+
 The Macquarie Ridge has multiple sources distributed along the ridge which constructively 
 interfere to produce the Tasman tidal beam \citep{rainville2010interference, 
 klymak2016reflection}. This principle will be applied here in reverse, i.e. from the distribution 
@@ -837,6 +879,27 @@ related to generation in the near-field and it quite rapidly becomes obscured by
 oceanographic conditions on the beam. These interactions seem to proceed without energy loss in the 
 tidal beam as its magnitude correlates with conversion rates at the ridge quite good.
 
+\begin{table}
+	\caption{Parameters of numerical experiments for generation at knife-edge topography}
+	\begin{tabular}{ |p{7cm}||p{7cm}|  }
+		\hline
+		Parameter & Value \\
+		\hline
+		$\Delta x \times \Delta y \times \Delta z$ & $8km \times 8km \times 80m$ \\
+		$L \times W \times H$ & $1800km \times 1800km \times 2000m$ \\
+		Knife-edge height & $800m$ \\
+		$N^2,~\lambda_1$ & $1.5\cdot 10^{-5}rad/sec,~110km$ \\
+		\hline
+		\multicolumn{2}{|l|}{Parameter space} \\
+		\hline
+		Knife-edge width, $L_{ridge}$ & $240km,~240km,~160km,~240km$ \\
+		Coriolis parameter, $f$ & $0,~\minus 10^{\minus4},~\minus 10^{\minus4},~\minus 0.99 
+		\omega_{M_2}(\minus1.39\cdot10^{\minus4})$ \\
+		\hline
+	\end{tabular}
+	\label{C3:tab.gen.prms}
+\end{table}
+
 %strength of the beam  
 %where $L_{C}$ is a position of the beam's center of mass in the cross beam direction, $L$ - length 
 %of the cross-beam transect, $|F(r)|$ - magnitude of the energy flux. This procedure is carried out 
@@ -885,6 +948,7 @@ tidal beam as its magnitude correlates with conversion rates at the ridge quite 
 %results 
 %in the basin. Hence, additional mechanisms such as mesoscale are in hand. This is discussed in 
 %the following section.
+
 
 \subsection{Variability of the Tasman Sea beam}
 The Tasman beam is inevitably affected by mesoscale circulation in the region. 
@@ -1336,257 +1400,265 @@ slope as they provide a necessary boundary condition for further investigations.
 %	\addcontentsline{toc}{section}{Appendices}
 %}
 %
-%\section*{Appendices}
+\section*{Appendices}
 
-%\renewcommand{\thesubsection}{\Alph{subsection}}
-%\setcounter{subsection}{0}
-%\subsection{Analytical model for knife edge}
-%Let consider a simplified problem of the internal tide generation at a three dimensional ridge. 
-%That is generating topography has extent in along x-axis, $a$, but infinitely small width. We will 
-%not pursue full solution of the problem and will not seek actual amplitudes of baroclinic modes, 
-%but rather concentrate on defining spatial pattern of the generated waves (might move up to 
-%opening). Under such problem statement the actual height is of no importance. And hence, in frame 
-%reference traveling with barotropic current, the topography becomes a piston-alike wavemaker that 
-%sends out the lowest mode internal tide. Its behavior in flat bottom ocean is well represented by 
-%Laplace tidal equations (cf \cite{kelly2012cascade}):
-%\begin{align}
-%\vec{u}_t + 2 \Omega \vec{k} \times \vec{u} = - \frac{1}{\rho_0} \nabla \cdot p\\
-%\nabla \cdot \vec{u} = -(\frac{1}{N^2 - \omega^2}p_z)_{tz}
-%\end{align}
-%with boundary conditions on the ridge,
-%\begin{equation}
-%\vec{u}\cdot \vec{n}|_{ridge} = \vec{u}_{bt} \cdot \vec{n} |_{ridge}
-%\end{equation}
-%And boundary condition in the infinity implying outgoing waves. Note that barotropic current, in 
-%general, is given as a current ellipse written in complex form as $\vec{u}_{bt} = u_{bt} + i 
-%v_{bt}$. This means that the boundary condition does not have a simple harmonic form. But the 
-%barotropic current can be decomposed to clockwise (CW) and counterclockwise components,
-%\begin{equation}
-%\vec{u}_{bt} = W_{CW} e^{-(i \omega t - \phi_{CW})} + W_{CCW} e^{(i \omega t + \phi_{CCW})}
-%\end{equation}
-%and the generation of internal tide can be solved separately for two oppositely rotating currents. 
-%In further discussion the only one component (CCW) is taken care of since a solution will have 
-%similar form with differences arising in sign in front of tidal frequency.\\
-%Considering rigid lid approximation and impermeable bottom equations for eigen modes is solved 
-%such that wavelength of corresponding mode is introduced. Than the dynamical equations can be 
-%reformulated as Helmholtz equation with harmonic temporal dependence implied and appropriate 
-%polarization relations,
-%\begin{align}
-%\nabla^2 p + k_n^2 p = 0\\
-%u = \frac{-i \omega p_x + f p_y}{\omega^2 - f^2},~v = \frac{-i \omega p_y - f p_x}{\omega^2 - f^2}
-%\end{align}
-%Since the problem is now formulated in terms of pressure only, boundary condition takes the 
-%following form (\cite{greenspan1968theory}),
-%\begin{equation}
-%\Big[ \frac{-i \omega p_y - f p_x}{\omega^2 - f^2} \Big]_{ridge} = \vec{u}_{BT}|_{ridge}
-%\end{equation}
-%The above equations (5-8) state generation of internal tides by vibrating strip of width $a$. Such 
-%problem was solved for radiation of acoustic waves by \cite{morse1946methods}. Since in Cartesian 
-%coordinates the strip boundary condition does not allow separation of variables, one can employ 
-%elliptic coordinate system,
-%\begin{equation*}
-%x = \frac{a}{2} \cosh \mu \cos \theta,~y = \frac{a}{2} \sinh \mu \sin \theta
-%\end{equation*}
-%where edges of the strip will be focii of ellipse, boundary condition will take simpler form,
-%\begin{align}
-%\Big[ \frac{-i \omega p_{\mu} + f p_{\theta}}{\omega^2 - f^2} \Big]_{\mu = 0} = \frac{a}{2} \sin 
-%\theta (\vec{u}_{BT}|_{\mu = 0})
-%\end{align}
-%The factor $\frac{a}{2} \sin \theta$ arises via conversion from Cartesian to elliptical 
-%derivatives. Note change of sign for $p_{theta}$ because opposite growth of $\theta$ argument to 
-%$x$ argument. Laplace operator in the elliptical coordinates has eigensolutions (''sloshing 
-%modes") 
-%in form of Mathieu functions (\cite{stratton2007electromagnetic}) that solution for the emitted 
-%waves will have form of,
-%\begin{equation}
-%p \sim \sum_{j} [Se_j, So_j](h, \theta) [Je_j, Jo_j, Ye_j, Yo_j](h, \mu)
-%\end{equation}
-%with $Se_j,~So_j$ - angular Mathieu functions of order $j$ corresponding to $\cos$ and $\sin$, 
-%$Je_j,~Jo_j$ and $Ye_j,~Yo_j$ - radial Mathieu functions of the first and second kind of order $j$ 
-%corresponding to Bessel functions. The physical parameter that sets Mathieu functions behavior is 
-%$h = {a k_n}{4} $ so that in large distance limit, $h \mu \gg 1,~rk_n \gg a$, they will represent 
-%circular harmonics.\\
-%Now RHS of boundary condition (9) can be expressed in series of Mathieu functions,
-%\begin{equation}
-%\sin \theta = \sum_{j = 0}^{\infty} C_{2j + 1} So_{2j + 1} (\theta)
-%\end{equation}
-%with coefficients $C_{2j + 1}$ defined by normalization constants $N_{2j + 1} = \int_{0}^{2\pi} 
-%So_{2j + 1}^2(\theta) d \theta$ and the first Fourier coefficient of $So_{2j + 1}$. The above 
-%series for $\sin$ and form of the boundary condition suggest solution in the form,
-%\begin{equation}
-%p(\mu, \theta) = \sum_{j = 0}^{\infty} \big( A_{2j+1} So_{2j + 1}(\theta) + B_{2j+1} Se_{2j + 
-%1}(\theta) \big) Ho^{1}_{2j + 1}(\mu)
-%\end{equation}
-%Here $Ho^{1}_{2j + 1}(\mu) = Jo_{2j + 1} + i Yo_{2j + 1}$ is a Hankel-Mathieu function. For CCW 
-%component to ensure condition for outgoing radiation, the sign should be different, so $Ho^{2}_{2j 
-%+ 1}(\mu) = Jo_{2j + 1} - i Yo_{2j + 1}$.\\
-%Now substituting (11, 12) into (9) the unknown coefficients $A,~B$ are obtained,
-%\begin{align*}
-%(-i\omega (\sum A So + B Se) Ho^{\prime} + f (\sum A So^{\prime} + B Se^{\prime}) Ho) = \sum 
-%(\omega^2 - f^2) C So
-%\end{align*}
-%At first, multiplying above equation by $So_{2m + 1}$ and taking integral from 0 to $2 \pi$, so 
-%that $\int_{0}^{2\pi} So_{2m + 1} Se_{2j + 1} d \theta = \int_0^{2 \pi} So_{2j + 1}^{\prime} 
-%So_{2m 
-%+ 1} d \theta = 0,~\int_0^{2 \pi} So_{2m + 1} So_{2m+1} d \theta = No_{2m + 1},~\int_0^{2 \pi} 
-%So_{2m + 1} Se_{2j + 1}^{\prime} d \theta = -{N^{\prime}}^{2m+1}_{2j + 1}$. In the last statement 
-%orthogonality between $So$ and $Se^{\prime}$ is not satisfied. Equation on each order is obtained
-%\begin{align}
-%(-i \omega A_{2m + 1} No_{2m + 1}^o Ho_{2m + 1}^{\prime} + f \sum_{j} B_{2j + 1} 
-%{Neo^{\prime}}^{2m + 1}_{2j + 1} Ho_{2j + 1}) = C No_{2m + 1}
-%\end{align}
-%And at second, carrying out the same procedure but with $Se_{2j + 1}$,
-%\begin{align}
-%(-i \omega B_{2m + 1} Ne_{2m + 1} Ho_{2m + 1}^{\prime} + f \sum_j A_{2j + 1} {Noe^{\prime}}^{2m + 
-%1}_{2j + 1} Ho_{2j + 1}) = 0
-%\end{align}
-%Note that $\int_0^{2\pi} Se^{\prime}_{2j + 1} So_{2m + 1} d \theta = -\int_0^{2\pi} 
-%So^{\prime}_{2j + 1} Se_{2m + 1} d \theta$, i.e. ${Noe^{\prime}}^{2m + 1}_{2j + 1} = 
-%-({Neo^{\prime}}^{2m + 1}_{2j + 1})^T$.\\
-%Equations (13) and (14) form a linear system to find coefficients for different component of the 
-%total field. These equations are solved numerically with $j_{max} = 5$ due to rapid convergence of 
-%the involved series.
-%
-%\subsection{Inverse model}
-%The model closely follows ideas used in ref-to-Luc, 2010 and -Jody-2016. The internal tide 
-%generating ridge is given by point sources each emitting following
-%\begin{equation} \label{invm_eq:1}
-%p = p_{0} \frac{2}{\pi k d} \cdot e^{i  k  d}
-%\end{equation}
-%where $k$ - wavenumber associated with eigen mode-1, i.e. $k = \sqrt{\omega ^ 2 - f ^ 2}{c_{eigen} 
-%^ 2}$, $d$ - distance between a point source and an observation point. By observation points here 
-%and after is meant points in which observations are inverted. The given solution is a solution of 
-%pressure distrubance propagation for two dimensional wave equation (p. 22, Frisk) and describes 
-%outgoing cylindrical wave. This is a far field approximation ($kd \ll 1$), in the near source zone 
-%the solution is substituded by Hankel functions. Here representation is simplified and observation 
-%points on the distance less than wavelength are omitted. Though introduction of Hankel function 
-%into the inverse model does not involve any additional complexity. By pressure here is thought 
-%mode-1 pressure amplitude that can be connected to sea level disturbance or isopycnal 
-%displacements.\\
-%To describe energy fluxes in the observational points polarization relations for cylindrical 
-%Poincare wave are invoked,
-%\begin{align} \label{invm_eq:2}
-%u = \frac{p_{0}}{\rho_{const}} * \frac{-i \omega \cos(\theta) + f \sin(\theta)}{\omega ^ 2 - f ^ 
-%2} \cdot p_{\vec{d}}\\
-%v = \frac{p_{0}}{\rho_{const}} * \frac{-i \omega \sin(\theta) - f \cos(\theta)}{\omega ^ 2 - f ^ 
-%2} \cdot p_{\vec{d}}
-%\end{align}
-%where $p_{\vec{d}}$ is a derivative along radius-vector $\vec{d}$,
-%\begin{equation}
-%p_{\vec{d}} = (i \cdot k - \frac{1}{2 d}) p
-%\end{equation}
-%In further description of the inverse model it is used following notation, indices $i,~k$ define 
-%$i,~k$-th point sources, while $j$ - $j$-th observation point.\\
-%The tidally and depth averaged energy fluxes will be given as an interference of pointwise fields 
-%from all sources,
-%\begin{align}
-%F_{j}^x = \frac{1}{2} \sum_k u_{kj}^{\star} \sum_i p_{ij} \int_H^0 \psi_1(z)^2 dz\\
-%F_{j}^y = \frac{1}{2} \sum_k v_{kj}^{\star} \sum_i p_{ij} \int_H^0 \psi_1(z)^2 dz
-%\end{align}
-%Note different indexes for u/v and p meaning that cross multiplication is involved which leads to 
-%complex interference pattern. In energy flux formulation normalization coefficient associated with 
-%eigenmode structure function are introduced by corresponding mode-1 structure function, 
-%$\psi_1(z)$. Coefficient $1/2$ is used for convenience to convert actual time averaging involved 
-%to 
-%multiplication of complex numbers. In further description the constant coefficients are omitted 
-%due 
-%to their irreleveance. The previous relations can be expressed in matrix form (it is not fully 
-%correct for fluxes, multiplication is done term by term per point),
-%\begin{align}
-%p_j = B^p_{ji}{p_i},~u_j = B^u_{ji}{p_i},~v_j = B^v_{ji}{p_i}\\
-%F^x_j = (B^u_{jk}{p_k})^{\star} B^p_{ji}{p_i},~F^y_j = (B^v_{jk}{p_k})^{\star} B^p_{ji}{p_i} 
-%\label{invm_eq:4}
-%\end{align}
-%where tensor notation is used, i.e. summation is done over same indices. Matrices 
-%$B^p_{ij},~B^u_{ij},~B^v_{ij}$ are short notation for generaion model and polarization relations, 
-%for example,
-%\begin{equation}
-%B^p_{ji} = p_i \frac{2}{\pi k d_j} \cdot e^{i  k  d_j}
-%\end{equation}
-%These can be thought as disretization of operators transforming distribution of sources into 
-%interference pattern in pressure and velocity fields.\\
-%Apparently, the energy flux relations are non-linear. To deal with this it is proposed an 
-%iterative technique. Let at $m$-th iteration there is a known distribution of wave amplitude at 
-%sources, $p^m_i$, the total energy flux field can be reconstruced by (\ref{invm_eq:4}). Than it is 
-%desired to find a small adjustment $\delta p^m_i$ (``nudge factor") such that residual between 
-%observed field and analytical description will be decreased. One can write,
-%\begin{align}
-%F_{j}^x = (B^u_{jk}(p^m_k + \delta p^m_k))^{\star} B^p_{ji}(p^m_i + \delta p^m_i) = \nonumber\\
-%(B^u_{jk} p^m_k)^{\star} B^p_{ji}{p^m_i} + (B^u_{jk} \delta p^m_k)^{\star} B^p_{ji} p^m_i + 
-%(B^u_{jk} p^m_k)^{\star} B^p_{ji} \delta p^m_i + (B^u_{jk} \delta p^m_k)^{\star} B^p_{ji} \delta 
-%p^m_i\nonumber\\
-%F_{j}^x - (B^u_{jk} p^m_k)^{\star} B^p_{ji}{p^m_i} = (B^u_{jk} \delta p^m_k)^{\star} B^p_{ji} 
-%p^m_i + (B^u_{jk} p^m_k)^{\star} B^p_{ji} \delta p^m_i + (B^u_{jk} \delta p^m_k)^{\star} B^p_{ji} 
-%\delta p^m_i \label{invm_eq:3}
-%\end{align}
-%The left hand side of (\ref{invm_eq:3}) represents the residual, the right hand side sets a 
-%controlling equation to obtain adjustment neceassary to decrease the residual. The last term of 
-%RHS 
-%shows a non-linear nature of the problem. This is omitted since the purpose of conseqeunt 
-%iterative 
-%technique is to find the final source distribution such that the model equations (\ref{invm_eq:4}) 
-%are satisfied in least square sense. Than the ``nudge-factor" can be found as inverse of 
-%\begin{equation}
-%F_{j}^x - (B^u_{jk} p^m_k)^{\star} B^p_{ji}{p^m_i} = R_j^x = \Big[ (B^u_{jk} )^{\star} B^p_{ji} 
-%p^m_i + (B^u_{jk} p^m_k)^{\star} B^p_{ji} \Big] \delta p^m_i \label{invm_eq:5}
-%\end{equation}
-%(these equations are not in matrix form, but obsevation point by observation point).
-%Hence, the aim of inverse model is to decrease error in representation of energy fluxes. The 
-%equation (\ref{invm_eq:5}) can be solved separately for zonal and meridional fluxes and also 
-%simultaneously for both directions. That is at each iteration step the nudge-factor is found first 
-%for zonal, than for meridional direction and finally, for both simultaneously. At the end pressure 
-%distribution is changed by average from all three substeps.\\
-%Note the inverse model equation (\ref{invm_eq:5}) is supported by additional condition stating 
-%that 
-%amplitude is nonnegative, $p_i^m + \delta p_i^m \geq 0$. All of this numerically is solved by 
-%linear programming routine \text{lsei} (least square with inequality) provided by LINPACK 
-%package.\\
-%Here it will be presented a test convergence and number tests on robustness on proposed iterative 
-%inverse model. The initial flux field is given by Fig. \ref{invm_fig:1} where by crosses are shown 
-%observational points. This define prescribed $F_{j}^x$ or $F_{j}^y$. Note that the prescribed 
-%field 
-%aims to describe midbasin energy flux field with Tasman shelf ommitted due to presence of 
-%reflection and complex bathymetry. The point sources distribution are given by green dots and at 
-%the first iteration step are set to $p^0_i = 100 Pa$. The distribution of points sources is 
-%representative to distribution of steep bathymetry which is belived to be an internal tide 
-%generator. In the inverse model there are only two parameters that describe characteristic of the 
-%internal tide, wavenumber and normalization coefficients used in energy flux. Both are found from 
-%solving eigenvalue for randomly picked stratification profile. This result in wavelength of 
-%$180~km$ which is a representative value for Tasman Sea conditions. In the same way eigenfunctions 
-%are obtained and normalization coefficients are found.\\
-%Hence, the inverse model does not account for
-%\begin{enumerate}
-%\item Bathymetry variation
-%\item Stratification variability
-%\item Variation of barotropic tide along ridges
-%\end{enumerate}
-%The first two points are thought to have minor effect on internal tidal beam structure. While the 
-%third is omitted to preserve simplicity of generation model. Additional tests were done with 
-%variation in barotropic tide phase along ridges, but they did not bring any substantial changes in 
-%foregoing results.\\
-%To show convergence of the inverse model it is given change in pressure amplitude with each 
-%iteration. Here convergence is defined by
-%\begin{equation*}
-%Conv = \sum_i \frac{(p_i^m - p_i^{m-1})^2}{(0.5 \cdot (p_i^m + p_i^{m-1}))^2}
-%\end{equation*}
-%The iterative solver is stopped when convergence is reaching tolerance. Here it is set to 0.01. 
-%From Figure (2a) it is seen that by 17th iteration there is no appreciable change in the inverse 
-%solution. This means that influence of non-linear terms in (\ref{invm_eq:3}) became negligible and 
-%the distribution of amplitude along the source region is the best in least square sense. The error 
-%of such description is given on subsequent panels of Fig. 2, where root-mean-square-error for 
-%different energy flux parameters is defined for example zonal component as
-%\begin{equation}
-%E_{x} = \sqrt{\frac{\sum_{obs} (F_i^x - \hat{F}_i^x)^2}{N_{obs}}}
-%\end{equation}
-%As it is seen the error is approaching stability for all used components much faster than 
-%convergence in amplitude. Note that the error is larger in zonal fluxes. The inverse solution can 
-%not predict far field behavior which is believed due to interaction with East Tasman Plateau. The 
-%obtained solution is given by Fig. 3. Here it is found that the inverse solution can not well 
-%represent the beam close to East Tasman Plateau. The following reasons can be named: interaction 
-%with topography and inadequacy of cylindrical wave model in the far-far field. It is believed that 
-%the second reason is the main. In general, the inverse solution picks up the central beam pretty 
-%well, outlines its boundary and the major region is satisfying manner. As well note that the 
-%northern and southern beams are also found in the solution.
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\setcounter{subsection}{0}
+\subsection{Analytical solution for generation at knife-edge ridge}
+Let consider a simplified problem of the internal tide generation at a ridge that has an 
+extent $a$ in zonal direction, but infinitely small width. Full solution will not be pursued, but 
+rather focus is made on outlining spatial pattern of emitted waves. Under such problem statement 
+ridge height is of no importance, and the topography thence is similar to a piston-like 
+wavemaker that radiates the internal tide. Its dynamics in flat-bottom ocean is expressed by 
+Laplace tidal equations that upon substitution of tidal temporal dependence yield,
+\begin{align}
+\nabla^2 p + k_n^2 p = 0\\
+u = \frac{-i \omega p_x + f p_y}{\omega^2 - f^2},~v = \frac{-i \omega p_y - f p_x}{\omega^2 - f^2}
+\label{C3.a2:eq.laplace}
+\end{align}
+here $k_n$ is a wavenumber of the emitted waves. Two boundary conditions are imposed. 
+On the ridge there should be no mass transport, 
+\begin{equation}
+\vec{u}\cdot \vec{n}|_{ridge} = \vec{u}_{bt} \cdot \vec{n} |_{ridge}
+\end{equation}
+and the emitted waves should be outgoing. Since the problem is formulated in terms of pressure 
+only, the boundary condition takes the following form \citep{greenspan1968theory},
+\begin{equation}
+\Big[ \frac{-i \omega p_y - f p_x}{\omega^2 - f^2} \Big]_{ridge} = v_{BT}|_{ridge}
+\label{C3.a2:eq.bc0}
+\end{equation}
+The ridge boundary is described by a strip $-a/2 < x < a/2,~y=0$. The equations 
+\eqref{C3.a2:eq.laplace}, \eqref{C3.a2:eq.bc0} state the simplified problem for generation of 
+internal tides by the knife-edge ridge of width $a$. If 
+rotational effects are omitted, the problem is identical to 
+radiation of acoustic waves by a vibrating strip \citep{morse1946methods}. That solution is now 
+extended to include Coriolis force. Since in Cartesian coordinates the strip boundary condition 
+does not allow separation of variables, this is circumvented by employing the elliptic coordinate 
+system,
+\begin{align*}
+x = \frac{a}{2} \cosh \mu \cos \theta,~y = \frac{a}{2} \sinh \mu \sin \theta,~\Delta = \frac{a}{2} 
+(\sinh^2 \mu + \sin^2 \theta)\\
+\partial_x = 
+\frac{1}{\Delta} (\partial_{\mu} \sinh \mu \cos \theta - \partial_{\theta} \cosh \mu 
+\sin \theta),~\partial_y = \frac{1}{\Delta} (\partial_{\mu} \cosh \mu \sin \theta + 
+\partial_{\theta} \sinh \mu \cos \theta)
+\end{align*}
+where $\mu = const$ graphs ellipses expanding from a reference center and $\theta$ is constant 
+along hyperbolas. The strip is equivalent to a degenerated ellipse with semimajor axis equal to 
+$a/2$ and semiminor - to $0$. The boundary condition now will take much simpler form,
+\begin{align}
+\Big[ \frac{-i \omega p_{\mu} + f p_{\theta}}{\omega^2 - f^2} \Big]_{\mu = 0} = \frac{a}{2} \sin 
+\theta (v_{BT})
+\label{C3.a2:eq.bc}
+\end{align}
+Laplace operator in the elliptical coordinates has eigensolutions (''sloshing modes") in form of 
+Mathieu functions \citep{gutierrez2003mathieu, mclachlan1951theory}. Then solution for the emitted 
+waves is sought in such form where dependence along ellipses $\mu = const$ and along hyperbola 
+$\theta = const$ is separated,
+\begin{equation}
+p \sim \sum_{j} [Se_j, So_j](h, \theta) \times [Je_j, Jo_j, Ye_j, Yo_j](h, \mu)
+\end{equation}
+with $Se_j,~So_j$ - even and odd angular Mathieu functions of order $j$ corresponding to $\cos$ and 
+$\sin$ in a polar coordinate system, $Je_j,~Jo_j$ and $Ye_j,~Yo_j$ - radial Mathieu functions of 
+the first and second kind of order $j$ corresponding to Bessel functions. The physical parameter 
+that sets Mathieu functions behavior is $h = \frac{a k_n}{4} $. For clarity of the further 
+analysis it is necessary to represent Mathieu functions by their corresponding Fourier series 
+\citep{morse1946methods},
+\begin{align}
+Se_j(h, \theta) = \sum_n Be_n^{j}(h) \cos( n\theta),~So_j(h, \theta) = \sum_n Bo_n^{j}(h) \sin( 
+n\theta)
+\end{align}
+The Fourier coefficients are usually found by solving recurrence relations 
+\citep[e.g.,][]{stamnes1995new} and here software of \citep{erricolo2013algorithm} was employed for 
+the necessary calculations. The same coefficients are stand in expansion of the radial functions, 
+but Bessel functions are substituted for trigonometric functions.\\
+To proceed with the solution, let RHS of the boundary condition \eqref{C3.a2:eq.bc} be expressed as 
+series of odd Mathieu functions,
+\begin{align}
+\sin \theta = \sum_{j = 0}^{\infty} C_{2j + 1} So_{2j + 1} (\theta) \\
+C_{2j + 1} = \frac{Bo^{2j + 1}_1}{Noo_{2j + 1}}
+\end{align}
+where normalization constant $Noo_{2j + 1} = \int_{0}^{2\pi} So_{2j + 1}^2(\theta) d \theta = 
+\sum_n \pi (Bo_{2n + 1}^{2j + 1})^2$. The 
+decomposition of $\sin \theta$ and structure of the ridge boundary condition suggest solution in 
+the form,
+\begin{equation}
+p(\mu, \theta) = \sum_{j = 0}^{\infty} A_{2j+1} So_{2j + 1}(\theta) Ho_{2j + 1}(\mu) + B_{2j+1} 
+Se_{2j + 1}(\theta) He_{2j + 1}(\mu)
+\label{C3.a2:eq.form}
+\end{equation}
+Here $H\{o/e\}_{2j + 1}(\mu) = J\{o/e\}_{2j + 1}(\mu) + i Y\{o/e\}_{2j + 1}(\mu)$ are 
+Hankel-Mathieu 
+functions to ensure boundary condition for radiation to be outgoing. Substituting the proposed 
+solution 
+into \eqref{C3.a2:eq.bc},
+\begin{align*}
+-i\omega \sum (A So Ho^{\prime} + B Se He^{\prime}) + f \sum (A So^{\prime} Ho + B Se^{\prime} He) 
+= \sum (\omega^2 - f^2) C So
+\end{align*}
+where prime denotes derivative with respect to appropriate variable and all radial functions are 
+evaluated at $\mu = 0$. Indexes were also dropped for simplicity. At first, after multiplying the 
+above equation by $So_{2m + 1}$, integrating from 0 to $2 \pi$, and after orthogonality relations 
+are made use of one obtains
+\begin{align}
+-i \omega A_{2m + 1} Noo_{2m + 1} Ho_{2m + 1}^{\prime} + f \sum_{j} B_{2j + 1} 
+Neo^{2m + 1}_{2j + 1} He_{2j + 1} = (\omega^2 - f^2) C_{2m + 1} Noo_{2m + 1}
+\label{C3.a2:eq1}
+\end{align}
+Note the second term on LHS that appears only because of Coriolis force and tangential component of 
+the flow in \eqref{C3.a2:eq.bc}, and represent ``spatial coupling" between the odd and even basis 
+functions. Their inter-dependence is determined by $Neo_{2j+1}^{2m + 1} = -\pi \sum_n 
+(2n + 1) Be_{2n + 1}^{2j + 1} Bo_{2n + 1}^{2m + 1}$. At second, carrying out the same steps but 
+with $Se_{2m + 1}$, the following matrix equation is found
+\begin{align}
+-i \omega B_{2m + 1} Nee_{2m + 1} He_{2m + 1}^{\prime} - f \sum_j A_{2j + 1} {Neo}^{2m + 
+1}_{2j + 1} Ho_{2j + 1} = 0
+\label{C3.a2:eq2}
+\end{align}
+Equations \eqref{C3.a2:eq1} and \eqref{C3.a2:eq2} form a linear system to find the unknown 
+coefficients. These equations are solved numerically only for the first $j_{max} = 5$ due to rapid 
+convergence of the involved series.
+
+\subsection{Inverse model}
+The model closely follows ideas used in ref-to-Luc, 2010 and -Jody-2016. The internal tide 
+generating ridge is given by point sources each emitting following
+\begin{equation} \label{invm_eq:1}
+p = p_{0} \frac{2}{\pi k d} \cdot e^{i  k  d}
+\end{equation}
+where $k$ - wavenumber associated with eigen mode-1, i.e. $k = \sqrt{\omega ^ 2 - f ^ 2}{c_{eigen} 
+^ 2}$, $d$ - distance between a point source and an observation point. By observation points here 
+and after is meant points in which observations are inverted. The given solution is a solution of 
+pressure distrubance propagation for two dimensional wave equation (p. 22, Frisk) and describes 
+outgoing cylindrical wave. This is a far field approximation ($kd \ll 1$), in the near source zone 
+the solution is substituded by Hankel functions. Here representation is simplified and observation 
+points on the distance less than wavelength are omitted. Though introduction of Hankel function 
+into the inverse model does not involve any additional complexity. By pressure here is thought 
+mode-1 pressure amplitude that can be connected to sea level disturbance or isopycnal 
+displacements.\\
+To describe energy fluxes in the observational points polarization relations for cylindrical 
+Poincare wave are invoked,
+\begin{align} \label{invm_eq:2}
+u = \frac{p_{0}}{\rho_{const}} * \frac{-i \omega \cos(\theta) + f \sin(\theta)}{\omega ^ 2 - f ^ 
+2} \cdot p_{\vec{d}}\\
+v = \frac{p_{0}}{\rho_{const}} * \frac{-i \omega \sin(\theta) - f \cos(\theta)}{\omega ^ 2 - f ^ 
+2} \cdot p_{\vec{d}}
+\end{align}
+where $p_{\vec{d}}$ is a derivative along radius-vector $\vec{d}$,
+\begin{equation}
+p_{\vec{d}} = (i \cdot k - \frac{1}{2 d}) p
+\end{equation}
+In further description of the inverse model it is used following notation, indices $i,~k$ define 
+$i,~k$-th point sources, while $j$ - $j$-th observation point.\\
+The tidally and depth averaged energy fluxes will be given as an interference of pointwise fields 
+from all sources,
+\begin{align}
+F_{j}^x = \frac{1}{2} \sum_k u_{kj}^{\star} \sum_i p_{ij} \int_H^0 \psi_1(z)^2 dz\\
+F_{j}^y = \frac{1}{2} \sum_k v_{kj}^{\star} \sum_i p_{ij} \int_H^0 \psi_1(z)^2 dz
+\end{align}
+Note different indexes for u/v and p meaning that cross multiplication is involved which leads to 
+complex interference pattern. In energy flux formulation normalization coefficient associated with 
+eigenmode structure function are introduced by corresponding mode-1 structure function, 
+$\psi_1(z)$. Coefficient $1/2$ is used for convenience to convert actual time averaging involved 
+to 
+multiplication of complex numbers. In further description the constant coefficients are omitted 
+due 
+to their irreleveance. The previous relations can be expressed in matrix form (it is not fully 
+correct for fluxes, multiplication is done term by term per point),
+\begin{align}
+p_j = B^p_{ji}{p_i},~u_j = B^u_{ji}{p_i},~v_j = B^v_{ji}{p_i}\\
+F^x_j = (B^u_{jk}{p_k})^{\star} B^p_{ji}{p_i},~F^y_j = (B^v_{jk}{p_k})^{\star} B^p_{ji}{p_i} 
+\label{invm_eq:4}
+\end{align}
+where tensor notation is used, i.e. summation is done over same indices. Matrices 
+$B^p_{ij},~B^u_{ij},~B^v_{ij}$ are short notation for generaion model and polarization relations, 
+for example,
+\begin{equation}
+B^p_{ji} = p_i \frac{2}{\pi k d_j} \cdot e^{i  k  d_j}
+\end{equation}
+These can be thought as disretization of operators transforming distribution of sources into 
+interference pattern in pressure and velocity fields.\\
+Apparently, the energy flux relations are non-linear. To deal with this it is proposed an 
+iterative technique. Let at $m$-th iteration there is a known distribution of wave amplitude at 
+sources, $p^m_i$, the total energy flux field can be reconstruced by (\ref{invm_eq:4}). Than it is 
+desired to find a small adjustment $\delta p^m_i$ (``nudge factor") such that residual between 
+observed field and analytical description will be decreased. One can write,
+\begin{align}
+F_{j}^x = (B^u_{jk}(p^m_k + \delta p^m_k))^{\star} B^p_{ji}(p^m_i + \delta p^m_i) = \nonumber\\
+(B^u_{jk} p^m_k)^{\star} B^p_{ji}{p^m_i} + (B^u_{jk} \delta p^m_k)^{\star} B^p_{ji} p^m_i + 
+(B^u_{jk} p^m_k)^{\star} B^p_{ji} \delta p^m_i + (B^u_{jk} \delta p^m_k)^{\star} B^p_{ji} \delta 
+p^m_i\nonumber\\
+F_{j}^x - (B^u_{jk} p^m_k)^{\star} B^p_{ji}{p^m_i} = (B^u_{jk} \delta p^m_k)^{\star} B^p_{ji} 
+p^m_i + (B^u_{jk} p^m_k)^{\star} B^p_{ji} \delta p^m_i + (B^u_{jk} \delta p^m_k)^{\star} B^p_{ji} 
+\delta p^m_i \label{invm_eq:3}
+\end{align}
+The left hand side of (\ref{invm_eq:3}) represents the residual, the right hand side sets a 
+controlling equation to obtain adjustment neceassary to decrease the residual. The last term of 
+RHS 
+shows a non-linear nature of the problem. This is omitted since the purpose of conseqeunt 
+iterative 
+technique is to find the final source distribution such that the model equations (\ref{invm_eq:4}) 
+are satisfied in least square sense. Than the ``nudge-factor" can be found as inverse of 
+\begin{equation}
+F_{j}^x - (B^u_{jk} p^m_k)^{\star} B^p_{ji}{p^m_i} = R_j^x = \Big[ (B^u_{jk} )^{\star} B^p_{ji} 
+p^m_i + (B^u_{jk} p^m_k)^{\star} B^p_{ji} \Big] \delta p^m_i \label{invm_eq:5}
+\end{equation}
+(these equations are not in matrix form, but obsevation point by observation point).
+Hence, the aim of inverse model is to decrease error in representation of energy fluxes. The 
+equation (\ref{invm_eq:5}) can be solved separately for zonal and meridional fluxes and also 
+simultaneously for both directions. That is at each iteration step the nudge-factor is found first 
+for zonal, than for meridional direction and finally, for both simultaneously. At the end pressure 
+distribution is changed by average from all three substeps.\\
+Note the inverse model equation (\ref{invm_eq:5}) is supported by additional condition stating 
+that 
+amplitude is nonnegative, $p_i^m + \delta p_i^m \geq 0$. All of this numerically is solved by 
+linear programming routine \text{lsei} (least square with inequality) provided by LINPACK 
+package.\\
+Here it will be presented a test convergence and number tests on robustness on proposed iterative 
+inverse model. The initial flux field is given by Fig. \ref{invm_fig:1} where by crosses are shown 
+observational points. This define prescribed $F_{j}^x$ or $F_{j}^y$. Note that the prescribed 
+field 
+aims to describe midbasin energy flux field with Tasman shelf ommitted due to presence of 
+reflection and complex bathymetry. The point sources distribution are given by green dots and at 
+the first iteration step are set to $p^0_i = 100 Pa$. The distribution of points sources is 
+representative to distribution of steep bathymetry which is belived to be an internal tide 
+generator. In the inverse model there are only two parameters that describe characteristic of the 
+internal tide, wavenumber and normalization coefficients used in energy flux. Both are found from 
+solving eigenvalue for randomly picked stratification profile. This result in wavelength of 
+$180~km$ which is a representative value for Tasman Sea conditions. In the same way eigenfunctions 
+are obtained and normalization coefficients are found.\\
+Hence, the inverse model does not account for
+\begin{enumerate}
+\item Bathymetry variation
+\item Stratification variability
+\item Variation of barotropic tide along ridges
+\end{enumerate}
+The first two points are thought to have minor effect on internal tidal beam structure. While the 
+third is omitted to preserve simplicity of generation model. Additional tests were done with 
+variation in barotropic tide phase along ridges, but they did not bring any substantial changes in 
+foregoing results.\\
+To show convergence of the inverse model it is given change in pressure amplitude with each 
+iteration. Here convergence is defined by
+\begin{equation*}
+Conv = \sum_i \frac{(p_i^m - p_i^{m-1})^2}{(0.5 \cdot (p_i^m + p_i^{m-1}))^2}
+\end{equation*}
+The iterative solver is stopped when convergence is reaching tolerance. Here it is set to 0.01. 
+From Figure (2a) it is seen that by 17th iteration there is no appreciable change in the inverse 
+solution. This means that influence of non-linear terms in (\ref{invm_eq:3}) became negligible and 
+the distribution of amplitude along the source region is the best in least square sense. The error 
+of such description is given on subsequent panels of Fig. 2, where root-mean-square-error for 
+different energy flux parameters is defined for example zonal component as
+\begin{equation}
+E_{x} = \sqrt{\frac{\sum_{obs} (F_i^x - \hat{F}_i^x)^2}{N_{obs}}}
+\end{equation}
+As it is seen the error is approaching stability for all used components much faster than 
+convergence in amplitude. Note that the error is larger in zonal fluxes. The inverse solution can 
+not predict far field behavior which is believed due to interaction with East Tasman Plateau. The 
+obtained solution is given by Fig. 3. Here it is found that the inverse solution can not well 
+represent the beam close to East Tasman Plateau. The following reasons can be named: interaction 
+with topography and inadequacy of cylindrical wave model in the far-far field. It is believed that 
+the second reason is the main. In general, the inverse solution picks up the central beam pretty 
+well, outlines its boundary and the major region is satisfying manner. As well note that the 
+northern and southern beams are also found in the solution.
 
 \newpage
 \section{Figures}
