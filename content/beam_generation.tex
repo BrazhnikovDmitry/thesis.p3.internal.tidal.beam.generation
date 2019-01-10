@@ -753,131 +753,116 @@ magnitude and heterogeneity of its generation. Then, importance of oceanographic
 Tasman Sea is discriminated. And at final, the numerical results are compared with the observations.
 
 \subsection{Analytical model for generation at a knife-edge ridge}
-Effect of generation variability on the beam is assessed through an analytical model (appendix B) 
-which is an extension of work by \citep{rainville2010interference} but with no ad-hoc parameters. 
+Effect of generation variability on the beam is assessed by an analytical model (appendix B) 
+which is an extension of \citep{rainville2010interference} but with no ad-hoc parameters. 
 The model solves for a wave field radiated into rotating ocean of mode-1 equivalent depth by a 
-vibrating strip \citep{morse1946methods}. To evaluate its correctness a complimentary numerical 
-study was carried out with MITgcm model. There a knife edge topography was placed against a 
+vibrating strip \citep{morse1946methods}. To evaluate its validity a complimentary numerical 
+study was carried out with MITgcm model. There a knife-edge topography was placed against a 
 semidiurnal barotropic tide. The forcing was prescribed as $U(t) = 0.01 \cos 
-\omega_{M_2} t$ and $V(t) = 0.01 \frac{f}{\omega_{M_2}} \sin \omega_{M_2} t$ along the western  
+\omega_{M_2} t$ and $V(t) = 0.01 \frac{f}{\omega_{M_2}} \sin \omega_{M_2} t$ along a western  
 boundary. All boundaries were of open type, but with sponges imposed to damp baroclinic fields. 
-All physical parameters of the experiments are given in Table \ref{C3:tab.gen.prms}. The emitted 
-baroclinic field was then diagnosed by the same methods as described before. The comparison between 
+Physical parameters of the complimentary experiments are given in \tblnm{C3:tab.gen.prms}. The 
+emitted baroclinic field was then diagnosed by the same methods as described before. The comparison 
+between 
 the numerical experiments and analytical solution are presented on \fignm{C3.fig:anlt_sol}. 
-Overall, the analytical model is well representative of spatial pattern of the radiated waves. Its 
-salient feature is a wavefront curvature near the knife-edge ridge. The model of 
-\citep{rainville2010interference} represents it by convex shape that is reminiscent of 
-assumed by them a single pole generation. It is shown here that in the near field wavefronts at 
-first perturbed by diffraction and are concave, then they flatten and over only several wavelengths 
-become akin to the single pole model. The last transition happens as an extent of generating ridge 
-becomes indiscernible or $kr \ll 1$. Similar effect is seen in semi-analytical calculations of 
-\citep{zhang2014modeling} who summed contributions from point sources placed along topography.\\
+Overall, the analytical solution is well representative of spatial pattern of the radiated waves. 
+Its 
+salient feature is a curvature of wavefront near the ridge. The model of 
+\citep{rainville2010interference} represents it by convex shape that is a reminiscence of 
+assumed a single pole generation offset by an ad-hoc parameter. It is shown here that near the 
+ridge wavefronts at first perturbed by diffraction and are concave, then they flatten and 
+over only 
+several wavelengths become akin to the single pole model. The last transition happens as an extent 
+of generating ridge cannot be discerned or $kr \gg 1$. Similar effect is seen in semi-analytical 
+calculations of \citep{zhang2014modeling} who summed contributions from point sources placed along 
+topography.\\
 The previous investigations have not incorporated rotational effect. But in presence of Coriolis 
 force along-ridge transports as well become subject to no-flow boundary condition \eqref{C3.a2:bc}. 
 This spatially redistributes emitted radiation leading to asymmetry \fignmlp[C3.fig:anlt_sol]{Panel 
-b, c}. Such that the tideward and leeward wave fields are shifted one to another. Thence, the 
-resulting conversion and flow across the ridge for the gravest mode are spatially non-uniform 
-leading to modulation of higher-mode energy content. Then any calculation based on point-wise 
-approach \citep[e.g.][]{st2003generation} is misleading in presence of rotation. As well wave 
-breaking will also have a spatial pattern \citep{buhler2007instability} from this perspective. 
-These inferences have not been explored as the analytical solution does not incorporate 
-inter-modal coupling at this moment and left for future investigation.\\
+b, c}. Such that the tideward and leeward wave fields are shifted one to another. The resulting 
+conversion and flow across the ridge for the gravest mode are spatially non-uniform, then in order 
+to balance the forcing barotropic flow, higher modes will be modulated as well. Hence, any 
+calculation based on point-wise approach \citep[e.g.][]{st2003generation} is misleading in presence 
+of rotation. As a result, wave breaking will also engrave some spatial pattern 
+\citep{buhler2007instability}. These inferences have not been explored as the analytical solution 
+does not incorporate inter-modal coupling, but the numerical results support non-uniform 
+distribution of the high-mode energy with each mode having a distinct pattern.\\
 Another effect associated with Coriolis force is observed as energy flux vectors appear to be 
-slanted near ridge \fignmlp[C3.fig:anlt_sol]{Panel c}. Both effects are highly dependent on number 
-of wavelengths aligned along the ridge or as a non-dimensional parameter $q = k 
-L_{ridge}/4$. For the Macquarie Ridge $q \simeq 2\pi/180km \cdot 200km/4 = 1.6$, so the third 
-experiment was performed to explore radiation pattern in such setting. The similar poleward 
-slanting is seen in the Tasman tidal beam that showed marked turning in the near-field 
-\fignmp{C3.fig:beam_prms} and was also diagnosed by the angular decomposition as Southwestern 
-waves \fignmp{C3.fig:beam_dcmp}. This phenomena was originally identified by 
+slanted near the ridge \fignmlp[C3.fig:anlt_sol]{Panel c}. The oblique radiation and asymmetry are 
+highly dependent on squared number of wavelengths aligned along the ridge or as a non-dimensional 
+parameter $q = (k L_{ridge}/4)^2$. For the Macquarie Ridge $q \simeq (2\pi/180km \cdot 200km/4) = 
+2.5$, so the third experiment was carried out to explore radiation pattern in such setting. The 
+similar poleward slanting is seen in the Tasman tidal beam that was illustrated by marked turning 
+in the near-field \fignmp{C3.fig:beam_prms} and was diagnosed by the angular decomposition as 
+Southwestern waves \fignmp{C3.fig:beam_dcmp}. This phenomena was originally identified by 
 \citep{zhao2018satellite} in the satellite-derived observations whose explanation was based 
 on phase lags in forcing barotropic wave. Though such argument can not be refuted, it seems to be 
-of the secondary importance since $M_2$-wave has phase difference of only $\sim 10^{\circ}$ 
-\fignmp{C3.fig:BT} at the Macquarie Ridge.\\
+of the secondary importance since $M_2$-wave has phase difference of $\sim 10^{\circ}$ 
+\fignmp{C3.fig:BT} at ends of the Macquarie Ridge.\\
 Here presented explanation and analytical approach is of fundamental nature as its characteristic 
-of spiraling outward waves and spatial non-uniformity in radiation pattern was reported in 
-numerical experiments \citep{munroe2005topographic} and an analytical generation model 
-\citep{baines2007internal}. Further to highlight ubiquity of the physical mechanism the analytical 
-solution is taken to extreme of the critical latitude \fignmlp[C3.fig:anlt_sol]{Panel d}. In this 
-case the constraint on the along-ridge flow is comparable to normal transport and wave becomes 
-trapped by the ridge. The similar process and pattern was observed in the numerical studies of 
-trapping of diurnal baroclinic tide by Oahu \citep{smith2017coastal} and by a sill located in a 
-channel at latitude slightly above the critical \citep{hughes2018tidal} representative of the 
-Canadian Archipelago.\\
- 
-response to  of 
-the 
-ridges in such regimes was also simulated by 
-
- The trapping of 
-energy 
+of spiraling outward waves and spatial non-uniformity was also reported in numerical experiments 
+\citep{munroe2005topographic} and an analytical solution for circular seamount 
+\citep{baines2007internal}. Further to highlight ubiquity of the physical mechanism the given 
+analytical solution is taken to extreme of the critical latitude \fignmlp[C3.fig:anlt_sol]{Panel 
+d}. In this case the constraint on the along-ridge flow is comparable to normal transport and wave 
+becomes trapped by the ridge. The similar process and pattern was observed in the numerical studies 
 of 
+baroclinic wave trapping for diurnal tide at Oahu \citep{smith2017coastal} and for semidiurnal tide 
+at a sill located in a channel at latitude slightly above the critical \citep{hughes2018tidal} 
+representative of the Canadian Archipelago.\\
 
- an analytical model 
-have 
-its roots to 
- the 
-$200km$-ridge edges of the $200km$-ridge will have lags of $40^{\circ}$   , it 
-appears 
-that Coriolis effects have more fundamental importance 
-forcing. 
+The analytical solution is now used to compose the Tasman tidal beam following the superposition 
+principle \citep{rainville2010interference}. The Macquarie Ridge comprises multiple sources 
+that constructively interfere to produce the beam \citep{klymak2016reflection}. The principle will 
+be applied inversely, i.e. from the distribution of energy in the beam let obtain 
+magnitude of sources each represented by a vibrating strip. So the ridge is discretized by $30~km$ 
+strips that placed tangential to $3000$ m isobath. Their respective strengths are 
+found by minimizing mismatch in flux vectors between synthesized analytical solution and the ROMS 
+experiments. This is a nonlinear problem that is solved iteratively (computational details are 
+given in Appendix A.2). For 'uniform' experiment the result is presented on \fignm{C3.fig:beam_inv} 
+and can be compared with \fignm{C3.fig:beam}. The synthesized far-field structure agrees well when 
+radiation from remote sources is omitted \fignmlp[C3.fig:beam_inv]{e.g., a}.  And the 
+inversely-found magnitude of sources and their position have strong correspondence to the actual 
+internal tide production sites. This model is then applied to study effect of variable generation. 
+But it will be only considered major production site at the Macquarie Ridge 
+\fignmlp[C3.fig:gen]{a}. And the analytical strips are adjusted in extent and orientation to 
+represent the previously considered topographic features \fignmlp[C3.fig:gen]{c}. So that the 
+spatially-averaged conversion rates can be directly substituted as $magnitude \sim 
+Conversion^{1/2}$ into the analytical model. An example is given on \fignml[C3.fig:beam_inv]{b}. 
+The beam's spatial finiteness is lost and the emitted field is similar to point-source generation, 
+but the simplified formulation directly relates non-stationary generation to the beam 
+characteristic.\\
 
-Such wave propagation then 
-develops phase lags and organizes into spirally emitting waves \citep{baines2007internal}. 
-\footnote{As well the given analytical solution is valid near 
-the critical latitude (e.g., $f = 0.99 \omega_{tide}$) where spatial structure was observed as 
-well, but the waves are trapped near the ridge.}\\
-
-The Macquarie Ridge has multiple sources distributed along the ridge which constructively 
-interfere to produce the Tasman tidal beam \citep{rainville2010interference, 
-klymak2016reflection}. This principle will be applied here in reverse, i.e. from the distribution 
-of energy in the beam let obtain magnitude of single sources represented by the shallow-water 
-pistons. They are described by their orientation that is found from localized curvature of $3000$ m 
-isobath. And their size is set constant to be $30~km$. Respective strengths are found by minimizing 
-mismatch in flux vectors between composed analytical solution and ROMS experiments. This is a 
-nonlinear problem that is solved iteratively (computational details are given in Appendix A). 
-For 'uniform' experiment the result is presented on \fignm{C3.fig:beam_inv} and can be compared 
-with \fignm{C3.fig:beam}. The synthesized far-field structure agrees well with the planar field. 
-And the inversely found source magnitude and location has strong correlation with the actual 
-internal tide production sites. To study effect of variable generation only the major part of the 
-Macquarie Ridge is examined \fignmlp[C3.fig:gen]{b}. There pistons adjusted to be representative of 
-the previously considered primary production sites \fignmlp[C3.fig:gen]{c}. The averaged conversion 
-rates are directly substituted as $magnitude \sim Conversion^{1/2}$ into the piston model. An 
-example is given on \fignml[C3.fig:beam_inv]{b}. The beam's spatial finiteness is lost and the 
-emitted field is quite similar to a point source generation, but lead to more feasible analysis of 
-generation effects on the beam.\\
-During the field period generation intensified in the northern part of the ridge 
-\fignmlp[C3.fig:gen_var_beam]{a}. Its effect on beam position is diagnosed by identifying beam's 
-''center of mass",
+It is considered the field-period simulation where conversion rates were growing overtime in the 
+northern part of the ridge \fignmlp[C3.fig:gen_var_beam]{a}. Resulting effect on the beam will 
+be diagnosed by identifying its ''center of mass",
 \begin{equation}
 L_{C} = \frac{\int_0^{L} dr |F(r)|r}{\int_0^{L} dr |F(r)|}
 \end{equation}
-where $L_{C}$ is a position of the beam's center of mass in the cross beam direction, $L$ - length 
-of the cross-beam transect, $|F(r)|$ - magnitude of energy flux along the transect. This procedure 
-is carried out for the Northwest quadrant (planar beam) and the analytical solutions. The 
-comparison of results confirm that the beam has moved its position by $20~km$ 
-northward \fignmlp[C3.fig:gen_var_beam]{b} following generation pattern. Two outliers, 'uniform' 
-and 
-'2014' \fignml[C3.fig:gen]{c} are included to further emphasize a dominant role  in the near-field 
-of inhomogeneous generation. Its effects can be discerned in the analytical solutions over 1-2 
-wavelengths after which the model becomes similar to uniform point-wise generation. While the 
-numerical experiments become irrespective to generation much faster as effects of interaction with 
-mesoscale are building up.\\
-Another consequence of the variable generation is alterations in the beam magnitude. Over the 
+where $L_{C}$ is a position of the center of mass in the cross beam direction, $L$ - length 
+of an across-beam transect, $|F(r)|$ - magnitude of energy flux along the transect. This procedure 
+is carried out for the Northwest quadrant spectral component and the analytical solutions. 
+Comparison between two confirms that the beam has shifted its position by $15~km$ northward 
+\fignmlp[C3.fig:gen_var_beam]{b} following the shift in generation pattern. An opposing example of 
+southerly concentrated production was observed \fignmlp[C3.fig:gen]{b} in 'uniform' experiment and 
+the resulting beam was occupying the southernmost location of all experiments. Hence, spatial 
+pattern in generation shapes near-field beam properties. These effects can be only discerned over 
+1-2 wavelengths - a distance prompted by the analytical model where the solutions converge to 
+uniform point-wise model. In contrary, the numerical simulations become irrespective to generation 
+much faster as effects of interaction with mesoscale are building up.\\
+Another consequence of variable levels in generation is alterations in the beam intensity. Over the 
 considered period mode-1 production increased by $30\%$ \fignmlp[C3.fig:gen_var_beam]{c}. Unlike to 
-previous this characteristic seems to be consistent throughout the whole Tasman basin. This is 
-shown by considering temporal variability in the integrated flux in the near-field, mid-field and 
-far-field. Note that the far-field record was shifted in color to account for time lag necessary to 
-energy propagation ($\sim 6.7~days$). All the time series show similar pattern of modulation that 
-follows the total conversion. But character declines with distance, but at rates slower than 
-as $1/r$ predicted by the analytical models \citep{zaron2014time}[e.g.] or given here. To account 
-for the unknown spreading law, the analytical results are scaled by mean magnitude of the numerical 
-experiments in the far field and given by diamonds on \fignmlp[C3.fig:gen_var_beam]{c}. The 
-correlation is surprisingly good.\\
-In conclusion, the given before changes in beam's heading and consequently, beam's position are 
-related to generation in the near-field and it quite rapidly becomes obscured by effect of variable 
-oceanographic conditions on the beam. These interactions seem to proceed without energy loss in the 
-tidal beam as its magnitude correlates with conversion rates at the ridge quite good.
+previous, this characteristic seems to be consistent throughout the whole Tasman basin. This is 
+shown by considering temporal variability in the integrated flux in the mid-field and far-field 
+locations. Note that the far-field series was shifted in color to accommodate a time lag necessary 
+for energy propagation ($\sim 6.7~days$). The time series demonstrate similar modulation 
+pattern that follows the ridge conversion. Magnitude of changes declines with distance slower 
+than $1/r$ as predicted by the analytical model, though the inverse solution 
+\fignmlp[C3.fig:beam_inv]{a} demonstrates similar spreading law. Hence, because of beam's linearity 
+to account for the spreading mismatch the analytical results are scaled by mean intensity in the 
+numerical experiments at respective locations. The result is depicted by diamonds on 
+\fignml[C3.fig:gen_var_beam]{c}. Strong dependence reinforces the previous observation, while any 
+departures are thought to be because of interaction with variable mesoscale circulation.
 
 \begin{table}
 	\caption{Parameters of numerical experiments for generation at knife-edge topography}
@@ -900,68 +885,10 @@ tidal beam as its magnitude correlates with conversion rates at the ridge quite 
 	\label{C3:tab.gen.prms}
 \end{table}
 
-%strength of the beam  
-%where $L_{C}$ is a position of the beam's center of mass in the cross beam direction, $L$ - length 
-%of the cross-beam transect, $|F(r)|$ - magnitude of the energy flux. This procedure is carried out 
-%for the Northwest quadrant (planar beam) and the analytical solutions. To emphasize the shift the 
-%results were averaged over equal two periods: 10 January to 10 February and 10 February - March. 
-%The results clearly show that there was a shift in the position by 5 km, this is well captured by 
-%the analytical model. Hence, suggesting that the inhomogeneous generation lead to shift in the 
-%beam's initial characteristics. Nevertheless, they are relatively weak as it seems, 
-%though outliers deviated from the field-period mean by 20 km. From Fig it is apparent that soon 
-%after leaving near-ridge region these differences become less apparent and further superposed with 
-%interaction with variable oceanographic media. At second, unsurprisingly, the magnitude of the 
-%beam 
-%also has increased following larger conversion rates (Fig). But this signal only weakly reflected 
-%in the far-field by Tasmania. These results apparently suggest that generation has effect on the 
-%beam location only near ridge, but as soon as the beam leaves Fresnel zone and as effects of 
-%mesoscale accumulates the beam is becoming less and less linked with generation history. But this 
-%is not true for the magnitude which seems to be kept. This is probably due to interactions with 
-%mesoscale without pronounced energy transfers.\\
-
-\footnote{ Two 
-	regions quite 
-	clearly 
-	can separated. First is near the generation site where generation has strong directional 
-	characteristic. In the far-field orientation of the fluxes is more uniform, nevertheless 
-	spatially 
-	energy is still has some structure and not spread everywhere. These two regions are similar to 
-	Fresnel and Fraunhofer zones from optics. In the former the wave field shows presence of 
-	diffraction, while the latter is characterized by plane wave.}\\
-
-%So now we are in position to investigate effects of the inhomogeneous generation on the tidal 
-%beam. 
-%The conversion rates from the field period experiments were set into the analytical model. The 
-%obtained wave field were then subject to the same analysis as the numerical experiments. Figure 
-%... 
-%shows comparison of the mean energy flux direction and integrated flux in case of each 
-%realization. 
-%The first conclusion comes right away. The marked turning of the beam is a direct result of the 
-%generation or more precisely Coriolis effect on the generation. This is the before observed skewed 
-%pattern of the emitted field. Secondary, obvious result of the increased generation leading to 
-%more energy carried by the beam. And at the third, the mean flux orientation can be described by 
-%generation model in the first $~300~km$ of the propagation. It should be noted even that 
-%the changes are small in orientation of the flux, in the far-field this produces large spatial 
-%shifts in position of the beam. For example, under small angle approximation change in $5^{\circ}$ 
-%by the Macquarie Ridge lead to $100~km$ shift in position of the beam's center by Tasmania. 
-%Nevertheless, there are apparent differences between the analytical model and the numerical 
-%results 
-%in the basin. Hence, additional mechanisms such as mesoscale are in hand. This is discussed in 
-%the following section.
-
-
 \subsection{Variability of the Tasman Sea beam}
 The Tasman beam is inevitably affected by mesoscale circulation in the region. 
-\fignml[C3.fig:meso_exampe]{a} gives an example of oceanograhpic conditions. The 
-deep ocean of the Tasman Sea is dissected by southern subtropical frontal zone. Its meandering 
-produce vortices. These features are relatively weak and do not have significant kinetic energy in 
-comparison to Tasmania with strong currents and eddies associated with EAC 
-\citep{zhao2018satellite}. Nevertheless, the basin vortices have Rossby number of $Ro \sim O(0.1)$ 
-and scales close to baroclinic Rossby number, i.e. $\sim 40~km$. Scaling performed by 
-\citep{dunphy2017low} showed that in such regime tide-mesoscale interaction terms will scale as Ro 
-and major phenomena will restrain to refraction with negligibly small energy scattering and 
-transfers. This is further diagnosed by application of the dispersion relation in presence of 
-background circulation \citep{zaron2014time},
+\fignml[C3.fig:meso_examp]{a} gives an example of oceanograhpic conditions. The 
+deep ocean of the Tasman Sea is intersected by a frontal zone where subtropical and subantarctic water masses collide. Their interaction lead to eddy formation. These features are relatively weak and do not posses substantial kinetic energy in comparison to Tasmania region where extension of East Australian Current might shed stronger eddies. The basin vortices have Rossby number of $Ro \sim O(0.1)$ and have an extent less than $100km$. In such setting nonlinear terms representative of tide-mesoscale interaction and energy exchange will scale as $Ro\frac{f}{\omega_{M_2}} max(1, \frac{L_{eddy}}{L_{wave}}) \sim 0.05$ following \cite{dunphy2017low}. Thus, the major phenomena will restrain to refraction with negligible weak scattering and energy transfers. Further, effects of refraction can be diagnosed as changes in phase speed in presence of background circulation \citep{zaron2014time} that follows
 \begin{align}
 \omega_{obs} = f_e^2 + \frac{\omega_{obs}}{\omega} gD |k|^2\\
 c_{obs}^2 = \big( \frac{\omega_{obs}}{|k|} \big)^2 = \frac{\omega_{obs}}{\omega} \frac{gD}{1 - 
@@ -971,47 +898,34 @@ where $\omega_{obs} = \omega + \vec{k}\cdot \vec{U}$ - observed, Eulerian freque
 Doppler shifted intrinsic frequency, $f_e = f(1 + \frac{1}{2} \frac{\zeta}{f})$ - effective 
 Coriolis frequency adjusted by rotation in vortical flow of $\zeta$, $c_0^2 = gD$ - phase speed of 
 internal tide in non-rotating ocean with effective depth of $D$. The latter term will encompass 
-variations in stratification. The dispersion relation was then used to occur respective phase 
+variations in stratification. The dispersion relation was then used to obtain time-variable phase 
 speeds. To do so, three dimensional currents from the numerical experiments were temporally and 
 vertically averaged. And since Doppler shift depends on alignment between wave propagation and 
 currents, a bulk beam orientation of $150^\circ$ was used in calculations.\\
-Results \fignmlp[C3.fig:meso_exampe]{b} show that major regions of variations are confined to the 
-meanders. The deviations due to stratification on average describe 50\% of anomaly, due to 
-background currents 30\% and due to vorticity - 20\%. The phase speed diverts by $0.2~m/s$ or 
+Results \fignmlp[C3.fig:meso_examp]{b} show that major regions of variations are confined to the 
+meanders. The deviations due to stratification alone on average describe 50\% of anomaly, due to 
+background currents 30\% and due to vorticity - 20\%. Overall phase speed deviates by $0.2~m/s$ or 
 $\sim5\%$ from the mean. Even though these changes appear to be small they can substantially divert 
-beam's propagation. This can be estimated using shallow-water gravity theory of refraction 
+beam's propagation. This is easily estimated using shallow-water gravity theory of refraction 
 (citation) as
 \begin{align}
 \frac{\Delta \theta}{\Delta s} = \frac{1}{c} \frac{\delta c}{\Delta n}
 \end{align}
-where $\Delta s$ and $\Delta n$ are distances in along-beam and cross-beam directions. Setting them 
-equal and $\delta c/c = 10\%$ (gradient between positive and negative anomalies) produce 
-reorientation of the beam by $\Delta \theta 5^{\circ}$.\footnote{ These calculations were supported 
-by ray 
-tracing that is not given.} This corresponds to the results presented previously (Section). Now as 
-waves refracted, they interfere with non-interacted portion of the beam leading to 
-obscure patterns as illustrated on \fignml[C3.fig:meso_examp]{b}. The beam seems to be separated in 
-two parts with a portion actually leaving the Tidal beam strongly northward.\\
-The phase speed deviations drive variations in the beam propagation. These were studied by variance 
-ellipses \fignmlp[C3.fig:beam_dcmp_cm]{a}. Since the corresponding semi-minor axis are small, it is 
-worth investigating only semi-major axis. Such characteristic is mainly associated with directional 
-variance. The first region is located by the Macquarie Ridge in accordance with the previous 
-section on generation. Further regions of high directional variability appear to come in slanted 
-manner representative of self-interference. It originates after internal tide passage over regions 
-of high phase speed variance or active mesoscale circulation \fignmlp[C3.fig:beam_dcmp_cm]{b}. 
-Clearly that direction variability leads to shift in position of the beam. And as the beam arrives 
-to Tasmania this could lead different location of the beam. During the field period simulation the 
-beam was constantly southward within $30~km$ from 'uniform'-experiment. This was mainly due to 
-located near ETP warm-core eddy \fignmlp[C3.fig:beam_dcmp_cm]{b}. Over all experiments the 
-deviations could be much larger that position shifted in meridional direction by $\pm 30~km$.\\
-The numerical experiments clearly presented large scale variability in the beam incidence on Tasman 
+where $\Delta s$ and $\Delta n$ are along-beam and cross-beam coordinates. Setting them 
+equal and $\delta c/c = 10\%$ (gradient between positive and negative anomaly) produce 
+reorientation of the beam by $\Delta \theta 5^{\circ}$. \footnote{These calculations were supported by ray 
+tracing which results are not conclusive and not given.} This corresponds to the results presented previously (Section). Now as part of the beam refracts, it interferes with non-interacted portion leading to 
+obscure patterns as illustrated on \fignml[C3.fig:meso_examp]{b}. The beam seems to be dissected in 
+two parts with a portion actually driven away, while another being focused, but reoriented strongly southward.\\
+Clearly, the phase speed deviations force variations in the beam propagation. These were further studied by variance 
+ellipses \fignmlp[C3.fig:beam_dcmp_cm]{a}. Since the respective semi-minor axis are small, it is worth investigating only semi-major axis \fignmlp[C3.fig:var_meso]{a}. The obtained distribution is noted to be mainly associated with directional 
+variance. The first strong region is located by the Macquarie Ridge in accordance with the previous 
+discussion on generation. Consequent regions come in slanted manner representative of beam interference with itself such as on \fignml[C3.fig:meso_examp]{a}. It can be also interpreted as focusing of energy (dunphy). It happens after internal tide passage over areas of high phase speed variance or active mesoscale circulation \fignmlp[C3.fig:beam_dcmp_cm]{b}. The figure illustrates relation to the beam center of mass. As the beam approaches Tasmania, its location can undergo drastic changes. During the field period simulation the beam was constantly southward within $30~km$ from 'uniform'-experiment even though generation was shown to be of opposite influence. This was mainly a result of refraction by warm-core eddy \fignmlp[C3.fig:beam_dcmp_cm]{b}. Additionally, over all experiments the deviations could be much larger that position shifted in meridional direction by $\pm 30~km$.\\
+The numerical experiments presented large scale variability in the beam incidence on Tasman 
 continental slope as a result of interaction with mesoscale circulation. It seems that changes can 
-appear on different time scales. Analysis has not shown any seasonal trends, but rather turbulent 
-behavior resulted as refractive effects accumulate as the beam transverse the Tasman basin. These 
+appear on different time scales. The analysis has not shown presence of any seasonality in the beam's characteristics, but rather chaotic behavior as refractive effects accumulate as the beam transverse the Tasman basin. These 
 interactions seem not to redistribute energy and only divert it since mesoscale currents are 
-relatively weak and driven mainly by small frontal zone instabilities. This is probably different 
-near Tasmania where strong East Australian Current can shed eddies of high vertical shear and 
-significant spatial extent.
+relatively weak and driven mainly by small frontal zone instabilities.
 
 \subsection{Comparison with altimetry observations and TBEAM observations}
 Results of the presented investigations are placed together with satellite altimeter measurements  
@@ -1024,7 +938,7 @@ characteristics as seen in a summary \ref{C3:tab.prms}. Further, plan-view compa
 \fignmp{C3.fig:cmp_sat_nexp} provides more details. Here over the first half of the Tasman Basin 
 both beams are similar in position, 
 travel direction and magnitude. This is primarily because of consistency in geography of internal 
-tide production. This was tested by application of the inverse approach to satellite-derived beam 
+tide production. This was tested by application of the inverse approach (section) to satellite-derived beam 
 \fignmlp[C3.fig:cmp_sat_nexp]{Scaled by magnitude dots along the Macquarie Ridge}. The same part of 
 the ridge was identified as the primary energy emitter. Yet it seems that conversion at the 
 seamounts was undervalued in the numerical experiments because of performed topography smoothing. 
@@ -1035,7 +949,7 @@ the internal tide conversion than reported here. On the other hand, the primary 
 mechanism (Section 3.1) associated with passing of non-local baroclinic tides is realistic as 
 Campbell Plateau emitted waves can be clearly identified in the altimeter observations.\\
 
-Major differences are found away from the generating ridge, near Tasmania. As previously discussed 
+Major differences are found away from the generating ridge, close to Tasmania. As previously discussed (section)
 the internal tide appearance in the far-field is produced by refraction on inhomogeneities in 
 oceanic media. Then any biases in the simulated dynamical state of the Tasman sea will lead to 
 biases in the beam characteristics. As well small number and short temporal coverage of the 
@@ -1049,12 +963,7 @@ of the increase is likely related to numerical parameters of HYCOM experiments. 
 comparison between AVISO satellite product and the ROMS experiments led to conclusion that 
 important mesoscale features were similar, but amplified and accompanied with higher 
 horizontal shear. Inevitably, different strength of mesoscale currents will drive varying amount of 
-refraction. On \fignm{C3.fig:KE_beam} this is depicted by diamonds representing the beam southward 
-deviation from the satellite-derived beam. Over the first period with weaker currents, the beam was 
-found closer to the satellite altimeter. But after 2013 intensification the beam was situated 
-further poleward. Thus, the performed numerical experiments are biased towards poleward location 
-due to the considered sample of the oceanic conditions. Regardless of the average, during the field 
-period simulation \fignmlp[C3.fig:KE_beam]{inset} it is seen a growth of kinetic energy caused by 
+refraction. On \fignm{C3.fig:KE_beam} this is depicted by diamonds representing the beam heading. Over the first period with weaker currents, the beam was only slightly diverted and hence, closer to the satellite altimeter. But after 2013 intensification the beam was refracted much higher. \fignml[C3.fig:var_meso]{b} additionally illustrates that the performed numerical experiments are biased towards poleward location. Regardless of the average position, during the field period simulation \fignmlp[C3.fig:KE_beam]{inset} it is seen a growth of kinetic energy caused by 
 spinning up of an anticyclonic eddy near East Tasman Plateau. This process is consistent with 
 satellite observed changes in sea surface anomaly and geostrophic currents. And hence, the 
 numerical simulations can provide a valuable perspective on the TBEAM measurements.\\
@@ -1084,7 +993,7 @@ numerical simulations can provide a valuable perspective on the TBEAM measuremen
 \end{table}
 
 
-In overall, the field period simulation diagnosed southward beam position with $\pm 15~km$ shifts 
+The field period simulation demonstrated southward beam position with $\pm 15~km$ shifts 
 and baroclinic tide intensification \fignmlp[C3.fig:gen_var_beam]. These prepositions will be 
 assessed against the in-situ observations \citep{waterhouse2018observations}. The TBEAM program 
 comprised a stationary, moored measurements over period of 49 days (A1 mooring) 
@@ -1097,25 +1006,24 @@ But the latter observations have to be considered with caution due to contaminat
 energetic near-inertial currents followed major storm events. More on data processing, 
 uncertainties and analysis is to be found in \citep{waterhouse2018observations}. Part of their   
 investigation included fitting a plane wave and an estimate on the bulk beam parameters 
-\ref{C3:tab.prms}. All three approaches, altimetry, field measurements and numerical modeling, 
+\tblnm{C3:tab.prms}. All three approaches, altimetry, field measurements and numerical modeling, 
 compare well and combined yield the averaged internal tidal wave of $\sim 3.4 kW/m$ incident on 
 Tasmania from the direction of $150^{\circ}$. Disparities in the results are further evaluated to 
 gain additional insights.\\
 The total field for the gravest mode \fignml[C3.fig:TBEAM_sp]{Panel A} reveals a large contrast 
 between the in-situ observations and averaged the field period experiment 
 \fignmlp[C3.fig:TBEAM_sp]{Panel a, black and red arrows}. At the stations closest to ETP (F2-F5 and 
-A1) the simulated energy fluxes are oriented towards south. Such property is induced by 
+A1) the simulated energy fluxes are oriented towards south. Such spatial variability is induced by 
 interference between the beam component (blue arrows) and oppositely traveling reflected waves 
-(green arrows). If the planar beam component \fignmp{C3.fig:beam_dcmp} is considered alone, then 
+(green arrows). If spectral components of Northwestern quadrant \fignmlp[C3.fig:beam_dcmp]{a} are considered alone, then 
 the contrast is less pronounced. In fact, at location 
-of A1 mooring the simulated beam coincides with the mean energy flux during the measurement period. 
-Thence, the simulations have different characteristics of the interfering fields than it was 
+of A1 mooring site the model and measurements show excellent agreement, but it is believed to be fortuitous. Overall, the simulations have different characteristics of the interfering fields than it was 
 observed in-situ. This fact is emphasized by examining a numerical experiment where the beam was 
 closest to the satellite-derived one \fignmlp[C3.fig:TBEAM_sp]{Panel b}. Now the total field at 
 F2-F5, A1 corresponds to the observations much better. Nevertheless, at other stations mismatch 
 is still large. This is not surprising due to superposition with the waves emerging from South 
 Tasman Rise. If that signal is removed, the comparison improves (not shown). These facts indicate 
-the TBEAM observations were also less influenced by internal tidal swell. \\
+the TBEAM observations were also less influenced by internal tidal swell and mainly was unidirectional. \\
 \fignml[C3.fig:TBEAM_sp]{Panel a and b} emphasize variability of the total wave field due to 
 alterations in incidence and reflection. This is further augmented in a partial standing wave and 
 chiefly in spatial distributions of HKE and APE. On average \fignmlp[C3.fig:TBEAM_KE2PE]{Panel 
@@ -1124,7 +1032,7 @@ or potential energy. Similar pattern is observed in the in-situ observations, bu
 comparison for LADCP stations is not feasible because of contamination by near-inertial wave 
 energy. But the observations at A1 furnish a time-series of the ratio HKE to APE 
 \fignmlp[C3.fig:TBEAM_KE2PE]{Panel d}. Over the first period APE was much larger 
-than kinetic part that is speculated as an anti-node was located nearby. In the later period the 
+than kinetic part which is consistent with an anti-node located nearby. In the later period the 
 ratio was tending towards a plane wave value, and hence, the anti-node magnitude was lessen either 
 because of change in position or diminish of interference phenomena. Whilst the numerical 
 simulation 
@@ -1151,11 +1059,11 @@ the anti-node locations ($kx = 0$) any changes in wave content will be amplified
 part. The amplification factor becomes infinitely large as $r \rightarrow 1$ and a pure standing 
 wave develops. In the numerical experiments location A1 exhibited higher variability in kinetic 
 energy since $\sigma_{APE}/<E_{APE}> = 33\%$ and $\sigma_{HKE}/<E_{HKE}> = 81\%$.\\
-During the TBEAM program measurements of potential energy ($91\%$) were more stationary as well 
-than kinetic energy ($67\%$). This lends additional confidence that the A1 mooring was located 
+During the TBEAM program measurements of only $9\%$ of potential energy was non-stationary, whereas 
+kinetic energy - $33\%$. This lends additional confidence that the A1 mooring was located 
 close to the anti-node and variability in tidal energetics was caused by adjustments in 
 interference pattern. Further these inferences are tested by spectral decomposition. Since the 
-moored measurement provides only a point-wise observation, the used previously method can 
+moored measurement provides only a point-wise observation, the used previously method (Appendix A.1) can 
 not be directly applied. But if it is assumed that interfering waves do not have any phase lags or 
 that cross-terms in energy quantities can be omitted, then a non-deterministic decomposition is 
 applicable. It implies that the actual signals can not be back-synthesized and only magnitude or 
@@ -1164,15 +1072,16 @@ a node and an anti-node where two interfering waves are in quadrature. So A1 loc
 possible to deduce parameters of wave components taken part in interference.\\
 The details of the non-deterministic decomposition are expressed in Appendix A.2 and an example 
 is demonstrated on \fignm{C3.fig:ex_spectra}. The fit seeks only 5 circular Fourier components 
-which leads to low angular resolution, only opposite traveling waves can be separated. In more 
-complicated sees this produces wrongly identified direction such as in example for the numerical 
-experiment. Main energy lobe is off by $\sim 30 \%$ in comparison to decomposition based on antenna 
+which leads to low angular resolution, only opposite traveling waves can be separated. Under more 
+complicated conditions the method produces wrong estimate of direction such as in the example for the numerical 
+experiment. Main energy lobe is off by $\sim 20^{\circ}$ in comparison to decomposition based on 
+antenna 
 (Appendix A.1). To further assess applicability, numerical simulation results from a wavelength 
 window centered at A1 were divided following the ratio in HKE and APE. Then the point-wise 
 decomposition was applied and compared to the antenna analysis \fignmp{C3.fig:test_spectra}. The 
 results highlight importance of interference cross-terms in relation to a position in the standing 
 wave. The worst case is when measurements are made near a node, so that phase lags lead to large 
-bias. But unlike to theoretical implications, the best performance is found near locations close to 
+bias. But unlike the theoretical implications, the best performance is found near locations close to 
 an anti-node or when the ratio is less than 1. The contradiction arises due to Poincare wave 
 dynamics that involve appearance of phase lags between pressure and currents via Coriolis force. 
 Hence, in the current formulation the point-wise decomposition considers interference of 
@@ -1181,56 +1090,40 @@ correctly as well as its bearing \fignmlp[C3.fig:test_spectra]{a, b}. The reflec
 other hand was underestimated, and its travel direction is never correctly diagnosed. Overall, the 
 point-wise decomposition provides a conservative estimate of the incident wave field and a 
 qualitative picture on the reflected wave.\\
-Now the point-wise decomposition is applied to the TBEAM observations \fignmp{C3.fig:dcmp_A1} 
-that were harmonically analyzed over 5-day running window. To aid comparison the 
-numerical simulation are plotted along. In both results amount of incident energy is similar to the 
-total signal. Overall there was a growth intermittent with a short period of decline. Considering 
-the the numerical experiments growth was driven in part by increase in the baroclinic-tide 
-production at the Macquarie Ridge. But primary variation arises 
-from the time-variable refraction causing spatial energy redistribution seen as 
-movement of the beam and/or its focusing. To estimate these contributions consider the beam to 
-be of a Gaussian-bell shape in transect, $F(x_n) = A e^{-\frac{(x_n - a)^2}{2w^2}}$, where $n$ - 
+Here the described point-wise method is used to document temporal variability over a sliding 5 day \fignmp{C3.fig:dcmp_A1}. To aid comparison the numerical simulation are also plotted. In the model and measurements amount of incident energy is similar to the total signal. And both show a growth intermittent with a short period of decline (doy 40-50). As for the numerical experiments the growth was driven in part by increase in the baroclinic-tide production at the Macquarie Ridge. But primarily variation arose from the time-variable refraction causing spatial energy redistribution seen as movement of the beam and/or its focusing (section). To estimate these contributions consider the beam to be of a Gaussian-bell shape in transect, $F(x_n) = A e^{-\frac{(x_n - a)^2}{2w^2}}$, where $x_n$ - 
 across beam coordinate, $a$ - location of the beam's maximum, $w$ - width defined where intensity 
-falls to 2/3 of maximum. From the numerical experiments an average width is $70~km$ and mean 
+falls to 2/3 of its maximum. From the numerical experiments an average width is $70~km$ and mean 
 distance to A1 is $d_{A1} = x_n - a = 90~km$. Further taking differential produces,
 \begin{align}
 \frac{\delta F(x_n)}{F(x_n)} = \frac{\delta A}{A} + \frac{\delta d_{A1}}{w} \frac{d_{A1}}{w} + 
 \frac{\delta w}{w} \frac{d_{A1}^2}{w^2}
 \end{align}
 The terms represent variation in point-wise observation due to change in beam's overall magnitude, 
-in position relative to the mooring and width of the beam. Using values from the numerical 
-experiments, average contributions are estimated as $\sim 10\%$, $\sim 50\%$ and $\sim 40\%$ 
-respectively, \fignmlp[C3.fig:gen_var_beam]{d} shows how the actual parameter varies and their 
+in position relative to the mooring, and due to width of the beam. Using values from the numerical 
+experiments, average contributions are estimated as $\sim 10\%$, $\sim 50\%$ and $\sim 40\%$. \fignml[C3.fig:gen_var_beam]{d} presents how the actual parameter varies and their 
 contributions in each particular case. It is apparent that overall increase is mainly associated 
 with beam becoming closer to the observational point \fignmlp[C3.fig:gen_var_beam]{d, black line}. 
 And then this is additionally modulated by width of the beam \fignmlp[C3.fig:gen_var_beam]{d, blue 
-line}. For instance, two extreme values at the start and the end of the field-period simulation  
-correspond to cases of focused beam when refraction caused beam's self-interference (e.g.)
-\fignmp{C3.fig:meso_examp}. In the first case, position and overall weak magnitude led to smaller 
-flux ($1.3~kW/m$), oppositely, closer position and stronger intensity produced higher value 
-($4.4~kW/m$). In other instances (between 20 and 30 day of year) the different contributions might 
-be of opposing effect leading to only small alterations in the flux magnitude. Further, let 
+line}. For instance, two extreme values at the start and the end of the field-period simulation (day 10 and 55) correspond to cases of focused beam. In the first case, position and overall weak magnitude led to smaller 
+flux ($1.3~kW/m$), whereas around day 55 closer position and stronger intensity produced higher value 
+($4.4~kW/m$). In other instances (between 20 and 30 day of year) the different contributions are of opposing effect leading to only small alterations in the flux magnitude. Further, let 
 consider an incidence angle \fignmlp[C3.fig:gen_var_beam]{d}. Its variations are closely related to 
 the changes in beam's bulk parameters. This is emphasized by any southward (angle is increasing) 
 deviation corresponding to beam location further away from the mooring and smaller flux magnitude. 
 And opposite holds for the northward orientation.\\
-Comparing the numerical experiment with the TBEAM observations a resemblance is observed 
-\fignmlp[C3.fig:dcmp_A1]{Panels a, c}. So that using the previous inferences it is speculated that 
-the A1 mooring recorded alterations in position of the beam that served as a primary reason for 
-flux magnitude decrease or increase and variability in the incident angle. Mechanism of this lies 
-in refraction by an anticyclonic eddy that was present during the field period. The ROMS model had 
-a moderate skill in simulating this mesoscale dynamics and so the point-wise obtained parameters 
-are in close correspondence to the factual measurements. Though the eddy in the numerical 
+
+Comparison of the numerical experiment with the TBEAM observations suggest an explanation for the measured evolution  \fignmlp[C3.fig:dcmp_A1]{Panels a, c}. Using the previous inferences the A1 mooring recorded shifts in position of the beam that served as a primary reason for flux magnitude decrease or increase, as well as variability in the incident angle. Mechanism is provided by refraction by an anticyclonic eddy that was present during the field period. The ROMS model had a moderate skill in simulating this mesoscale dynamics and so the point-wise obtained parameters are in close correspondence to the measurements. Though the eddy in the numerical 
 experiments was situated a half degree south $\sim 70~km$ in comparison either to AVISO or HYCOM, 
 its center was over $A1$ and $F5$, while from the satellite altimetry - over $F3$. Nevertheless, 
 the timing was simulated correctly as most active interaction has taken place in February 2015. 
 This produced in the numerical experiment a southward shift of the beam and consequently, the 
-energy flux turned southward \fignmlp[C3.fig:dcmp_A1]{Panel c, dots} and later rebounded back by 
+energy flux turned southward \fignmlp[C3.fig:dcmp_A1]{Panel c, dots} and later shift back by 
 $10^\circ$ northward.\\
-The point-wise decomposition also emphasizes that portion of the reflected energy was weaker in the 
+
+The point-wise decomposition also emphasizes that the reflected portion of the energy was weaker in the 
 TBEAM measurements \fignmlp[C3.fig:dcmp_A1]{Panel b}. Following assessment of the method and result 
 for the numerical simulations the reflected part in the TBEAM is 3-4 times smaller than it was 
-calculated. Thence, the reflected wave was at maximum $0.5~kW/m$ during the TBEAM observations. It 
+calculated. Thence, the reflected wave was at maximum $0.5~kW/m$. It 
 was mostly present during January and ended with a short burst over the first week of February.  
 Later in the month the reflected wave was mostly absent. Such temporal history is strongly 
 supported by changes in the KE-PE ratio that was mostly below 1 during the first period 
@@ -1248,7 +1141,7 @@ of the numerical experiments - $40(25)\%$ with upper limit - $60(47)\%$. In the 
 given estimates calculated from the decomposition based on antenna. Hence, the point-wise 
 decomposition overestimates this ratio, mainly because of a small bias in the incident signal for 
 which adjustment was not undertaken. Thence, the numerical experiments have several times larger 
-reflected energy present at A1. Origin of this radiation located at in several locations, i.e. 
+reflected energy present at A1. Origin of this radiation located at several locations, i.e. 
 Tasmania continental slope, reflected waves from the ETP and local generation at the 
 Cascade seamount. The latter source constitutes the major portion. Dynamics of barotropic energy 
 conversion at this location is similar to the Macquarie Ridge, i.e. phasing of the incident beam 
@@ -1258,24 +1151,22 @@ dynamics as many wave field components interact with the seamount, but also due 
 mesoscale currents. For example, in all the experiments with mesoscale currents there is an overall 
 generation at the seamount, but in the 'uniform' experiment the internal tides are mainly 
 destroyed with the reflected energy being minuscule at A1. So it seems likely that the ROMS 
-experiments were not able to predict this part of the internal tide dynamics correctly. 
-Nevertheless, it appears that amount of the reflected energy is partly depends on the beam 
-incidence parameters, but additional investigation was not performed.\\
+experiments were not able to predict the reflected portion of the internal tide dynamics adequately at TBEAM study sites.\\
 
 This discussion draws conclusion that information provided by the A1 mooring and LADCP stations 
 were well descriptive of the beam characteristics. Nevertheless, LADCP stations seem to 
 largely overestimate fluxes because of aliasing with near-inertial internal waves. The time 
 variability observed at the A1 mooring appears to be a result of at least 3 processes including 
 long-period adjustments in baroclinic tide production at the Macquarie Ridge, refraction by 
-mesoscale eddies and reflection at Tasmania and the Cascade Seamount. All of these stipulate high 
-nonstationarity in the observations, so that energy characteristics can largely vary on 
+mesoscale eddies and variability of reflection at Tasmania and the Cascade Seamount. All of these highlight 
+non-stationarity in the observations, so that energy characteristics can largely vary on 
 time scales compared to the semidiurnal period. As well change in position of the beam relative to 
 the mooring can further complicate interpretation of the signal. So that extrapolation from a 
 single-moored observation does not necessarily produce a satisfactory estimate on the beam bulk 
 parameters such as intensity. Nevertheless, performed here comparison between the numerical 
 experiments and the factual observations conclusively shows that during the TBEAM observational 
 period the beam was located and oriented southward then the time-averaged picture provided 
-by satellite altimetry. This was emphasized by \ref{C3:tab.prms}. While the numerical experiment 
+by satellite altimetry. This was emphasized by \tblnm{C3:tab.prms}. While the numerical experiment 
 might overestimate importance of refractive phenomena due to stronger mesoscale feature in the 
 region, it is also likely that the beam was shifting its location which is documented by energy 
 flux variability. These observations are pertinent to the beam reflection from Tasman continental 
