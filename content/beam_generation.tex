@@ -250,6 +250,7 @@ Here the low mode is characterized by rates of conversion from barotropic tide t
 \citep{simmons2004internal, kurapov2003m}, depth-averaged energy flux, horizontal kinetic energy 
 (HKE) and available potential energy (APE) that were found as
 \begin{align}
+\label{C3.eq:conv}
 C_{bt\to 1} = -\frac{1}{2}(\cj{\vec{u}_{bt}} \cdot \nabla H) p_{1}|_{z = -H(x,y)}\\
 \vec{F} = \frac{1}{2} \frac{1}{H} \cj{\vec{u}_1} p_1 \int_{-H}^{0} \psi_1(z) \psi_1(z) dz\\
 HKE = \\
@@ -311,7 +312,7 @@ significant differences in spatial structure, though magnitude of latter was rou
 The semidiurnal barotropic tide propagates into the southern Tasman Sea from the North 
 \fignmp{C3.fig:BT}. Its phase increases in counterclockwise manner with maximum amplitude of sea 
 level located along 
-New Zealand's coast, behavior typical to Kelvin wave \citep{walters2001ocean}. As well 
+New Zealand's coast, a behavior typical of Kelvin wave \citep{walters2001ocean}. As well the 
 strong tidal phenomena is observed in shallow Bass Strait, but relatively weak anywhere else in the 
 basin. 
 The simulated sea surface tidal oscillation closely follows TPXO7.2 with gross 
@@ -331,8 +332,8 @@ confined
 to two seamounts that are separated with a sill. This valley topography has more gradual slopes and 
 should play 
 a secondary role in production of the tidal beam. But from distribution of conversion rates 
-\fignmlp[C3.fig:gen]{b} and respective spatial averages \fignmlp[C3.fig:gen]{c} it emerges a 
-different picture that is also subject to large changes between experiments. On average, 
+\fignmlp[C3.fig:gen]{b} and their spatial averages \fignmlp[C3.fig:gen]{c} a different perspective 
+emerges that is also marked by significant changes between the experiments. On average, 
 the part of the ridge confined to two seamounts converts 1.6 GW of surface tide into mode-1 
 baroclinic tide. This is a half of production at Kaena Ridge, 
 Hawaii 
@@ -346,59 +347,77 @@ interference creates a standing wave in Solander Trough \fignmp{C3.fig:stand_wav
 characterized by a node in horizontal kinetic energy with fluxes revolving in counterclockwise 
 direction \fignmp{C3.fig:stand_wave} as it should be in the Southern Hemisphere. By the directional 
 method (appendix \ref{C3.app:A1}) the standing wave is separated into elemental east-west oriented 
-components \fignmlp[C3.fig:stand_wave]{b}. On the leeward side of the Macquarie Ridge generation 
+components \fignmlp[C3.fig:stand_wave]{b, c}. On the leeward side of the Macquarie Ridge generation 
 takes place at the same seamounts but there is a region of destruction that coincides with 
-incidence of waves emitted from the escarpment. There generation has richer structure both due to 
-more complicated topography that is crisscrossed by canyons but also because of the Macquarie ridge 
-produced waves. Quantifying energy transfer across the trough and comparing with spatially 
-integrated conversion rates highlights the fact that wave field is being fed by waves reflected 
-from the slope's supercritical topography and only partly by barotropic field conversion. The 
-system is similar to Luzon strait where resonance conditions exist between two parallel ridges 
-\citep{buijsman2014three}. In 
+incidence of waves emitted from the escarpment. On the trough's opposite side generation has 
+richer structure both due to more complicated topography crisscrossed with canyons but also due to 
+effect of the Macquarie ridge waves on the local generation. Quantifying energy transfer across the 
+trough 
+and comparing with spatially integrated conversion rates \fignmlp[C3.fig:stand_wave]{d} highlights 
+the fact that, on average, wave field is 
+being fed by waves reflected from the surrounding supercritical topography and only partly by 
+barotropic field conversion. The 
+system is similar to Luzon strait where resonance conditions exist between two almost parallel 
+ridges \citep{buijsman2014three} that are separated by a distance of 0.6 mode-1 wavelength. In 
 the case of the Macquarie Ridge and the Campbell Plateau resonance is only partial since the former 
-has an orientation of $15^{\circ}$ relative to the latter. At latitude of $49.5^{\circ}$ the 
-distance corresponds to 3/4 of mode-1 wavelength. Such spacing makes waves travel time across the 
-trough to be an important parameter that a partial reason for variable production levels and 
-pattern. To illustrate this let detail generation dynamics in simulations ('2014' and '2015, 
-d10-15') of opposite regimes.\\
+has an orientation of $15^{\circ}$ relative to the latter. As well the separation distance at 
+$49.5^{\circ}$ is 3/4 of mode-1 wavelength. Such spacing makes wave's travel time across the 
+trough to be a relevant parameter for the observed variability in production levels and spatial 
+distribution. To illustrate this further let detail dynamics in simulations 
+with diametrically different generation regimes ('2014' and 'd10-15', \fignml[C3.fig:gen]{c}).\\
 
-Conversion rate shows how much work was done by baroptropic tide to displace isopycnal interfaces. 
-This is understood as work against buoyant forces. But it can happen that barotropic forcing will 
-be oppositely directed if somewhere in the water column other forces are present. For case of 
-'2014' 
-simulation \fignmlp[C3.fig:gen_2d]{a, b} during ebb tide on tideward side there is net energy 
-conversion to baroclinic field even that along bottom an internal wave ray is developing by upward 
-displaced interfaces as a result of previous tidal phase. Hence, at these location a newly 
-generated internal wave does work against downward barotropic flow. And this produces negative 
-conversion \fignmlp[C3.fig:gen_2d]{e} at some moment. As tide turns conversion changes sign 
-again. Overall, period averaged transfer is positive, i.e. surface tide losses energy. In 
-the other experiment presented, '2015, d10-15', \fignmlp[C3.fig:gen_2d]{c-d}, there is an 
-intensification 
-due to passage of a mode-1 wave. In actuality, its propagation from Solander Trough 
-(at longitude of $165^{\circ}$) and over the sill is the major difference between two simulations. 
-So in '2015'-setting similar along slope advancement of an internal wave ray is observed, but now 
-due to shoaling mode-1 
-conversion is positive throughout tidal cycle.\\
-The contrary situation is found on leeward side ($164.5^{\circ}$) where surface tide current has the
-opposite direction. For '2015' it appears that propagating mode-1 is losing energy since it does 
-work against barotropical forcing by dipping isopycnals. Though in transition some energy is lost 
-from surface tide. In '2014' there is a reflection of an internal wave ray as phase is advancing 
-onto the sill. This coincides with upward barotropic flow that in total leads to intensification. 
-In total, period averaged conversions have different signs on leeward side. Comparison of mode-1 
-wave 
-position in the trough at ebb tide \fignmlp[C3.fig:gen_2d]{a,c} suggests difference in timing of 
-the 
-remote wave arrival or its passage. This is explored on \fignmlp[C3.fig:gen_2d]{g}. The total 
-signal shows a region of low phase change eastward of $165^{\circ}$ that corresponds to 
-concentration of kinetic energy \fignmlp[C3.fig:stand_wave]{a}. Decomposition of the signal 
-presents 
-it roughly as a sum of the ridge generated waves (eastward propagation) and the escarpment 
+Vertically integrated conversion rate (\ref{C3.eq:conv}) quantifies how much work was done by 
+baroptropic tide in displacing isopycnal interfaces against buoyant forces throughout a water 
+column\footnote{Following this concept a derivation from the first principles is provided in 
+appendix 
+\ref{C3.app:B} \citep{kurapov2003m, kelly2010topo}.}. So it can be recognized 
+that 
+barotropic forcing might be oppositely directed to vertical motions if somewhere in the 
+water column other processes take place. For case of '2014' simulation \fignmlp[C3.fig:gen_2d]{a, 
+b} 
+during ebb tide on the tideward side (solid black line, $164.2^{\circ}$) there is vertically net 
+energy 
+conversion into the baroclinic field \fignmlp[C3.fig:gen_2d]{e}. But note along the bottom an 
+internal wave ray is developing as a consequence of preceding flood tide and revealed by uprising 
+of isopycnals. 
+Hence, at this location and depths a locally generated internal wave does work against 
+downward barotropic flow and this contribution is increasing with time. At about hour 7 on 
+\fignml[C3.fig:gen_2d]{e} the net conversion becomes negative, but then flips sign as the 
+tidal currents reverse direction \fignmlp[C3.fig:gen_2d]{b}. Averaged over tidal period the 
+transfer is positive, i.e. the surface tide losses energy, but weak compare to 'd10-15' simulation 
+\fignmlp[C3.fig:gen_2d]{c, d}. In the latter there is an enhancement of generation at the sill due 
+to presence of non-local internal tide. Its propagation from Solander Trough ($165^{\circ}$) and 
+over the sill is the major difference between the two experiments. In setting of \sqm{d10-15} 
+along slope formation of an internal wave is still found, but now due to the shoaling 
+mode-1, conversion is positive throughout the full tidal cycle. Simply stating, the remote signal 
+supports 
+generation during periods of the tidal current reversals, so that excess of energy is drawn from 
+the surface tide into the baroclinic field.\\
+Clearly, phase difference between barotropic forcing and non-local signal is a crucial parameter 
+in describing the system dynamics. On the leeward side (black dashed line, $164.5^{\circ}$) the 
+vertical 
+component of the barotropic flow has the opposite direction. For \sqm{d10-15} propagating mode-1 is 
+losing energy as it is displacing isopycnals contrary to the forcing. While in \sqm{2014} there is 
+a reflection seen as change in phase progression from downward-westward to upward-eastward in an 
+internal wave in Solander Trough \fignmlp[C3.fig:gen_2d]{a, b}. The reflection coincides with the 
+upward barotropic flow that in total leads to higher production of the baroclinic tide. And the  
+conversions highlight the marked dynamical differences by having opposite signs on the leeward 
+side \fignmlp[C3.fig:gen_2d]{f}. These points are further explored on \fignmlp[C3.fig:gen_2d]{g} 
+where phase distribution of the mode-1 along the section is given. The total signal shows a region 
+of almost constant phase change eastward of $165^{\circ}$ that corresponds to 
+concentration of the node in HKE (\fignml[C3.fig:stand_wave]{a}, dashed line marks the considered 
+transect). Decomposition of the signal 
+reveals the balance as a sum of the ridge-generated waves (eastward propagation) and the escarpment-
 originated (westward) waves. The actual relation will depend on relative magnitudes 
 \citep{martini2007diagnosing}. 
-But westward of $165^{\circ}$ there is almost a free propagation in '2015' of the ``escarpment" 
-waves as the total signal closely corresponds to them. But in '2014' due to sill's generation and  
-strong reflection, phase difference with local baroptropic tide falls below 
+Westward of $165^{\circ}$ there is almost a free propagation in '2015' of the ``escarpment" 
+waves as the total signal closely corresponds to them. However in '2014', due to leeward sill 
+generation 
+and  
+strong reflection, the phase difference with the local baroptropic tide falls below 
 $90^{\circ}$, so that there is an intensification of generation.\\
+
+
 The described situation provides a several approaches to narrate variability in conversion rates. 
 At first, it is clear that amount of remote energy crossing the Macquarie Ridge through the sill 
 will 
@@ -1257,6 +1276,40 @@ are found. And these then are used in reconstructions.
 \subsubsection{Point-wise analysis}
 \label{C3.app:A2}
 
+\subsection{Derivation of conversion from the first principles}
+\label{C3.app:B}
+While \eqref{C3.eq:conv} provides a convenient way to quantify energy transformations, it does 
+not have much room for physical interpretation. Such as in complicated situation when along with 
+local baroclinic tide production a remote signal is present. The resultant perturbation of bottom 
+pressure might lead to rather ambiguous result of internal tide destruction. It is said that such 
+regime is to occur when a phase difference between $w_{bt}$ and $p_{1}$ is in range of 
+$(\pi/2,~3\pi/2)$. This is understood as an internal tide performing work against barotropic 
+forcing. Unfortunately, this statement does not directly follow from \eqref{C3.eq:conv}. Hence, to 
+provide cleaner physical picture, let derive the expression for conversion rate from the first 
+principles. Body force of \citep{baines1982internal} is performing work by displacing isopycnal 
+surfaces 
+throughout a water column,
+\begin{equation}
+\label{C3:eq.convd1}
+C(z) = \frac{dW(z)}{dt} = F_{B} w_{bc} = \frac{N^2 (-\vec{u} \cdot \nabla h) z}{i \omega h} 
+\frac{d 
+\xi}{dt} = \frac{w_{bt}}{i \omega h} \frac{z d(-b)}{dt} = -\frac{1}{h} w_{bt} zb
+\end{equation}
+where isopycnal displacements $\xi$ were changed to buoyancy, $b = -N^2 \xi$ and temporal 
+variation 
+was assumed to be harmonic, $\sim e^{i \omega t}$. On a final step, integration by parts can be 
+employed as,
+\begin{equation}
+\label{C3:eq.convd2}
+\int_{-h}^{0} z b dz = \int_{-h}^{0} z d \big( \int^0_{z} b dz \big) = \big( z \int^0_{z} b dz 
+\big)\big|_{-h}^0 - \int_{-h}^{0} dz \int_{z}^{0} b dz^{\prime} = h (\int_{-h}^{0}b dz - 
+\frac{1}{h} \int_{-h}^{0} dz \int_{z}^{0} b dz^{\prime})
+\end{equation}
+The last expression is a bottom pressure perturbation. Noteworthy, a baroclinicity condition was 
+not employed. Combining \eqref{C3:eq.convd1} and \eqref{C3:eq.convd2}, familiar result 
+for conversion rate is obtained. Note that a similar approach to \eqref{C3:eq.convd1} was used 
+by \citep{nash2006structure} to estimate an upper limit on emitted energy.\\
+
 \subsection{Analytical solution for generation at knife-edge ridge}
 Let consider a simplified problem of the internal tide generation at a ridge that has an 
 extent $a$ in zonal direction, but infinitely small width. Full solution will not be pursued, but 
@@ -1788,36 +1841,3 @@ position in ROMS-experiments relative to satelite altimetry. }
 \bibliography{/home/dmitry/Bibtex_lib/my_first_lib}
 
 \end{document}
-
-%%%% LEFTOVERS
-%% Derivation of conversion from the first principles
-%While \eqref{C3:eq.conv} provides a convenient way to quantify energy transformation, it does 
-%not have much room for physical interpretation. Such as in complicated situation when along with 
-%local baroclinic tide production a remote signal is present, resultant perturbation of bottom 
-%pressure might lead to rather ambiguous result of internal tide destruction. It is said that such 
-%regime is to occur when a phase difference between $w_{bt}$ and $p_{1}$ is in range of 
-%$(\pi/2,~3\pi/2)$. This is understood as an internal tide performing work against barotropic 
-%forcing. Unfortunately, this statement does not directly follow from \eqref{C3:eq.conv}. Hence, to 
-%provide cleaner physical picture, let derive expression for conversion rate from the first 
-%principles. Body force of \citep{baines1982} is performing work by displacing isopycnal surfaces 
-%throughout a water column,
-%\begin{equation}
-%\label{C3:eq.convd1}
-%C(z) = \frac{dW(z)}{dt} = F_{B} w_{bc} = \frac{N^2 (-\vec{u} \cdot \nabla h) z}{i \omega h} 
-%\frac{d 
-%\xi}{dt} = \frac{w_{bt}}{i \omega h} \frac{z d(-b)}{dt} = -\frac{1}{h} w_{bt} zb
-%\end{equation}
-%where isopycnal displacements $\xi$ were changed to buoyancy, $b = -N^2 \xi$ and temporal 
-%variation 
-%was assumed to be harmonic, $\sim e^{i \omega t}$. On a final step, integration by parts can be 
-%employed as,
-%\begin{equation}
-%\label{C3:eq.convd2}
-%\int_{-h}^{0} z b dz = \int_{-h}^{0} z d \big( \int^0_{z} b dz \big) = \big( z \int^0_{z} b dz 
-%\big)\big|_{-h}^0 - \int_{-h}^{0} dz \int_{z}^{0} b dz^{\prime} = h (\int_{-h}^{0}b dz - 
-%\frac{1}{h} \int_{-h}^{0} dz \int_{z}^{0} b dz^{\prime})
-%\end{equation}
-%The last expression is a bottom pressure perturbation. Noteworthy, a baroclinicity condition was 
-%not employed. Combining \eqref{C3:eq.convd1} and \eqref{C3:eq.convd2}, familiar result 
-%for conversion rate is obtained. Note that a similar approach to \eqref{C3:eq.convd1} was used 
-%by \citep{nash2006structure} to estimate an upper limit on emitted energy.\\
