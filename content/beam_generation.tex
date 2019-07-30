@@ -14,77 +14,30 @@
 	}
 
 \section*{Abstract}
-\textbf{NEW VERSION:}\\
-Variability in conversion of barotropic tidal energy into internal tidal waves at the Macquarie 
+Variability in the conversion of barotropic tidal energy into internal tidal waves at the Macquarie 
 Ridge is addressed by carrying out numerical experiments with variable hydrographic conditions. The 
 main goal of the simulations is to compliment a field program, the Tasman TIdal Dissipation 
-Experiment (TTIDE), which was designed to study the fate of the radiated internal tides. The ridge 
-and the nearby Campbell Plateau form a double-ridge system known to be conducive to strong 
-interference and complicated wave mechanics. Primary dynamical feature is coupling of waves, 
-emitted 
-from one ridge, with local wave generation, occurring at the another, to amplify or reduce the 
-conversion. So that at the Macquarie Ridge found change in the energy transfers to mode-1 by $\pm 
-10\%$ and in the 
-spatial 
-distribution is 
-strongly associated with characteristic of the remote, plateau-emitted waves. A novel technique for 
-directional decomposition of the interference is utilized to examine the wave-field 
-variability. 
+Experiment (TTIDE), which was designed to study the fate of radiated internal tides as 
+they impinge Tasman continental slope located 1000 km to the west. The Macquarie Ridge 
+and the nearby Campbell Plateau form a double-ridge system found here to be conducive to strong 
+interference and complicated wave mechanics. The waves, emitted from the plateau couple 
+with internal wave generation occurring at the ridge, and consequently drive amplification or 
+reduction in the local conversion. 
+The numerical experiments show that at the Macquarie Ridge energy transfer to mode-1 changes by 
+$\pm 
+10\%$ in magnitude and exhibits spatial variability. These modulations are inherently linked to the 
+coupling with the nearby emitted waves. The remote wave properties are comprehensively examined by 
+a 
+novel technique for directional decomposition of the interfering wave fields. 
 The 
-result emphasizes 
-three-dimensionality of the plateau-emitted waves and the importance of multiple reflections on the 
-wave amplitudes. It is shown that time variability results from water mass movement or  
-position of the local front by controlling wave speed. Additionally, 
-local stratification modulates the reflectivity/transmission and hence, the magnitude of 
-the amplification. Variable strength of the conversion implies basin-scale changes to the wave 
-field 
-that can produce irregular signal in far-field observations such as TTIDE. The results also suggest 
-an 
-important role of the tidal energy 
-loss on the dynamics of the frontal zone.\\
-
-
-
-\textbf{OLD VERSION:}\\
-The Macquarie Ridge south of New Zealand is a strong generator of semidiurnal internal tidal waves 
-forming a 
-baroclinic tidal beam. The beam generation takes place in a complex bathymetric region that is 
-compared to resonant generation that occurs in Luzon Strait. Local oceanographic conditions are 
-highly variable due to presence of the southern subtropical front. These factors produce 
-variability in the generation that was studied by numerical simulations initialized with realistic 
-hydrographic conditions. The investigation's main goal was to compliment a field program, Tasman 
-TIdal Dissipation Experiment (TTIDE), addressed to study fate of the tidal beam. The 
-numerical 
-simulations yielded a mean value of $1.7~GW$ of barotropic $M_2$ energy was converted into a 
-largely mode-1 baroclinic field, with variability of $\pm 10\%$(range - 1.4 and 1.9 GW). The 
-changes were correlated with processes in a topographic gap in the ridge and resulted from passage 
-of remote baroclinic waves emitted by the Campbell Plateau. Direct analysis of the wave field was 
-complicated by interference from multiple wave sources. The complexity was eliminated by a novel 
-decomposition technique. The wave field is resolved into directional spectra found as solution to 
-an inverse problem. The spectral representation allowed for the quantification of the magnitude and 
-arrival time of the remote waves, emphasizing their in-phase relation with the barotropic forcing 
-and thus, amplified generation. Alongside this, multiple reflection constituted large portion of 
-the 
-obtained energy budget. To balance the components this study successfully resorted to 
-Fabry-Perot interference in a cavity.\\
-
-The generation enhancement was strongly depended on the three-dimensional structure of the remote 
-waves 
-rather than along two-dimensional transect arrival time usually associated with the resonant 
-condition and previously used for Luzon strait. Hence, complexity of the problem increases as 
-there 
-is a feedback and coupling in dynamics of 
-generation at the straight ridge and complicated topography of the Campbell 
-Plateau. In the numerical 
-experiments 
-alteration of these processes and the remote wave was induced by phase speed anomalies following 
-changes in 
-stratification, i.e. position of the front. The water mass distribution as well governed 
-transmission of the remote wave energy across the ridge.  Consequently, the ocean state served to 
-trigger adjustments in the coupled system. The described processes bring about variability in the 
-generation and the tidal beam intensity that can cause 
-intermittency in far field, many mode-1 wavelengths away and can affect field observations such as 
-TTIDE.
+result emphasizes non-plane wave propagation and the importance of multiple reflections on the 
+wave amplitudes. It is shown that temporal variability stems from water mass redistribution 
+attributed to dynamics of the local front. Additionally, 
+local stratification modulates the reflectivity/transmission and hence, the degree of 
+the amplification in the double-ridge system. Variable strength of the conversion leads to 
+basin-scale changes to the wave 
+field that can produce irregular signal in far-field observations and variable amount 
+of energy arriving at the Tasmanian slope.\\
 
 \section{Introduction}
 Baroclinic semidiurnal tides originate from heaving of isopycnal surfaces driven by a strong 
@@ -95,39 +48,41 @@ munk1997once} and contributes significantly to internal wave climate \citep{wuns
 interior ocean mixing \citep{wunsch2004vertical}. At most conversion sites because of highly 
 inclined slopes, the radiated 
 internal waves of tidal period (internal tides) have vertical wavenumber spectrum dominated by 
-highly stable low mode \citep{st2002role} able to transmit tidal energy over ocean basin-scale 
-distances \citep{zhao2016global} with yet unknown fate. While generation sites have been identified 
+highly stable low modes \citep{st2002role} able to transmit tidal energy over ocean basin-scale 
+distances \citep{zhao2016global} with as yet unknown fate. While generation sites have been 
+identified 
 \citep{morozov1995semidiurnal, simmons2004internal, arbic2010concurrent} and some have been 
 studied in detail, e.g. Hawaii Islands \citep{rudnick2003tides}, Luzon Strait 
 \citep{alford2015formation}, Mendocino Escarpment \citep{althaus2003internal}, 
 the Bay of Biscal 
 \citep{gerkema2004internal}, and analytical models have been developed \citep{garrett2007internal}, 
-there is still large uncertainty about variability in the conversion and its dynamical reasons.\\
+there is still large uncertainty about variability in the conversion and its dynamics.\\
 
-The variability can simply arise as ocean state changes. Water column stratification directly 
+The variability can arise as ocean state changes. Water column stratification directly 
 impacts internal wave dispersion and generation. In fact, the analytical models of generation 
-emphasize a ratio between angle of internal wave characteristics to bathymetric slope (referred to 
-as slope's criticality \citep{sutherland2010internal, garrett2007internal}) along with a height of 
+emphasize a ratio between angle of internal wave characteristics to bathymetric slope, known  
+as slope's criticality, \citep{sutherland2010internal, garrett2007internal} along with a height of 
 topography as primary 
 quantities in setting conversion levels \citep{llewellyn2003tidal, petrelis2006tidal}. For tall, 
 steeply inclined submarine ridges the energy transfer approaches an upper theoretical limit 
-\citep{petrelis2006tidal, st2003generation} making them ``oases" of barotropic tide 
+\citep{petrelis2006tidal, st2003generation} making them ``hotspots" of barotropic tide 
 scattering and internal tide production \citep{morozov1995semidiurnal, egbert2000significant}. 
 Clearly, the energy rates are modulated by changing buoyancy frequency 
-\citep{holloway1999internal}, especially when transformation of water properties happens at same 
-depths as the steepest bottom gradients \citep{gerkema2004internal}. Nevertheless, in later field 
-studies it was realized that presence of external baroclinic tidal signal leads to even larger 
-temporal variability \citep{Kelly2010a, zilberman2011incoherent, pickering2015structure}. This 
-might occur as opposite ridge slopes affect each other \citep{nash2004internal, 
+\citep{holloway1999internal}, especially when change of water properties takes place near 
+supercritical bottom gradients \citep{gerkema2004internal}. Nevertheless, in later field 
+studies it was realized that presence of nonlocal, baroclinic tidal signal leads to even larger 
+temporal variability \citep{Kelly2010a, zilberman2011incoherent, pickering2015structure}.\\
+
+
+
+This 
+might occur as opposite slopes of single ridge affect each other \citep{nash2004internal, 
 zilberman2011incoherent, echeverri2010internal} or due to spatially inhomogeneous distribution of 
-production hotspots \citep{osborne2011spatial, ponte2013coastal}, or as separate topographic 
+production hotspots \citep{osborne2011spatial, ponte2013coastal}, or as neighboring topographic 
 features mediate each others generation energy levels \citep{xing1998three, buijsman2012modeling, 
 klymak2013parameterizing, buijsman2014three}. The present investigation addresses 
-temporal and spatial variability of internal tide generation happening at the Macquarie Ridge, 
-south from 
-New Zealand. The Tasman Sea geometry \fignmp{C3:fig:geo.map} suggests that 
-location and characteristics of major sea bottom features lead to complex internal tide regime with 
-potential similarities to well-studied Kaena Ridge and Luzon Strait.\\
+temporal and spatial variability of internal tide generation at the Macquarie Ridge, 
+south from New Zealand \fignmp{C3:fig:geo.map}.\\
 
 The Macquarie Ridge is scatterer of barotropic energy with the radiated waves forming a baroclinic 
 tidal beam \citep{zhao2016global}. Its fate was a subject of a recent field 
@@ -137,10 +92,8 @@ because of the neighboring Campbell Plateau. It is possible that similarly to Lu
 constructive interference of the radiated waves at generation sites can substantially amplify 
 energy transfer from barotropic tide \citep{buijsman2012double, echeverri2010internal}. In turn, 
 this can affect magnitude of the beam and far-field observations. Oceanographic conditions present 
-additional difficulties as the Macquarie Ridge is found in region of convergence between 
-subtropical (STW) and 
-subpolar (SAW) water masses 
-\citep{chiswell2015physical}. 
+additional difficulties as the Macquarie Ridge is located in region of interaction between 
+subtropical (STW) and subpolar (SAW) water masses \citep{chiswell2015physical}. 
 The zone is bounded by two fronts delimited with surface isohalines of $35.1$ and $34.7$ 
 \citep{belkin1996southern, hamilton2006structure} \fignmp{C3:fig:geo.map}. The Southern 
 Substropical Front 
@@ -157,44 +110,41 @@ insolation and strength of the westerlies.\\
 
 The primary goal of this study was to describe effect of the complex internal wave field on the 
 generation of the tidal beam and how the dynamics evolves in response to the changing oceanographic 
-conditions. These problems were investigated by means of numerical simulations that combine  
-baroclinic tide dynamics and variable, realistic hydrographic conditions (Section 
+conditions. These problems were investigated by means of regional numerical simulations that 
+combine baroclinic tide dynamics and variable, realistic hydrographic conditions (Section 
 \ref{C3.sec:model}). General 
-characteristics of the generation were delineated in Section \ref{C3.sec:main_res}. Then primary 
+characteristics of the generation are described in Section \ref{C3.sec:main_res}. Primary 
 mechanism of 
-amplification was identified and its connection to the remote internal waves was firmly established 
+amplification is identified and its connection to the remote internal waves is established 
 (Section \ref{C3.sec:amp_mech}) by application of a novel decomposition technique (Appendix 
 \ref{C3.app:A1}). 
-This allowed for 
+This allows for 
 complete description of how generation is governed by three-dimensional wave field, dependent upon 
 the ocean state (Section \ref{C3.sec:3d_var}). To conclude, effect of the discussed dynamical 
-factors were 
-quantitatively related to the conversion levels and intensity of the tidal beam (Section 
-\ref{C3.sec:disc}).\\
+factors are quantitatively related to the conversion levels and intensity of the tidal beam 
+(Section \ref{C3.sec:disc}).\\
  
 \newpage
 
 \section{Numerical experiments and analysis}
 \subsection{Numerical experiments}
 \label{C3.sec:model}
-To study dynamics of internal tide generation around New Zealand, propagation in Tasman Sea and 
-reflection by Tasmania  
-numerical simulations were performed with Regional Ocean Modeling System 
-\citep{shchepetkin2005regional}. 
-The numerical domain covered the southern Tasman Sea from subantractic waters of $60^{\circ}$ S 
-to subtropics in $35^{\circ}$ S. And the zonal extent stretched from $142^{\circ}$ to $172^{\circ}$ 
-E. This ensued correct representation of rich regional oceanographic conditions. The horizontal 
-grid spacing was taken to be of $1/32^{\circ}$ on average corresponding to discretization of 3 km 
+Numerical simulations were performed with Regional Ocean Modeling System 
+\citep{shchepetkin2005regional} to study dynamics of internal tide generation around New Zealand, 
+propagation in Tasman Sea and reflection by Tasmania. The domain covered the southern Tasman Sea 
+from $60^{\circ}$ S to $35^{\circ}$ S, the zonal extent stretched from $142^{\circ}$ to 
+$172^{\circ}$ E. The horizontal grid spacing was $1/32^{\circ}$ on average corresponding to 
+discretization of 3 km 
 in zonal direction and 2.5 km in meridional. The nonuniformly separated, vertical 50 $s$-levels 
 were placed to smoothly follow subsurface terrain.\\
-Such discretization of vertical momentum equation tends to induce artificial, horizontal  
+Such discretization of vertical momentum equation can induce artificial, horizontal  
 along-slope flows \citep{haidvogel1999numerical} due to errors in reproducing of pressure 
 gradient force. Especially severe errors are made by steep terrain. The misbehavior is usually 
 resolved by artificial smoothing of topography. This procedure additionally increases numerical 
-stability, but has an adverse effect on internal tide generation \citep{di2006numerical} since 
-primary production sites are collocated with large topographic gradients. To test the numerical 
+stability, but has an adverse effect on dynamics of internal tide \citep{di2006numerical} since 
+its generation sites are collocated with large topographic gradients. To test the numerical 
 setup, a sensitivity study was carried out by performing additional experiments with grid size of   
-$1/8^{\circ},~1/16^{\circ},~1/64^{\circ}$. The essential for this study 
+$1/8^{\circ},~1/16^{\circ},~1/64^{\circ}$. Essential for this study 
 internal tide behavior manifested at $1/16^{\circ}$ and converged for $1/32^{\circ}$ and 
 $1/64^{\circ}$ cases with no marked differences observed.\\
 
@@ -213,22 +163,22 @@ mostly followed linear dynamics with vertical accelerations to have negligible c
 The horizontal boundary conditions were imposed to be open for depth-averaged, barotropic flows 
 following recommendations of \cite{marchesiello2001open}. The baroclinic fields were  
 nudged to zero by linearly increasing lateral viscosity and diffusivity over sponge layers. Through 
-the same outer boundaries numerical simulations were forced with barotropic tide. The tidal 
+the same outer boundaries numerical simulations were forced with barotropic tide. The $M_2$ tidal 
 currents and sea level were derived from TPXO atlas, version 7.2 \citep{egbert2002efficient} and 
-prescibed as volume transports linearly interpolated onto the model's grid. It was used only the 
-largest semidiurnal 
-constituent $M_2$. Amplitude ratio between the principal lunar and solar components is 4-to-1 
-suggestive of slight open-ocean spring-neap modulation. The diurnal species are weak in the region 
-except shoals east of New Zealand \citep{walters2001ocean}.\\
+prescibed as volume transports linearly interpolated onto the model's grid. This study considered 
+only $M_2$ constituent since amplitude ratio with $S_2$ is 4-to-1 suggestive of 
+slight open-ocean 
+spring-neap modulation. The diurnal species are weak in the region except shoals east of New 
+Zealand \citep{walters2001ocean}.\\
 
-To investigate variations of baroclinic tide dynamics several ocean states were prescribed and 
-analyzed separately. In the simplest setting lateral gradients in water properties were absent, 
-while buoyancy frequency was set to be representative of the Tasman Basin. The second set of 
-simulations 
-was comprised to investigate interannual and interseasonal variability (Table 1). And the third 
-calculation was intended to cover period of TTIDE/TBEAM/Tshelf field programs 
-\citep{pinkel2015breaking}, a single experiment once initialized was left to proceed for three 
-months.
+Several ocean states were prescribed and analyzed separately to investigate variations of 
+baroclinic tide dynamics. In the \sqm{uniform}-case setting lateral gradients in water properties 
+were 
+absent, 
+while buoyancy frequency was set to be representative of the Tasman Basin. The second type of 
+simulations was performed to investigate interannual and interseasonal variability (Table 1). The 
+third calculation was intended to cover whole period of TTIDE/TBEAM/Tshelf field programs 
+\citep{pinkel2015breaking}.
 \begin{table}
 	\caption{Carried out numerical experiments}
 	\begin{tabular}{ |p{3cm}||p{5cm}|p{5cm}|  }
@@ -255,61 +205,50 @@ The simulations with variable conditions were at first initialized with HYCOM hi
 \footnote{(NAVGEM;	downloaded from hycom.org)} for respective start dates. Then during 
 integration, 
 along with barotropic tidal flow, time-variable, subtidal fields 
-of horizontal currents, temperature and salinity were imposed onto the numerical ocean along the 
-boundaries. Air-sea fluxes obtained from MERRA-reanalysis \citep{rienecker2011merra} were as well 
-utilized to prescribe realistic insolation, air temperature, E-P rate and wind stress.
+of horizontal currents, temperature and salinity were imposed along the 
+boundaries. Air-sea interaction was simulated by utilizing MERRA-reanalysis 
+\citep{rienecker2011merra} to prescribe realistic fluxes of heat, moisture and momentum.
 
 \subsection{Internal tide analysis}
 \label{C3.sec:anlsys}
-As seen in \tblnm{ch2:table_exp} the simulations were carried out for 15 days. In all 
-cases the first 10 days were regarded as spin up period. Particularly it accommodated a single 
-passage of mode-1 from New Zealand 
-to Tasmania that takes roughly 7 days. After the spin-up period three 
+Most of the simulations proceeded for 15 days \tblnm{ch2:table_exp}. In all 
+cases the first 10 days were regarded as spin up period that allowed a single 
+passage of mode-1 internal tide from New Zealand to Tasmania that takes roughly 7 days. After the 
+spin-up period three 
 dimensional fields of velocity, temperature and salinity were sampled hourly over 5 days. And in 
-the TTIDE-experiment the quantities were subsampled with 5 day window, hence, naming convention. 
-Then the time series were subject to high pass filtering with Butterworth filter 
+the TTIDE-experiment the quantities were subsampled with 5 day window, hence, naming convention 
+\tblnm{ch2:table_exp}. Then the time series high pass filtered with Butterworth filter 
 of 
-order $6$ with cut-off time of $36$ 
-hours to remove subtidal motions. The filtered signal was further fit in a least square sense to 
-the 
-principle semidiurnal harmonic. Then the three dimensional fields 
-underwent a separation into barotropic and baroclinic signals \citep{cummins1997simulation, 
-kunze2002internal, carter2008energetics}. A depth-averaged current is thought to represent a pure 
-barotropic signal and any vertical deviation is attributed to a baroclinic wave,
+order $6$ with cut-off frequency of $1/36~cph$ to remove subtidal motions. The filtered signal was 
+further fit in a least square sense to $M2$ harmonic. Then the three dimensional field of 
+horizontal currents underwent a separation into barotropic and baroclinic signals using following 
+decomposition \citep{cummins1997simulation, kunze2002internal, carter2008energetics}
 \begin{equation}
 \label{ch2:bt_bc_vel}
 \vec{u}_{bt}(x,y) = \frac{1}{H} \int_{-H}^{0} \vec{u}(x,y,z)  dz,~\vec{u}_{bc}(x,y,z) =  
 \vec{u}(x,y,z) - \vec{u}_{bt}(x,y)
 \end{equation}
-To obtain distribution of pressure, at first, the linear equation of state and respective 
-\textit{TS}-fields were used to determine density perturbations. At second, via the hydrostatic 
-approximation consequent vertical integration led to total pressure field. This 
-was then subject to baroclinicity condition \citep{kunze2002internal, kelly2010topo}, stating that 
-baroclinic pressure 
-anomaly associated 
-with internal tides is taken to be a deviation from the depth-averaged,
+Pressure associated with internal tidal motions was found from density field via the  
+hydrostatic approximation and the same decomposition \citep{kunze2002internal, kelly2010topo},
 \begin{equation}
 \label{ch2:bt_bc_pres}
-p(x,y,z) = \int_{-z}^{0} \rho(x,y,z) dz,~p_{bc}(x,y) = p(x,y,z) - \frac{1}{H} \int_{-H(x,y)}^{0} 
-\rho(x,y,z) dz
+p(x,y,z) = \int_{-z}^{0} \rho(x,y,z) g dz,~p_{bc}(x,y) = p(x,y,z) - \frac{1}{H} \int_{-H(x,y)}^{0} 
+p(x,y,z) dz
 \end{equation}
 In the both expressions rigid-lid approximation is used. This is a valid assumption unless 
 vertical accelerations are greater than acceleration due to gravity \citep{kelly2010topo}.\\
-Vertical distribution of each dynamical variable was then decomposed into vertical modes. The 
-structure functions were 
-obtained from local Brunt-Vaisala frequency profiles found from time-averaged density fields. 
-They were used in Sturm-Liouville problem under the hydrostatic approximation,
+Each variable was then decomposed into vertical normal modes. The eigenfunctions were obtained by 
+solving Sturm-Liouville problem under the hydrostatic approximation,
 \begin{equation}
-\frac{d}{dz}\Big( \frac{1}{N^2}  \frac{d \psi(z)}{dz}\Big) + c^{-2}_n \psi(z) 
+\frac{d}{dz}\Big( \frac{1}{N^2(x,y)}  \frac{d \psi(z)}{dz}\Big) + c^{-2}_n \psi(z) 
 = 0
 \end{equation}
-where $c_n$ is the mode phase speed in non-rotating ocean. The first 3 eigenmode structural 
-function obtained per each numerical grid point were used to describe respective vertical 
-distribution in the dynamical fields. And further presented results focus only on mode-1 energetics 
-as of its primary importance.\\
-Here the low mode is characterized by period-averaged rates of conversion from barotropic tide to 
+where $c_n$ is the mode phase speed in non-rotating ocean, $N^2(x, y)$ - local Brunt-Vaisala 
+frequency profiles found from time-averaged density fields.\\
+This work focuses on energy characteristics of the low mode internal tidal wave field. 
+Period-averaged rates of conversion from barotropic tide to 
 baroclinic \citep{simmons2004internal, kurapov2003m}, depth-averaged energy flux, horizontal 
-kinetic energy (HKE) and available potential energy (APE) that were found as
+kinetic energy (HKE) and available potential energy (APE) are found as
 \begin{align}
 \label{C3.eq:conv}
 C_{bt\to 1} = -\frac{1}{2}(\cj{\vec{u}_{bt}} \cdot \nabla H) p_{1}|_{z = -H(x,y)}\\
@@ -317,18 +256,21 @@ C_{bt\to 1} = -\frac{1}{2}(\cj{\vec{u}_{bt}} \cdot \nabla H) p_{1}|_{z = -H(x,y)
 HKE = \frac{1}{4} \rho_0 \cj{\vec{u}_1} \vec{u}_1 \int_{-H}^{0} \psi_1(z) \psi_1(z) dz\\
 APE = \frac{1}{4c_1^2} \rho_0 \cj{p_1} {p}_1 \int_{-H}^{0} \psi_1(z) \psi_1(z) dz
 \end{align}
-The coefficient $\frac{1}{2}$ appears due to time averaging and because signals are given in 
-complex number notation.\\
+Here the subscript $1$ identifies the first eigenmode, all variables are given in complex number 
+notation with the complex conjugate defined by $\cj{}$. The coefficient $\frac{1}{2}$ appears due 
+to 
+time 
+averaging.\\
 
-The mode-1 internal tide field was additionally subject to directional analysis in order to 
+The mode-1 internal tide fields were additionally subject to directional analysis in order to 
 extract elemental signals usually hindered by interference. The details are presented in appendix 
 \ref{C3.app:A1} and summarized as follows. Dynamical fields of pressure and currents sampled over 
-finite number of grid points can be described by directional 
+area-limited footprint can be described by directional 
 spectra. Its circular Fourier 
 transform was then obtained as solution by damped least squares of an ill-posed inverse problem. 
 The 
-spectral, directional analysis is different from the approach of \cite{zhao2010long} for two main 
-reasons. The underlying inverse model equations \eqref{C1:p.eq} describe continuous distribution of 
+spectral, directional analysis differs from the approach of \cite{zhao2010long} for two main 
+reasons. The used here technique seeks for continuous distribution of 
 energy over all compass directions, rather than a finite number of plane waves. This makes a 
 difference in regions 
 where wave diffraction prevails. For instance, wave field near sites of internal tide generation or 
@@ -339,10 +281,11 @@ Fourier analysis. The analysis artifacts lead to unambiguous interpretation, so 
 used when wave fields are back-synthesized over sampling angular sectors. Secondary, 
 velocity measurements are utilized along with pressure observations \eqref{C1:uv.eq}. The 
 formulation provides additional constrain on the inverse model. Indeed, the velocity equations tend 
-to 
-lessen Gibbs phenomena. More importantly, fitting of directional spectra to current and pressure 
-observations can be extended to point-wise measurements such as a stationary mooring.\\
+to lessen Gibbs phenomena. Furthermore, the directional spectra technique can be extended 
+point-wise observations where currents and pressure are measured simultaneously  \footnote{such as 
+a stationary mooring}.\\
 
+\textbf{Get rid of it? - Define what you mean by average and stdev}\\
 All of the above calculations produced sets of dynamical variables for barotropic, baroclinic 
 fields and directional representation of the gravest mode for each experiment. To study 
 variability in the generation, mean energy characteristics were defined by simple arithmetic mean 
@@ -358,80 +301,94 @@ Performed comparison (not shown) between an ensemble-mean of flux and a flux of 
 not reveal significant differences in spatial structure, though the latter results were smaller.
 
 \section{Results}
-\subsection{Internal tide production}
+\subsection{General outlook on internal tide generation at the Macqurie Ridge}
 \label{C3.sec:main_res}
 The semidiurnal barotropic tide propagates into the Southern Tasman Sea from the North 
 \fignmp{C3.fig:BT}. Its phase increases in counterclockwise manner with maximum amplitude of sea 
 level located along New Zealand's coast, the behavior typical of Kelvin wave 
 \citep{walters2001ocean}. 
-The strong tidal phenomena is also observed in shallow Bass Strait, but relatively weak anywhere 
+The strong tide is also observed in shallow Bass Strait, but relatively weak anywhere 
 else in the basin. The simulated sea surface tidal oscillation closely followed TPXO7.2 with gross 
-features well captured. But the sea level magnitude and cotidal (phase) lines exhibited wave-like, 
+features well captured, but the sea level amplitude and cotidal (phase) lines exhibited wave-like, 
 small scale perturbations. This is a manifestation of low-mode baroclinic waves 
 \fignmp{C3.fig:beam}. The baroclinic tidal field appeared as a complex pattern produced by 
-multiple generation sites determined by steep topographic relief. The primary sites were found just 
-south 
-of 
-New Zealand. Here the barotropic Kelvin wave faced the Macquarie Ridge stretched for 2000 km. As 
-the barotropic current decayed away from the coastline baroclinic tide production decreased as 
-well. 
-But low-mode beams were emitted from many sites. Henceforth, analysis concerns the 
-most energetic beam emitted from a site at $49.5^{\circ}$ which hereinafter referred to as the 
-Macquarie Ridge.\\
+multiple generation sites determined by steep topographic relief. The primary sites were located  
+just south of New Zealand as flow of the barotropic Kelvin wave interacted with relief of the 
+Macquarie Ridge. As a result, several low-mode beams were emitted into the Tasman 
+sea. Henceforth, analysis concerns the most energetic beam originated from a site centered at 
+$49.5^{\circ}S$ (inset on \fignm{C3.fig:geo.map}) which hereinafter referred to as the Macquarie 
+Ridge.\\
 
-The major beam is produced by conversion of the barotropic tidal currents impinging on 
-supercritical bathymetry \fignmp{C3.fig:gen}. The strongest generation should occur between depths 
-of 1000-3000 m and be spatially confined to two seamounts that are separated with a gap. This 
-valley 
-topography is deeper and has more gradual slopes, so it should play a secondary role in production 
-of the tidal beam. But from distribution of conversion rates \fignmlp[C3.fig:gen]{B} and its 
-spatial averages \fignmlp[C3.fig:gen]{C} a different perspective emerged. Generation at the gap 
-made up a significant portion of the converted energy and displayed unusually high variability in 
-magnitude. Degree of spatial variation within the averaging regions was much smaller. However,  
-the generation pattern was rearranging between the experiments. The production could diminish in 
-the gap and peak value could move into the northern or southern part of the ridge.\\
+The major beam was mainly generated on highly supercritical slopes where kinetic energy of the 
+barotropic tidal currents was conversed into available potential energy of the internal tidal 
+waves. Geographically, the steepest slopes are found at two seamounts whereas a gap separating the 
+two has more gradual relief. Such seabed terrain steered the barotropic 
+current and forced rectilinear flow in the gap \citep{holloway1999internal}, but the current 
+amplitude did not significantly increase. The described conditions suggest that the conversion 
+ought to occur primarily 
+at the 
+seamounts. However, simulated distribution of the conversion rates \fignmlp[C3.fig:gen]{B} and 
+spatial averages over the topographic features \fignmlp[C3.fig:gen]{C} revealed different 
+perspective. The gap contribution was significant and sometimes the largest. All averaging 
+regions   
+exhibited 
+unusually high variability in magnitude. As well, the spatial pattern was rearranging between 
+the experiments, location of the conversion hot spot was moving between southern and northern 
+parts of the ridge.\\
 
-The Macquarie ridge on average converts $1.7 \pm 0.2~GW$ of the surface tide into mode-1 
-baroclinic tide. This is a half of production at Kaena Ridge, Hawaii \citep{carter2008energetics} 
-and tenfold smaller than Luzon Strait \citep{alford2011energy, kerry2014impact}. But similar to 
+The Macquarie ridge transfers $1.7 \pm 0.2~GW$ of the surface tide into mode-1 baroclinic tide. 
+This 
+is a half amount at Kaena Ridge, Hawaii \citep{carter2008energetics} and tenfold smaller 
+than Luzon Strait \citep{alford2011energy, kerry2014impact}. But similar to 
 Luzon Strait the Macquarie ridge features complex internal tide dynamics that was manifested as 
-regions of negative conversion (green shading, \fignml[C3.fig:gen]{B}). It is known 
-\citep{Kelly2010a} that such reverse energy transfer and destruction of internal tide is driven by 
-coupling with remote baroclinic waves. In fact, oppositely located slopes of the Campbell Plateau 
-(Auckland Escarpment) provided a source of such signal. Further interference created a standing 
-wave \fignmp{C3.fig:stand_wave}. The wave presence was evident in the 
-distribution of 
-HKE marked by a 
-node in the middle of Solander trough. Additionally, around the node energy flux formed a circular 
-pattern \fignmp{C3.fig:stand_wave} with counterclockwise progression since the Coriolis parameter 
-is 
-negative in the Southern Hemisphere.\\
+regions of negative conversion (green shading, \fignml[C3.fig:gen]{B}). Such reverse energy 
+transfer and destruction of internal tide is driven by coupling with non-local baroclinic waves 
+\citep{Kelly2010a}. In 
+fact, adjacent slopes of the Campbell Plateau 
+(Auckland Escarpment) provided a source of such remote signal. Further superposition with the 
+ridge-emitted waves created a standing wave \fignmlp[C3.fig:stand_wave]{A}. The wave presence was 
+evident in the distribution of HKE marked by a node in the middle of Solander trough. Additionally, 
+around the node energy flux formed a circular pattern \fignmp{C3.fig:stand_wave} with 
+counterclockwise progression since the Coriolis parameter is negative in the Southern Hemisphere.\\
 
-By the directional method (appendix \ref{C3.app:A1}) the standing wave was separated 
-into elemental east-west oriented components \fignmlp[C3.fig:stand_wave]{B, C}. On the leeward side 
-of the Macquarie Ridge generation took place at the same seamounts but there was a region of 
-destruction that coincided with incidence of waves emitted by the escarpment. On the trough's 
-eastern side the generation had richer structure both due to more complicated topography and 
-barotropic forcing \fignmlp[C3.fig:BT]{A}, but also due to effect of the Macquarie ridge waves on 
-the local generation. Respective energy transfer across the trough was quantified and compared with 
-spatially integrated conversion rates \fignmlp[C3.fig:stand_wave]{D}. On average, energy in each 
-elemental wave field was almost equally divided amongst waves reflected from the supercritical 
-slopes and wave energy derived from the barotropic field. Though the system exhibited large 
-departures from the average state due to variable conditions of the coupling on the slopes.\\
+The standing wave was separated into elemental east-west traveling components 
+\fignmlp[C3.fig:stand_wave]{B, C}. On the eastward side of the Macquarie Ridge generation took 
+place at the same seamounts. On slopes of the escarpment the conversion had richer 
+distribution of positive and negative sign manifesting complicated structure of energy transfers. 
+Part of the reason is in more complicated sea bottom relief and the barotropic forcing 
+\fignmlp[C3.fig:BT]{A, B}. Dynamically though, the impinging, ridge-emitted waves were 
+back-reflected into the trough, and at the same time they were interfering with the local 
+generation, 
+hence, producing the negative conversion.\\
 
-The obtained internal tide description is similar to Luzon strait where near-resonance conditions 
-exist 
-between two almost parallel ridges \citep{buijsman2012double, buijsman2014three} separated by a 
-distance of 0.6 mode-1 wavelength. In the case of the Macquarie Ridge and the Campbell Plateau the separation distance is about the same. But resonance should be weaker since the former has an orientation of $15^{\circ}$ relative to the 
-latter.\\
+Respective energy transfer across the trough was quantified and compared with spatially integrated 
+conversion rates \fignmlp[C3.fig:stand_wave]{D}. On average, each elemental wave field 
+was almost equally divided amongst waves reflected from the supercritical slopes and wave energy 
+converted from the barotropic field. Though the system exhibited large departures from the average 
+state due to variable conditions of the coupling on the trough's slopes.\\
 
-The geometrical characteristics suggest relevance of wave's travel-time to the observed variability in baroclinic tide 
-production levels and its spatial pattern. To examine this the internal tide dynamics is further 
-studied along a two-dimensional transect crossing the gap (horizontal line on 
-\fignml[C3.fig:gen]{B}) in simulations with diametrically different generation regimes (\sqm{2014} 
-and \sqm{d10-15, 2015}, \fignml[C3.fig:gen]{C}, \fignmlp[C3.fig:stand_wave]{D}). Consequent 
-results are similar to findings of \cite{echeverri2010internal, buijsman2012double} with 
-exception that here the decomposition method augments variations in the mode-1 wave field.\\
+It is apparent that the coupling represents key mechanism to describe variability of the 
+conversion \fignmlp[C3.fig:gen]{C}. The associated wave mechanics is examined further for a 
+stand-out result 
+of \sqm{2014} when conversion in the gap was the weakest. Alongside with \sqm{2014}, experiment   
+\sqm{d10-15} is also considered to characterize what appears to be a normal situation at the 
+Macquarie Ridge.
+%The obtained internal tide description is similar to Luzon strait where near-resonance conditions 
+%exist 
+%between two almost parallel ridges \citep{buijsman2012double, buijsman2014three} separated by a 
+%distance of 0.6 mode-1 wavelength. In the case of the Macquarie Ridge and the Campbell Plateau the 
+%separation distance is about the same. But resonance should be weaker since the former has an 
+%orientation of $15^{\circ}$ relative to the 
+%latter.\\
+%
+%The geometrical characteristics suggest relevance of wave's travel-time to the observed 
+%variability in baroclinic tide 
+%production levels and its spatial pattern. To examine this the internal tide dynamics is further 
+%studied along a two-dimensional transect crossing the gap (horizontal line on 
+%\fignml[C3.fig:gen]{B}) in simulations with diametrically different generation regimes (\sqm{2014} 
+%and \sqm{d10-15, 2015}, \fignml[C3.fig:gen]{C}, \fignmlp[C3.fig:stand_wave]{D}). Consequent 
+%results are similar to findings of \cite{echeverri2010internal, buijsman2012double} with 
+%exception that here the decomposition method augments variations in the mode-1 wave field.\\
 
 %Variation in the coupling process was responsible for the reported changes in the conversion. 
 
@@ -440,130 +397,88 @@ exception that here the decomposition method augments variations in the mode-1 w
 \textbf{NEW:}
 \newpage
 Conversion rates represent work done by barotropic tidal current in displacing isopycnal 
-interfaces. Equation \ref{C3.eq:conv} quantifies the process as correlation 
-between the 
-resultant 
-baroclinic bottom pressure and the vertical component of the current. Phase lag between the two  
-determines sign of the energy transfer. Thus, the conversion can be negative 
-if the downward current, for example, coincides with heaving of isopycnals. Such situation 
-might arise when non-locally generated internal tidal waves are present. When 
-the remote waves are in-phase, an amplified energy transfer from the surface tide takes place. Note 
-the 
-interaction 
-is non-linear, i.e. the total energy transfer is not explained by a superposition of the two 
-processes, 
-since it involves coupling through non-linear bottom boundary condition on the inclined slope.\\
+interfaces\footnote{Following this concept a derivation from the first principles is provided in 
+appendix \ref{C3.app:B} \citep[see also][]{kurapov2003m, kelly2010topo}.}. Equation 	
+\ref{C3.eq:conv} quantifies the process as correlation between the resultant baroclinic bottom 
+pressure and the vertical component of the barotropic tidal current. The phase lag between the two  
+determines the sign of the energy transfer. Thus, the conversion can be negative if the downward 
+current, for example, coincides with heaving of isopycnals. 
+This situation might arise when 
+non-locally generated internal tidal waves are present. When the motions induced by the remote 
+waves are in-phase with the local tidal currents, an amplified energy transfer from the surface 
+tide takes place. In the opposite situation of the out of phase coupling, the remote wave losses 
+energy by performing work against the external force imposed by the barotropic tide. Additionally, 
+considering temporal evolution of the energy transfer, the conversion can be negative during some 
+periods of time even if the remote signal is absent. This becomes obvious by considering a trivial 
+case of point-wise force. The density perturbation equation imposes a quarter 
+period lag relative to the forcing vertical velocity, hence, periods of the positive conversion 
+follow negative and the period-averaged value is zero. The barotropic current simply heaves 
+isopycnal 
+interfaces and no internal wave is radiated.\footnote{ Note the 
+interaction is 
+non-linear, i.e. the total energy 
+transfer is not 
+explained by a superposition of the two processes, because it involves coupling through non-linear 
+bottom boundary condition on the inclined slope.}\\
 
-The distinct pathways in energy transfer were highlighted in two experiments, \sqm{2014} and 
-\sqm{d10-d15}. \fignm{C3.fig:gen_2d} provides respective wave field development. At ebb on the 
-ridge's west side \fignmlp[C3.fig:gen_2d]{A, C} the downward barotropic current forced isopycnals 
+The experiments, \sqm{2014} and \sqm{d10-d15} serve to illustrate different pathways that the 
+energy transfer can take. \fignml[C3.fig:gen_2d]{A-D} 
+depicts respective wave field developments 
+throughout the tidal stages along a section crossing the gap; \fignml[C3.fig:gen_2d]{E-F} 
+shows time series of the 
+conversion in two locations on the ridge. At ebb, on the ridge's west side 
+\fignmlp[C3.fig:gen_2d]{A, C}, the downward barotropic current forced isopycnals 
 to 
 dip near bottom. 
-At that moment the conversion was found to be positive in both experiments as shown by respective 
-time series 
-on \fignml[C3.fig:gen_2d]{E}. However, in \sqm{2014} about hour 7 the transfer became negative as, 
-contrary to the forcing, isopycnals began to rise. Later at slack \fignmlp[C3.fig:gen_2d]{B} the 
-barotropic current reversed direction and with it the conversion changed sign again. Obviously, 
-the process of energy transfer was distorted and resulted in weak internal tide generation 
-\fignmlp[C3.fig:gen_2d]{F}. 
-The example of \sqm{d10-15} revealed other regime. Throughout the ebb flow the isopycnals 
-were permanently depressed signifying larger transfer of the barotropic energy.\\
+At that moment the energy was transferred from the barotropic tide into the baroclinic waves as the 
+conversion was found to be positive in 
+both experiments \fignmlp[C3.fig:gen_2d]{E}. However, in \sqm{2014}, at about hour 7, the transfer 
+became 
+negative as, 
+contrary to the forcing, isopycnals began to rise and fully formed by slack stage 
+\fignmlp[C3.fig:gen_2d]{B}. At that moment the barotropic current reversed direction and the 
+conversion changed sign again. Here, the process of energy transfer was distorted and resulted 
+in weak internal tide generation 
+\fignmlp[C3.fig:gen_2d]{E}. 
+The example of \sqm{d10-15} revealed other regime. Throughout the ebb flow the conversion rate was  
+large and positive as the isopycnals were permanently depressed signifying larger loss of the 
+barotropic energy.\\
 
-The striking difference originated from dynamics of the remote internal waves. At the 
-same time with the ebb flow in \sqm{d10-15} a mode-1 wave crossed the ridge, evident in the 
-baroclinic pressure by characteristic vertical dipole pattern. The wave travel was accompanied by 
-downward isopycnal motion along the slopes of the ridge. On the west side the in-phase coupling 
-was driving the excessive energy transfer, while the east side having the oppositely directed 
-forcing manifested the baroclinic energy loss \fignmlp[C3.fig:gen_2d]{F}. Contrary, the mode-1 wave 
-was not observed on the ridge slopes in \sqm{2014}. And the east side exhibited generation of an 
-internal wave seen as 
-a ray emitted from the ridge crest on \fignmlp[C3.fig:gen_2d]{A}. It appears that later on the ray 
-destructively interfered with the west-side generation producing the prolonged periods of the 
-negative conversion.\\
+The striking difference originated from dynamics of the remote internal waves. During the ebb flow 
+in \sqm{d10-15} a mode-1 wave crossed the ridge, evident in the 
+baroclinic pressure by a characteristic vertical dipole pattern. The wave travel was accompanied by 
+downward isopycnal motion along both slopes of the ridge. On the west side the interaction was 
+constructive because the mode-1 propagation was in phase with the barotropic current, this 
+was driving the strongly positive energy transfer. On the east side the forcing was reversed and 
+the transfer was negative \fignmlp[C3.fig:gen_2d]{G, E}. In contrast, the mode-1 wave 
+was not observed on the ridge slopes in \sqm{2014}. The east side exhibited positive conversion 
+that led to radiation  from the ridge crest of an internal wave ray \fignmlp[C3.fig:gen_2d]{A, 
+dashed line}. Apparently, the mentioned previously lifting of the isopycnals in the middle of the 
+ebb flow on the west side in \sqm{2014} resulted from the ray propagation across the ridge. This 
+illustrated destructive interference of the remote wave with the local generation.\\
+
 It should be noted that the remote mode-1 wave was present in the Solanders trough 
-($162.25^{\circ}$) in both examples, but the wave travel 
-paths were distinct. This conclusion was augmented by the directional decomposition and respective 
-wave phase distribution (Fig.). The trough was occupied 
-by the standing wave seen as almost constant phase and hence, no propagation of the total signal. 
+($162.25^{\circ}$) in both experiments, but the wave travel paths were different. This conclusion 
+was supported by the directional decomposition and respective 
+wave phase distribution \fignmp{C3.fig:2d_phase}. The trough was occupied 
+by a standing wave pattern seen as almost constant phase and hence, no propagation of the total 
+signal. 
 Near the Campbell plateau ($162.25^{\circ}$) the decomposition revealed almost equal contribution 
-of the east and west-traveling waves. However, by the ridge in \sqm{d10-15} the total signal was 
+of the east and west-traveling waves. However, at the ridge in \sqm{d10-15} the total signal was 
 seen to propagate across the ridge with the westward component to be dominant. In \sqm{2014} 
 the eastward wave was stronger and the phase tended to $-180^{\circ}$ (relative to the west side's 
-surface tide) emphasizing local origin. The arrival to the ridge of the westward wave was similar 
-in the given examples and the phase lag with the forcing was the same, thus, the different wave 
-dynamics resulted from difference in the westward wave incidence on the ridge which is explored in 
-detail further.\\
-
-%On the tideward side waves in both experiments were in the same quadrature with the local 
-%barotropic flow.\\
-%\fignmlp[C3.fig:gen_2d]{F} summarizes 
-%these 
-%findings by 
-%revealing striking difference in levels and sign of the conversion.\\
+surface tide) implying in-phase relation with the local barotropic tide and local generation. In 
+both experiments the westward wave reached the ridge at similar phase of the barotropic tide. 
+The further interaction was of similar nature and thence, can not explain the differences 
+in the mode-1 travel and the energy transfer pathways. Therefore, it is necessary to elaborate the 
+westward wave characteristics.\\
 
 
-\textbf{OLD:}
-Vertically integrated conversion rate (\ref{C3.eq:conv}) quantifies how much work is done by the 
-baroptropic tide in displacing isopycnal interfaces against buoyant forces throughout a water 
-column\footnote{Following this concept a derivation from the first principles is provided in 
-appendix \ref{C3.app:B} \citep[see also][]{kurapov2003m, kelly2010topo}.}. It should be recognized 
-that the barotropic forcing might be oppositely directed to vertical motions if somewhere in the 
-water column other processes take place. Such as in case of \sqm{2014}-simulation 
-\fignmlp[C3.fig:gen_2d]{A, B} during ebb stage on the tideward side (solid black line, 
-$164.2^{\circ}$) throughout the column energy was transferred into the baroclinic field 
-\fignmlp[C3.fig:gen_2d]{E}. But note that along the bottom an internal wave ray was developing as 
-isopycnals were lifting following preceding flooding stage. Hence, at this location and depths the 
-locally generated internal wave did work against the downward barotropic flow. As the contribution 
-was growing, at about hour 7 on \fignml[C3.fig:gen_2d]{E} the net conversion became negative. Then 
-it flipped sign as the tidal current reversed its direction \fignmlp[C3.fig:gen_2d]{B}. Averaged 
-over the tidal period the transfer was positive, i.e. the surface tide lost energy, but weak 
-compare to \sqm{d10-15} simulation \fignmlp[C3.fig:gen_2d]{C-D}. This experiment demonstrated  
-amplification of production on the gap's slope because of strong presence of the remotely generated 
-internal tide. Its propagation from Solander Trough ($165^{\circ}$) and across the gap was the 
-major 
-difference between the two situations. In \sqm{d10-15} along slope formation of an internal wave 
-was still found, but due to the shoaling mode-1, conversion was positive throughout the full tidal 
-cycle. In summary, the remote signal supported positive energy transfer during periods of tidal 
-current reversals, so that excess of energy was drawn from the surface tide into the baroclinic 
-field \fignmlp[C3.fig:gen_2d]{E}.\\
-
-Phase lag between localized barotropic forcing and remote, incident signal is a 
-crucial parameter in describing the system dynamics which is illustrated by the leeward side (black 
-dashed line, $164.5^{\circ}E$). Here the vertical barotropic flow was opposite to the previous 
-location. For \sqm{d10-15} the traveling mode-1 internal tide was losing energy as it was 
-displacing 
-isopycnals oppositely to the forcing. In actuality, reflection took place as an internal 
-wave ray was emitted towards the trough. The associated baroclinic currents were easterly downward, 
-same direction as group speed \fignmlp[C3.fig:gen_2d]{C-D}. In \sqm{2014} the along slope current 
-was opposite, coinciding with the isopycnal displacements and the flow of the surface tide. 
-Thus, in both cases the energy propagated downward and away from the slope, but the corresponding 
-phases were $180^{\circ}$-shifted denoting either reflection of the internal tide or unobstructed 
-generation respectively \fignml[C3.fig:gen_2d]{E}. The period-averaged conversion rates highlighted 
-the differences \fignmlp[C3.fig:gen_2d]{F}. Overall, the simulations demonstrated three distinct 
-cases of energy transfer between barotropic and baroclinic modes on sloping bottom and pathway 
-taken was driven by the remote wave. Its influence was further elucidated by exploring phase 
-distribution along the section \fignmlp[C3.fig:gen_2d]{G} in the mode-1 pressure field.\\
-
-Phase of the superposed, total wave showed a stagnant region eastward from of $165^{\circ}E$ that 
-corresponded to the node in HKE \fignmlp[C3.fig:stand_wave]{A}. As before the decomposition 
-revealed it as a sum of the ridge-generated waves (eastward) and the escarpment-originated waves 
-(westward). In \sqm{d10-15} west of $165^{\circ}E$ there was almost a free propagation of the 
-``escarpment" waves since the total signal was similar and the eastward component was weak. At the 
-previously considered locations the mode-1 phase wave was above $-90^{\circ}$ which 
-resulted respectively in enhancement or destruction on the opposite gap's slopes. Note that the 
-phases were referenced relative to the barotropic flow on the tideward side. In \sqm{2014} on the 
-leeward side the total signal was mostly described by the eastward waves and the phase tended to 
-$-180^{\circ}$, hence, the wave was mainly related to the local generation. On the tideward side 
-waves in both experiments were in the same quadrature with the local barotropic flow, but 
-\sqm{d10-15} showed twenty-fold stronger conversion resulted not only from higher bottom 
-pressure, but also because of smaller phase lag with the barotropic forcing.
-
-\subsection{Three dimensional structure of the wave fields}
+\subsection{Spatial structure of the wave fields}
 \label{C3.sec:3d_var}
-Conversion rate in the gap strongly depended on magnitude and phase of the incident, westward wave 
-and 
-hence, was related to three dimensional structure of the wave field. The decomposition analysis 
-further delineated associated variations \fignmp{C3.fig:wv_fld_dist}. The westward wave in 
+\fignmp{C3.fig:wv_fld_dist} illustrates the west and eastward wave components in the considered 
+experiments. Here, a notable feature bring light on the difference 
+The westward wave in 
 \sqm{2014} was small as generation at the Campbell Plateau was diminished (see also 
 \fignml[C3.fig:gen]{C}). And since lines of constant phase (isochrons) were slanted relative to the 
 ridge, such 
@@ -1039,20 +954,31 @@ by \citep{nash2006structure} to estimate an upper limit on emitted energy.\\
 \begin{figure}
 	\centering
 	\includegraphics[scale = 
-	1]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_6_2d_section_sill.png}
+	1.25]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_6_2d_section_sill.png}
 	\caption{(A-D) Distribution of baroclinic pressure anomaly with superposed isopycnal 
 	displacements given by contour lines during ebb and slack tidal stages in the two experiments. 
 	Positive (red) color is assigned to lifted interfaces and negative (blue) - for the opposite. 
-	Stick lines represent currents with vertical velocity largely amplified for clarity. 
-	Along-slope line shows corresponding distribution of criticality with coloring presented on 
-	legend at (C). Beige line is distribution of barotropic vertical velocity $w_{bt}$ during 
-	respective stages. The tideward and leeward sides of the Macquarie Ridge are designated by 
-	vertical solid and dashed lines used throughout this figure. On (E) it is found time evolution 
-	of the conversion for both experiments and ridge sides. And (F) presents distribution of 
-	period-averaged conversion rate along the transect. The same is for (G) where progression of 
-	bottom mode-1 baroclinic pressure is shown by phases of total field and elemental 
-	components. The phases are referenced to flood barotropic current on the tideward side.}
+	Insets between (A) and (C), (B) and (D) provide vertical component of the barotropic current 
+	during the considered time moments in the experiments (blue - \sqm{2014} and red - 
+	\sqm{d10-15}). The west and east sides of the Macquarie Ridge are 
+	designated by vertical solid lines used throughout this figure. (E) Evolution of the conversion 
+	for both experiments at ridge sides. (F) Along-section distribution of the period-averaged 
+	conversion rate along. The line color is the same as for the insets with the current.}
 	\label{C3.fig:gen_2d}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale = 
+	1.5]{/home/dmitry/Work/Research/thesis/FINALE/P3_ITS_GENERATION/figures/fig_7_phase_distr.png}
+	\caption{Phase of mode-1 baroclinic pressure at the ocean bottom along the section previously 
+	considered on \fignm{C3.fig:gen_2d}. Solid line gives the total wave signal. Dashed and dotted 
+	lines provide the result of the directional decomposition, i.e. the westward and eastward 
+	traveling waves	respectively. All phases are referenced relative to the barotropic current on 
+	the west side of the Macquarie Ridge. Horizontal dashed lines represent -180, -90, 0 and 
+	90$^\circ$ phase lags. The east and west sides of the Macquarie Ridge are identified by 
+	vertical solid lines.}
+\label{C3.fig:2d_phase}
 \end{figure}
 
 \begin{figure}
