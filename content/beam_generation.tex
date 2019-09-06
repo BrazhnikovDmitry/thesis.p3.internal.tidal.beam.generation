@@ -9,7 +9,8 @@
 
 \begin{document}
 	\iftoggle{only_Chapter} {
-		\title{Variable internal-tide generation at the Macquarie Ridge.}
+		\title{Aspects of variable internal-tide generation at a double-ridge system of the 
+		Macquarie Ridge.}
 		\maketitle
 	}
 
@@ -279,10 +280,11 @@ baroclinic \citep{simmons2004internal, kurapov2003m}, depth-averaged energy flux
 kinetic energy (HKE) and available potential energy (APE) are found as
 \begin{align}
 \label{C3.eq:conv}
-C_{bt\to 1} = -\frac{1}{2}(\cj{\vec{u}_{bt}} \cdot \nabla H) p_{1}|_{z = -H(x,y)}\\
+C_{bt\to 1} = -\frac{1}{2}(\cj{\vec{u}_{bt}} \cdot \nabla H) p_{1}|_{z = -H(x,y)} = |w_{bt}| \cdot 
+|p_{1,bot}| \cos (\phi_{w_{bt}} - \phi_{p_{1,bot}})\\
 \vec{F} = \frac{1}{2} \frac{1}{H} \cj{\vec{u}_1} p_1 \int_{-H}^{0} \psi_1(z) \psi_1(z) dz\\
 HKE = \frac{1}{4} \rho_0 \cj{\vec{u}_1} \vec{u}_1 \int_{-H}^{0} \psi_1(z) \psi_1(z) dz\\
-APE = \frac{1}{4c_1^2} \rho_0 \cj{p_1} {p}_1 \int_{-H}^{0} \psi_1(z) \psi_1(z) dz
+APE = \frac{1}{4c_1^2} \rho_0 \cj{p}_1 {p}_1 \int_{-H}^{0} \psi_1(z) \psi_1(z) dz
 \end{align}
 Here the subscript $1$ identifies the first eigenmode, all variables are given in complex number 
 notation with the complex conjugate defined by $\cj{}$. The coefficient $\frac{1}{2}$ appears due 
@@ -291,8 +293,9 @@ time
 averaging.\\
 
 The mode-1 internal tide fields were additionally subject to directional analysis in order to 
-extract elemental signals usually hindered by interference. The details are presented in appendix 
-\ref{C3.app:A1} and summarized as follows. Dynamical fields of pressure and currents sampled over 
+extract primary wave components usually hindered by interference. The details are presented in 
+appendix 
+\ref{C3.app:ddec} and summarized as follows. Dynamical fields of pressure and currents sampled over 
 area-limited footprint can be described by directional 
 spectra. Its circular Fourier 
 transform was then obtained as solution by damped least squares of an ill-posed inverse problem. 
@@ -313,20 +316,10 @@ to lessen Gibbs phenomena. Furthermore, the directional spectra technique can be
 point-wise observations where currents and pressure are measured simultaneously  \footnote{such as 
 a stationary mooring}.\\
 
-\textbf{Get rid of it? - Define what you mean by average and stdev}\\
-All of the above calculations produced sets of dynamical variables for barotropic, baroclinic 
-fields and directional representation of the gravest mode for each experiment. To study 
-variability in the generation, mean energy characteristics were defined by simple arithmetic mean 
-(ensemble-mean) and variability - by standard deviation. Such definitions have a caveat. 
-While ensemble-mean allows a straightforward interpretation of mode-1 dynamics, it 
-incorporates  
-a portion of variable (non-stationary) signal since any energy characteristic is a nonlinear 
-quantity \citep{zaron2014time}. On contrary, energy flux, for instance, found from ensemble-mean 
-pressure and currents exclusively provides a stationary part. However, if a mode-decomposed signal 
-is considered, finding the means entails averaging of vertical basis functions. As a 
-consequence, their orthogonality is not preserved leading to uncertainty in the dynamics. 
-Performed comparison (not shown) between an ensemble-mean of flux and a flux of ensemble-means did 
-not reveal significant differences in spatial structure, though the latter results were smaller.
+The above analysis produced sets of dynamical variables for barotropic, baroclinic 
+fields and directional representation of the gravest mode for each experiment. To characterize 
+temporal changes in the generation, mean energy characteristics were defined as simple arithmetic 
+mean and variability - by standard deviations.
 
 \newpage
 \section{Results}
@@ -408,53 +401,50 @@ Ridge.
 \subsubsection{Coupling of local generation with remote waves}
 \label{C3.sec:amp_mech}
 The experiments, \sqm{2014} and \sqm{d10-d15} serve to illustrate a number of pathways that the 
-energy transfer can take. \fignm{C3.fig:gen_2d} depicts wave evolution on panels A-D throughout ebb 
+energy transfer can take. Panels A-D on \fignm{C3.fig:gen_2d} depict wave evolution throughout ebb 
 stage of the $M_2$ tidal cycle; E-F shows respective time 
 series of the conversion at two designated locations on opposite slopes of the ridge. At 
 ebb, on the ridge's western side \fignmlp[C3.fig:gen_2d]{A, C}, the downward barotropic current 
-forced near the bottom isopycnals to dip. At hour 6 of the tidal cycle, in both experiments the 
-energy was 
-transferred 
-from 
-the barotropic tide into the baroclinic waves as the conversion was positive 
-\fignmlp[C3.fig:gen_2d]{E}. However, in \sqm{2014}, at about hour 7, the 
-transfer became negative as, contrary to the forcing, isopycnals began to rise. The ensued  
-positive displacements were clearly seen at the moment of slack current \fignmlp[C3.fig:gen_2d]{B}. 
+forces near the bottom isopycnals to dip. At hour 6 of the tidal cycle, in both experiments the 
+energy is transferred from the barotropic tide into the baroclinic waves, and the conversion is 
+positive \fignmlp[C3.fig:gen_2d]{E}. However, in \sqm{2014}, at about hour 7, the 
+transfer becomes negative as, contrary to the forcing, isopycnals begin to rise. The ensued  
+positive displacements are clearly seen at the moment of slack current \fignmlp[C3.fig:gen_2d]{B}. 
 As the 
-barotropic current reversed direction, the conversion again changed sign. Not surprisingly, the 
-period-averaged energy transfer was weak \fignmlp[C3.fig:gen_2d]{G}. Experiment \sqm{d10-15} 
-revealed another regime. Throughout the ebb flow the conversion rate was much larger and positive 
-because the isopycnals were continuously depressed.\\
+barotropic current reverses direction, the conversion again changes sign. Not surprisingly, the 
+period-averaged energy transfer is weak \fignmlp[C3.fig:gen_2d]{G}. Experiment \sqm{d10-15} 
+reveals another regime. Throughout the ebb flow the conversion rate is much larger and positive 
+because the isopycnals are continuously depressed.\\
 
 A striking difference originated from dynamics of the remote internal waves. During the ebb flow 
-in \sqm{d10-15} a mode-1 wave originated at the Campbell Plateau and progressed across 
-the ridge, 
-evident by a characteristic vertical dipole pattern in the baroclinic pressure. The wave 
-travel forced downward isopycnal motion along both slopes of the ridge \fignmlp[C3.fig:gen_2d]{C}. 
+in \sqm{d10-15} a mode-1 wave emitted from the Campbell Plateau progresses across 
+the ridge, evident by a characteristic vertical dipole pattern in the baroclinic pressure. The wave 
+travel forces downward isopycnal motion along both slopes of the ridge \fignmlp[C3.fig:gen_2d]{C}. 
 On the western side, the 
-interaction was in-phase with the barotropic current, driving the strongly positive energy 
-transfer. On the eastern side, there was upward isopycnal motion, so the transfer was negative 
+interaction is in-phase with the barotropic current, driving the strongly positive energy 
+transfer. On the eastern side, there is upward isopycnal motion, so the transfer is negative 
 \fignmlp[C3.fig:gen_2d]{F}, corresponding to energy loss from the remote wave. As a consequence, 
 the 
 conversion time series on opposite sides of the gap \fignml[C3.fig:gen_2d]{E, F} are almost 
 reversed one to another, and the small shift between the two curves accounts for the remote wave 
 transition.
 In contrast, the 
-mode-1 wave was not observed on the ridge slopes in \sqm{2014}. Here the eastern side exhibited 
+mode-1 wave is not observed on the ridge slopes in \sqm{2014}. Here the eastern side exhibits 
 positive 
-conversion that led to internal wave radiation from the ridge crest \fignmlp[C3.fig:gen_2d]{A} seen 
+conversion that leads to internal wave radiation from the ridge crest \fignmlp[C3.fig:gen_2d]{A} 
+seen 
 as positive displacements obliquely propagating away from the topography. 
-Probably, the \textbf{previously mentioned} rising of the isopycnals on the western side  
-in the middle of the ebb flow in \sqm{2014} resulted from propagation of the 
-radiated internal wave. It destructively interfered with the generation on the western side 
-leading to the weak conversion.\\
+Probably, the rising of the isopycnals on the western side  
+in the middle of the ebb flow in \sqm{2014} results from propagation of the 
+radiated internal wave. It destructively interferes with the generation on the western side 
+leading to the weak conversion \fignmlp[C3.fig:gen_2d]{G}.\\
 
 It should be noted that the remote mode-1 wave was present in Solanders Trough 
 ($165^{\circ} - 165.5^{\circ}$) in both experiments, but its propagation was different since in 
 \sqm{2014} the wave did not cross the gap. This result is further illustrated by the directional 
-decomposition and deduced wave phase distributions \fignmp{C3.fig:2d_phase}. It is seen as 
+decomposition and deduced wave phase distributions \fignmp{C3.fig:2d_phase}. It is seen that  
 the trough was occupied 
-by a standing wave pattern, i.e. almost constant phase and hence, no propagation of the total 
+by a standing wave, i.e. almost constant phase and hence, no propagation of the total 
 signal. 
 Near the Campbell Plateau ($165.5^{\circ}$) the decomposition revealed almost equal contribution 
 of the east and west-traveling waves. However, at the ridge in \sqm{d10-15} the total signal 
@@ -526,8 +516,10 @@ explained next.\\
 Phase of a plane wave grows inversely to its phase speed, and for internal tides the speed is 
 determined by local water column properties and stratification (see eq. \eqref{C3.eq:sturm}). 
 However, the phase increase can deviate from $\sim 1/c_p$ in complex wave fields consisting of 
-multiple components. In extreme case of a standing wave phase is constant. Furthermore, fundamental 
-work of Longuet-Higgins demonstrated that phase speed depends on moments of directional spectra 
+multiple components. For instance, in extreme case of a standing wave phase is constant. 
+Furthermore, classical 
+work of \cite{longuet1957statistical} demonstrated that phase speed depends on moments of 
+directional spectra 
 such as skewness and spread, and the phase speed approaches a plane wave value for narrow spectra. 
 In the setting of Solanders Trough the westward wave was 
 composed of 
@@ -562,103 +554,114 @@ characterized as a mixture of SAW and STW. The stratification was strongly surfa
 weaker deeper in the column.\\
 
 \subsection{Interpretation of variability in the conversion and the standing wave}
-The previous analysis examined complicated and variable internal tide dynamics occurring at the 
-Macquarie Ridge, in Solanders Trough and on slopes of the Campbell Plateau. The considered 
+The previous analysis examined the complicated and variable internal tide dynamics occurring at the 
+Macquarie Ridge, in Solanders Trough and on the slopes of the Campbell Plateau 
+\fignmp{C3.fig:geo.map}. 
+The 
 numerical 
 simulations revealed how hydrographic conditions affect the plateau-emitted waves and how 
-the variable remote waves change generation of the Tasman Sea 
+the variable remote to the Macquarie Ridge waves change the generation of the Tasman Sea 
 internal tidal beam. In the next section these findings are used to achieve more concrete 
-understanding of internal tide variability at the Macquarie Ridge based on all of the experiments.
+understanding of internal tide variability at the ridge based on all of the experiments.
 
 \subsubsection{Spatial and temporal variability in the conversion}
 \label{C3.sec:spat_conv}
-Strength of the coupling and increase of the internal tide generation on the western side of the 
+The strength of the coupling and amplification of the internal tide generation on the western side 
+of 
+the 
 ridge  
-depends on amount of the remote wave energy reaching the production sites. On the other hand, 
-this amount is defined by topography's transmission and amplitude of the westward wave in the 
-trough. At 
-first, the transmission is addressed by considering spatial distribution of the eastern slope 
+depends on amount of the remote, plateau-emitted wave energy to reach the western side. Clearly, 
+this amount is defined by the transmission and amplitude of the westward wave in the 
+trough. The transmission is addressed by considering spatial distribution of the eastern slope 
 reflectance 
-\fignmp{C3.fig:crit}. It follows that the remote energy was mainly transmitted through the 
+\fignmp{C3.fig:crit}. It follows that the remote energy was mainly fluxed through the 
 subcritical gap, 
-whereas the seamounts were supercritical and reflective, and hence, transport of the 
-westward wave energy from the trough was suppressed. The observed spatial inhomogeneity of the 
-transmission 
-explains large contribution of the gap to the overall conversion by the Macquarie Ridge.\\
+whereas the seamounts were supercritical and reflective, and hence, transfer of the 
+westward wave energy from the trough was suppressed. Thus, the gap's contribution to the overall 
+conversion is directly a result of the ridge's relief.\\
 
-The relief of the topography also has signature in relative importance of the remote waves to the 
-conversion variability. This is particularly captured by how much each physical term in eq. 
-\eqref{C3.eq:conv} contributes to the total variance. In order to do so, the equation is 
+Because of the inhomogeneous transmission, the remote waves have spatially variable contribution to 
+the variation of the conversion. This is particularly captured by how much variance terms in 
+eq. 
+\eqref{C3.eq:conv} induce separately. In order to do so, the equation is 
 differentiated with respect to each term, and the differentials are substituted with variances 
-\citep{kerry2014impact}. Results are provided on \fignm{C3.fig:var_sp}. Notably, the total 
+\citep{kerry2014impact}. Results are summarized in \fignm{C3.fig:var_sp}. Notably, the total 
 variance found as sum of the individual contributions is equal to 0.9 GW, which is much larger 
-0.2 GW reported in Section \ref{C3.sec:main_res}. The disparity attributed to 
-interdependence of the terms resulting in non-zero covariances that has to be 
-subtracted from the sum. Regardless, the obtained distribution on the western side of the ridge  
+0.2 GW reported in Section \ref{C3.sec:main_res}. The disparity is attributed to non-zero 
+covariances that result from dynamical relationships between the terms. Regardless, the 
+spatial distribution of term-by-term contribution on the western side of the ridge  
 shows a pattern that was dictated by the inhomogeneous transmission. Variability due to 
 the 
-phase lag concentrated near the gap, but it was smaller at the 
-seamounts. Opposite distribution is found for amplitude of the bottom baroclinic pressure. 
-Physically, on the western slopes of the gap the remote waves were largest than anywhere else 
+phase lag was dominant near the gap, but it was smaller at the 
+seamounts. The bottom baroclinic pressure, on other hand, contributed more at the 
+seamounts and less at the gap. Physically, on the western slopes of the gap the remote waves were 
+larger than anywhere 
+else 
 on the ridge, and they strongly impacted the local generation affecting both amplitude and phase of 
 the 
 bottom pressure. On the steeper flanks of the seamounts the local generation was strong, 
-the remote waves were weak, so the coupling mainly happened by adjusting the pressure's 
-amplitude. For the Campbell Plateau most of variability arose from phase of the incident 
-eastward waves corroborating \fignm{C3.fig:wv_fld_dist}.\\
+the remote waves were weak, so the coupling mainly happened by adjusting the pressure. For the 
+Campbell Plateau most of variability arose from phase of the incident 
+eastward waves as indicated by \fignm{C3.fig:wv_fld_dist}.\\
 
-\fignm{C3.fig:crit} also demonstrates variation in the reflectivity of the eastern slope between 
-the 
-experiments. 
-It seems that migration of hot spot in the conversion and spatial variability observed on  
-\fignm{C3.fig:gen}, can be explained 
-by changes in the criticality and transmission of the westward waves. For example, spatial 
-distribution of the conversion moved northward for the northern seamount between \sqm{d10-15} and 
-\sqm{d35-40} \fignmlp[C3.fig:gen]{D} as criticality decreased in that portion of the ridge 
-\fignmp{C3.fig:crit}. This suggests another effect of stratification on the double-ridge system 
-which is addressed in Section \ref{C3.sec:strat_eff}.\\
+\fignm{C3.fig:crit} also illustrates variation in the reflectivity of the eastern slope between 
+the experiments. It seems that migration of the hot spot in the conversion and spatial variability 
+\fignmp{C3.fig:gen} can be explained by changes in the criticality and the transmission 
+of the westward waves. For example, between \sqm{d10-15} and \sqm{d35-40} the northern portion of 
+the ridge became more transparent for the westward wave. As a result, the latitude of the 
+conversion-weighted mean moved northward as well \fignmlp[C3.fig:gen]{D}. This suggests another 
+effect of stratification on the double-ridge system which is addressed in Section 
+\ref{C3.sec:strat_eff}.\\
 
-Temporal evolution of the conversion magnitude is addressed by \fignm{C3.fig:ener_var} 
-where panel B is devoted for the gap alone. Here it becomes apparent that processes in the gap are 
-a primary cause to changes in the overall Macquarie Ridge conversion since the time series of 
+Temporal evolution of the conversion magnitude is shown on \fignm{C3.fig:ener_var} 
+where panel B is computed for the gap alone. Here it becomes apparent that processes in the gap are 
+a primary contributor to changes in the overall Macquarie Ridge conversion since the time series of 
 conversion for the gap and the ridge are strongly correlated with $R^2 = 0.75$. On the other hand, 
-a primary factor to cause this variability was variable amplitude of the westward waves in 
-Solanders Trough that were incident on the gap. Magnitude of the conversion on the western side was 
-correlated by $R^2 = 0.5\%$ to strength of the remote waves on the eastern side. The coefficient 
-was substantially higher and rose to $0.8$ if \sqm{uniform} was omitted.\\
+a primary contributor to this variability was variable amplitude of the westward waves in 
+Solanders Trough that were incident on the gap. The magnitude of the conversion on the western side 
+was correlated by $R^2 = 0.5$ to strength of the remote waves on the eastern side. The coefficient 
+was substantially higher and rose to $0.8$ if \sqm{uniform}-experiment was omitted.\\
 
-Experiment \sqm{uniform} is another outlier as it presented dynamically opposite regime to other 
-extreme of \sqm{2014}. The prescribed uniform 
-stratification 
-led to extremely high wave speeds in the region. The considered stratification was representative 
-of the central Tasman Basin where water masses are comprised by STW. The resultant phase speeds 
+Experiment \sqm{uniform} is an outlier similar to \sqm{2014} as it represents a dynamically 
+opposite regime to other experiments. Contrary to slower propagation in \sqm{2014}, the prescribed 
+uniform stratification led to extremely high wave speeds for the region. The stratification was 
+representative 
+of the central Tasman Basin where water masses are comprised by subtropical waters. The resultant 
+phase speeds 
 caused much earlier arrival of the westward wave to the ridge \fignmlp[C3.fig:ener_var]{red inset, 
 panel B}. The energy transfers at the gap and on the western side of the ridge had different 
-character. For example, the internal tidal field was losing energy at the northern seamount since 
-the remote waves were out of phase with the local forcing. For other experiments the arrival 
-of the westward wave seems to have second order effect that complicates relation between the 
+character. For example, the internal tidal field was losing energy at the northern seamount 
+\fignmp{C3.fig:gen} since the remote waves were out of phase with the local forcing. In general, 
+unlike the outlier experiments of \sqm{uniform} and \sqm{2014}, in other experiments the arrival of 
+the westward wave seems to have a secondary effect that only complicates the relation between the 
 conversion at the gap and the remote waves.
 
 \subsubsection{Effect of variable stratification}
 \label{C3.sec:strat_eff}
-Purple insets on \fignm{C3.fig:ener_var} present transmission coefficients obtained from the 
-directional decomposition (filled dots). These estimates support the analysis based on 
-criticality of the eastern slopes: the gap alone transmitted $47 \pm 8~\%$, the seamounts 
-combined had it two times smaller - $27 \pm 4\%$, and the overall Macquarie ridge - $35 \pm 4~\%$. 
-In addition, these results were compared to a closed-form solution of 
-\cite{larsen1969internal} for transmission by a single knife-edge. The Macquarie Ridge was thought 
-as a barrier. Such representation is not strictly applicable to the eastern side of the gap because 
-of its subcritical slope, and probably, it results in underestimate of the transmission 
-coefficient. However, here primary interest is in effect of ocean's hydrography on transmission 
-which  
-varies with a height of the barrier. The height can be estimated as the topography's mean depth in 
-WKB-scaled vertical coordinate \citep{althaus2003internal} relative to Solanders Trough. Since the 
-WKB-scaling depends on local stratification profile, such approach provides a perspective on 
-influence of oceanographic conditions. The scaled analytical calculations are given by empty purple 
-diamonds on \fignm{C3.fig:ener_var}.\\
+Purple filled dots on \fignm{C3.fig:ener_var} represent transmission coefficients 
+obtained from the directional decomposition. Not surprisingly, the criticality of the eastern 
+slopes determined spatial character of the directional analysis estimates: the gap alone 
+transmitted $47 
+\pm 8~\%$, for the seamounts 
+the coefficient fell to $27 \pm 4\%$, and the overall Macquarie ridge showed $35 \pm 4~\%$. In 
+addition, these results were compared to a closed-form solution of 
+\cite{larsen1969internal} for transmission by a single knife-edge in uniformly stratified ocean. 
+The Macquarie Ridge was thought 
+as a barrier whose transmission varies with its height. The height was defined as the 
+topography's mean depth relative to Solanders Trough in the ocean with WKB-scaled vertical 
+coordinate 
+\citep{althaus2003internal}. Since the WKB-scaling depends on local stratification profile, such 
+approach provides a perspective on effect of variable conditions in the ocean. It is worth 
+emphasizing that application of the WKB approximation usually results in underprediction, 
+and the 
+knife-edge representation is applicable to topographies with criticality above 3 
+\citep{mathur2016internal}, which fails 
+for the gap. For the supercritical seamounts at the Macquarie Ridge following 
+\cite{mathur2016internal} the error is estimated to be of $30\%$.\\
 
+The scaled analytical results are given by empty purple diamonds on \fignm{C3.fig:ener_var}. 
 Both calculations of the transmission coefficient reveal similar character of temporal change. 
-Therefore, the local stratification does not only affect kinematic characteristic of the internal 
+Therefore, the local stratification not only affects kinematic characteristic of the internal 
 tides 
 in 
 Solanders Trough (Section \ref{C3.sec:3d_var}), but also it influences dynamical properties of the 
@@ -671,209 +674,249 @@ phenomena was previously identified by \cite{klymak2013parameterizing} in relati
 Luzon Strait. It was shown that the increase depends on ridge separation distance or phase of the 
 impinging waves. Here it is additionally observed that the increase in transmission is stronger for 
 more reflective or taller topography. Following the theory for a single knife-edge ratio of the gap 
-transmission to one of the seamount is 3, while the same ratio obtained for the simulation deduced 
-estimates is 1.5.\\
+transmission to one of the seamounts is 3, while the ratio obtained from the simulation is 1.5. 
+Note 
+that the previously outlined caveats of the analytical calculations do not undermine the 
+conclusions and even reinforce the one on the transmission ratio.\\
 
-Direct effect of variable stratification on conversion has to be considered as well since it is 
-expected that topography in strongly stratified ocean sheds more internal tides 
+It is as well expected that topography in strongly stratified ocean produce more internal tides 
 \citep{holloway1999internal}. This dependence is investigated by another application of the 
 knife-edge approach \citep{st2003generation}. This time the barrier's height is calculated 
-relative to the abyssal ocean, and in order to obtain total conversion instead of rates per 
+relative to the abyssal plain in WKB-scaled ocean, and in order to obtain total conversion 
+instead 
+of rates per 
 distance, the barrier is set to have  
 lateral extent of $240~km$. The forcing barotropic current is taken to be uniform and equal to 
-$0.03~m/s$. In any case, the extent and the current are just linear scale factors. The knife-edge 
-generation is compared with the ROMS 
-experiments on \fignml[C3.fig:regr]{A}. Contrary to the expectation of larger conversion by 
-taller barrier, the dependence is found to be reverse, i.e. the numerical simulations that had 
-ocean conditions leading to smaller WKB-height were 
-conversing more barotropic energy. However, such result aligns with previous calculation of 
-transmission since one expects smaller barrier to transmit more energy incident from the 
-trough. \fignml[C3.fig:regr]{B} shows 
-relation between the westward wave magnitude scaled by the previously found transmission 
-coefficients (i.e. from \fignml[C3.fig:ener_var]{A} black dots were scaled by empty diamonds). 
-Here, the dependence is direct, so that, as higher amount of the remote energy reached the western 
-side, the coupling with the barotropic tide was stronger, and the conversion to the baroclinic tide 
-was larger.\\
+$0.03~m/s$. In any case, the ridge length and the current amplitude are just linear scale factors. 
+The knife-edge generation is plotted against the results from the numerical experiments on 
+\fignml[C3.fig:regr]{A}. It was expected that the strongly stratified ocean leading to taller 
+knife edge will ensue higher conversion. Contrary, relation is found to be negative as the 
+simulations with lower knife edges conversed more barotropic energy. However, the result is 
+consistent with the transmission analysis. One expects smaller barrier to be more transparent for 
+the westward wave incident from the trough. This is confirmed by \fignml[C3.fig:regr]{B} where on 
+horizontal axis are now given the diagnosed westward wave magnitude multiplied by the analytically 
+obtained transmission coefficients, i.e. on \fignml[C3.fig:ener_var]{A} the black dots were scaled 
+by the 
+empty 
+purple diamonds. Here the dependence is positive. Higher amount of the remote energy was reaching 
+the western side, the stronger coupling and amplification were getting. The result does not exclude 
+the direct role of stratification in process of the internal tide generation, but rather emphasizes 
+the primary 
+mechanism 
+for the amplified generation.\\
 
-\subsubsection{Strength of internal tides in Solanders trough}
+\subsubsection{Strength of internal tides in Solanders Trough}
 \label{C3.sec:disc_sw}
-It was seen that magnitude of the westward wave is an imperative quantity to strength of the 
+It is seen that the magnitude of the westward wave changes the strength of the 
 conversion at the Macquarie Ridge. Variability of the wave is associated with reflection and 
-conversion taken place on slopes of the trough. These parameters can be linked by invoking 
+conversion on the slopes of the trough. These parameters can be linked by invoking 
 analogy of a 
-double-ridge system to a Fabry-Perot interferometer as follows \footnote{see another application of 
-such approach to internal wave problem by \cite{mathur2010internal}}. Let conversion rates on the 
-slopes be $C_M$ and $C_C$ and reflection coefficients - $r_M,~r_C$ with indexes denoting 
-respectively the eastern side of the Macquarie Ridge and slopes of the Campbell Plateau. Strength 
-of the westward wave initially is $C_C$, after it reflects from the ridge, then from the 
-plateau, its magnitude is $r_C r_M C_C$. Besides the Campbell Plateau portion, the westward wave 
-also includes contribution of the eastward wave that is first emitted from the ridge and then 
-reflected from the 
-plateau. So that, next term becomes $r_C r_M C_C + r_C C_M$, the $n$-th - $(r_C 
-r_M)^n C_C + (r_C)^n (r_M)^{n-1} C_M$, and the total flux is $F_W = \sum_{i = 1}^N (r_C r_M)^i C_C 
-+ (r_C)^i (r_M)^{i-1} C_M$. Assuming equilibrium state, $N \rightarrow \infty$, transition to 
+double-ridge system to a Fabry-Perot interferometer as follows\footnote{see another application of 
+such approach to internal wave problem by \cite{mathur2010internal}}.\\
+
+Let conversion rates on the slopes be $C_M$ and $C_C$ and reflection coefficients - $r_M,~r_C$ with 
+indexes denoting 
+respectively the eastern side of the Macquarie Ridge and the slopes of the Campbell Plateau. 
+Initially, the strength of the westward wave is just $C_C$. Then it crosses the trough, reflects 
+from the ridge and the plateau. After the first crossing its magnitude becomes $r_C r_M C_C$, and 
+after $n$-th crossing - $(r_C r_M)^n C_C$. Besides the plateau portion, the westward wave 
+also includes contribution of the eastward wave. After it is emitted from the ridge, it reflects 
+from the plateau having now west orientation and amplitude $r_C C_M$. The $n$-th term is given by 
+$(r_C)^n (r_M)^{n-1} C_M$. In overall, the total flux is $F_W = \sum_{i = 1}^N (r_C r_M)^i C_C 
++ (r_C)^i (r_M)^{i-1} C_M$. Assuming equilibrium, $N \rightarrow \infty$, transition to 
 geometrical series is made, hence,
 \begin{equation}
 \label{C3.eq:fl_fabry}
 F_W = \frac{1}{1 - r_C r_M} (C_C + r_C C_M)
 \end{equation}
-In order to test applicability of such calculation, the equation is solved for the reflection 
-coefficient. 
-The averaged result 
+In order to test applicability of such representation, the equation is solved for the reflection 
+coefficient. The averaged result 
 from the numerical experiments \fignmlp[C3.fig:stand_wave]{D} was $C_M \simeq C_C = 0.45~GW$ and 
-$F_W = 1.2~GW$, under assumption of $r_C = r_M$, it is found that the reflection is $63\%$ which 
-in agreement with the transmission estimates obtained previously.\\
+$F_W = 1.2~GW$, under the assumption of $r_C = r_M$, it is found that the reflection is $63\%$ 
+which is in agreement with the transmission estimates obtained previously.\\
 
 The Fabry-Perot description emphasizes amplification of the westward wave due to multiple 
 reflection that is expressed as a fraction in eq. \eqref{C3.eq:fl_fabry}. The amplification factor 
-reveals effect of both slopes reflectivity on the wave field strength. Specifically, if reflection 
-coefficients change, the consequent effect is multiplicative and hence, nonlinear. The reflectance 
+reveals the effect of both slopes reflectivity on the wave field strength. Specifically, if 
+reflection coefficients change, the consequent effect is multiplicative and hence, nonlinear. The 
+reflectance 
 variability has as well asymmetrical response in the eastward and westward components. For example, 
 the 
-results on \fignml[C3.fig:stand_wave]{D} indicated more consistency of the eastward component in 
+results shown in \fignml[C3.fig:stand_wave]{D} indicated more consistency of the eastward component 
+in 
 the 
 TTIDE-simulation. This implies less variation of the ridge reflection than at the plateau that was 
 also apparent from \fignm{C3.fig:wv_fld_dist}.\\
 
-The expression \eqref{C3.eq:fl_fabry} represents simplified one-dimensional description of the 
+The expression \eqref{C3.eq:fl_fabry} represents a simplified one-dimensional description of the 
 multiple reflection in a double-ridge system. Energy terms, i.e. conversions and reflection 
 coefficients, are diagnosed separately, and as it was shown in Section \ref{C3.sec:3d_var},  
-these characteristics are dependent on kinematic properties of the three dimensional wave fields 
-and vary in response to oceanographic conditions. This leads to conclusion that the internal tide 
-within Solanders Trough is highly variable and it can be characterized by obscure temporal 
-evolution nonlinearly dependent on a number of factors.
+these characteristics are dependent on properties of the three dimensional wave fields 
+that vary in response to oceanographic conditions. Thus, the standing wave and the involved 
+wave components has a high degree of variability stemming from the environmentally controlled 
+parameters. The dependence is multifaceted as by means of the described mechanisms change in 
+stratification triggers adjustment both in propagation of the waves and their energetics.
 
 \newpage
 
-%The obtained internal tide description is similar to Luzon strait where near-resonance conditions 
-%exist 
-%between two almost parallel ridges \citep{buijsman2012double, buijsman2014three} separated by a 
-%distance of 0.6 mode-1 wavelength. In the case of the Macquarie Ridge and the Campbell Plateau the 
-%separation distance is about the same. But resonance should be weaker since the former has an 
-%orientation of $15^{\circ}$ relative to the 
-%latter.\\
-%
-%The geometrical characteristics suggest relevance of wave's travel-time to the observed 
-%variability in baroclinic tide 
-%production levels and its spatial pattern. To examine this the internal tide dynamics is further 
-%studied along a two-dimensional transect crossing the gap (horizontal line on 
-%\fignml[C3.fig:gen]{B}) in simulations with diametrically different generation regimes (\sqm{2014} 
-%and \sqm{d10-15, 2015}, \fignml[C3.fig:gen]{C}, \fignmlp[C3.fig:stand_wave]{D}). Consequent 
-%results are similar to findings of \cite{echeverri2010internal, buijsman2012double} with 
-%exception that here the decomposition method augments variations in the mode-1 wave field.\\
-
-%Variation in the coupling process was responsible for the reported changes in the conversion. 
-
 \section{Discussion \& Conclusion}
 \subsection{Summary}
-The numerical experiments were conducted to investigate dynamics of the Tasman Sea internal tidal 
-beam in realistic and variable oceanographic conditions. This chapter was concerned with 
-origination of the beam. The generation takes place along the Macquarie Ridge as the semidiurnal 
-barotropic Kelvin wave sloshes across the steep relief. The process of energy transfer of 
-the surface tide energy to the baroclinic tides is amplified because the strong remote signal 
-constructively couples with the barotropic forcing. The largest amplification is localized at the 
-gap whose height allows higher remote wave transmission in comparison to nearby supercritical 
-seamounts. However, the spatial pattern of the energy conversion is subject to change under 
-variable stratification. The numerical experiments demonstrated migration of conversion hot 
-spot and spatial variablity as a result of varying inhomogeneity of the Macquarie Ridge 
-transmission.\\
+The numerical experiments were conducted to investigate dynamics of the low-mode internal tidal 
+beam in Tasman Sea under realistic and variable oceanographic conditions. This chapter was concerned with 
+origination of the beam. The generation takes place along the western side of the Macquarie Ridge, south of New Zealand, 
+where the semidiurnal barotropic Kelvin wave sloshes across the steep relief. The process of energy 
+transfer of the surface tide energy into the internal tides is amplified because the strong remote 
+signal constructively couples with the barotropic forcing. The remote signal is incident on the 
+opposite side and is transmitted across the ridge. Thus, details of the wave transmission shapes 
+the 
+amplified generation. The inhomogeneous ridge topography lead to concentration of the conversion in 
+the subcritical gap separating two supercritical seamounts. Nevertheless, the spatial pattern of 
+the conversion is subject to change under temporally variable stratification. The numerical 
+experiments indicated spatial variability such as migration of the conversion hot spot as a 
+result of varying transmission.\\
 
-Generally, internal tide dynamics around the Macquarie Ridge is analogous to Luzon strait. Both 
-geographical regions represent a case of double-ridge system where remote internal waves are 
-emitted from nearby topography. In case of the Macquarie Ridge slopes of the Campbell Plateau emit 
-waves that induce amplification of the conversion. 
-These 
-waves superposed with the 
-ridge-emitted one to form the standing wave that masked magnitude of the elemental, east-west 
-oriented components and hindered energy budget analysis. But with the directional decomposition 
-technique it was possible to quantify reflection/transmission and compare it with conversion of 
-the barotropic tide. These estimates augmented importance of the multiple reflection from the 
-opposing slopes. This observation led to application of the Fabry-Perot theory. The obtained simple 
-relation was able to describe asymmetries in the east-west signals. As well, the system exhibited 
-nonlinear amplification factor that depended on reflection/transmission properties of the involved 
-topographies.\\
+In general, internal tide dynamics around the Macquarie Ridge represents a case of double-ridge 
+system which is analogous to Luzon Strait. In such settings there is strong interaction in internal 
+tide generation on opposing slopes of ridges forming the system. At the same time, the emitted fields are oppositely directed, and as they interfere, a standing wave is created. The standing wave pattern was observed in Solanders 
+Trough that separates the Macquarie Ridge from the nearby Campbell Plateau. In order to describe 
+the involved energy budgets directional spectra analysis was carried out. Its results revealed 
+several important features.\\
 
-Degree of the amplification varied with changing hydrographic conditions. And 
-since the region is located where two distinct water masses converge into the frontal zone, 
-it was presented strong evidence that redistribution of the water types triggers swings in the 
-conversion 
-rates. Such process was explained by employing two mechanisms. In terms of kinematics the upper 
-column 
-stratification directly altered internal tide phase speed and consequently, phase lags with the 
-barotropic forcing. While dynamical effect involved variation of the reflection/transmission 
-coefficients. It is worth emphasizing that both processes were not fully separated, since the 
-estimated coefficients were themselves dependent on the phase of the incident waves. At the same 
-time, this suggests existence of a feedback mechanism that forces system of the two coupled 
-generators to achieve equilibrium it negative. Such feedback loop could potentially explain the 
-symmetry in the ensemble-averaged properties even though reflection at the Campbell Plateau was 
-highly 
-variable.\\
+At first, the westward traveling waves that are incident on the 
+Macquarie Ridge and cause the amplification originate from multiple sites on the plateau slopes. 
+However, strength of the generation strongly depends on phase of the arriving ridge-emitted 
+eastward waves.\\
 
-The variability in energy levels of the remote waves were translated into the tidal beam magnitude. 
-However, some disparity between the beam's strength and conversion by the Macquarie Ridge were 
-observed. Its nature was not investigated, but likely due to three-dimensionality of the problem 
-and dissipative processes. Nevertheless, on average, the beam acquired $87 \pm 7\%$ of the 
-converted 
-energy. 
-Such efficiency is higher than $74\%$ found in studies concerning generation of the beam radiated 
-from the Hawaiian islands \citep{carter2008energetics}, since unstable higher modes were not 
-accounted for in the reported here budgets. The modeled here losses are hypothesized to be because 
-of numerical dissipation \citep{di2006numerical}. Discussion of the dissipation was not considered 
-in any depth since the coarse resolution did not 
-allow direct simulation of wave breaking and no subgrid parametrization was utilized. Additionally, 
-the analysis was not intended to provide robust estimates and accounting of energy losses 
-was left out. Though the intriguing dynamics of the generation invites investigation on the 
-dissipative processes and nonlinear interactions.\\
+At second, both components of the wave in the trough depend 
+on water mass distribution and variable stratification that change mode-1 eigenspeed. However, the 
+westward wave, because of its non plane propagation, demonstrate less relation to the phase speed. 
+In contrary, the eastward wave travel is purely plane.\\
 
-The presented dynamical picture of generation at the Macquarie Ridge only further emphasized role 
-of remote waves in producing time-variable records through nonlinear coupling. The numerical 
-experiments 
-exposed role of 
-variable ocean environment in shaping those variations. And by virtue of the detailed mechanisms 
-response cascaded into the variable strength of the tidal beam. It is unclear over 
-what distances away from the generating ridge signature of such processes could be still discerned 
-from interactions with mesoscale field of the open ocean. And then what level of 
-intermittency should be expected at a distant observational point due to the generation alone.
+At third, the directional analysis made possible estimates of transmission of the westward waves 
+across the Macquarie Ridge. There is a clear expression of temporal evolution. Analytical 
+calculation based on WKB-scaling and transmission for a single knife-edge ridge produced similar 
+dependence, but the values were 5 and 10 times smaller for the gap and the overall ridge 
+respectively. This illustrates previously identified phenomena of increased transmission in the 
+double-ridge system when separation distance is near half wavelength of mode-1. The numerical 
+estimates of the transmission also made possible to successfully test application of the 
+Fabry-Perot theory. The obtained relation highlights role of the 
+multiple reflection in amplifying the westward wave whose amplitude is not simply defined by the 
+conversion at the Campbell Plateau. At the same time, the amplification of the westward and 
+eastward waves is asymmetrical relative to the involved reflection coefficients. This explains 
+non-equal energy fluxes of the eastward and westward components found in the numerical 
+experiments.\\
+
+Further, it was shown that the variability of the westward wave translates into the tidal beam 
+generation. However, relation between the generation and the beam intensity is less certain as 
+illustrated by \fignml[C3.fig:ener_var]{A} and by rather low correlation of $R^2 = 
+0.43$\footnote{If only NW quadrant portion of the directional spectra is considered, the 
+coefficient increases to 0.6. This is shown in the next chapter.}. Nature of this disparity was not 
+investigated, but likely due to three-dimensionality of the problem and not accounted dissipative 
+processes. On average, the beam acquired $87 \pm 7\%$ of the barotropic energy converted into the 
+baroclinic mode-1. Such efficiency is higher than reported $\sim 70\%$ for the beam radiated from 
+the Hawaiian islands \citep{carter2008energetics}. But note the loss for the Hawaiian case 
+also included the unstable high modes. In this study the high mode dynamics was not accounted 
+for. Hence, the obtained here loss is hypothesized to be primarily because of numerical dissipation 
+\citep{di2006numerical}.\\
+
+Discussion of the dissipation and its effects was also not considered in any depth because the 
+coarse resolution 
+does not permit direct simulation of wave breaking and no subgrid parametrization was utilized. As 
+consequence, the analysis was not intended to provide robust estimates and accounting of all 
+energy losses. Furthermore, nonlinear process of lee wave generation was neglected for the same 
+reason of the resolution. This is partly warranted by scaling analysis. The topographic Froude 
+number $Ft_t = 
+U_0/(N_{ridge}h_{ridge}) \sim 0.001$ is much less than $1$, as well as the tidal excursion 
+number $\delta = U_0/(L \omega_{M_2}) = 0.015 \ll 1$. These values ensure largely 
+linear regime of internal tide generation \citep{garrett2007internal}. Nevertheless, similar range 
+was obtained for Luzon Strait by \citep{buijsman2012double} who addressed strong dissipation due to 
+the breaking high-mode lee waves. Thus, such dissipative mechanism possibly does take place in 
+reality 
+at the Macquarie Ridge, but its strength and spatial distribution can not be envisioned from the 
+current numerical results. At the same time, such knowledge will be of great importance for the 
+local oceanography considering that \citep{smith2013interaction} observed the frontal zone to be 
+positioned between the seamounts, at the gap, where the strongest amplification and coupling takes 
+place following this study. Such intriguing dynamical setting invites an investigation centered on 
+the internal tide dissipation and its effects on the frontal dynamics.
 
 \subsection{Comparison with Luzon Strait}
 \label{C3.sec:disc_luzon}
-Throughout the analysis several remarks were made regarding similarity of the Macquarie Ridge and 
-Luzon Strait. Luzon Strait is a well known site of strong internal tide generation that is 
-amplified by two near parallel ridges. The process was addressed in work of 
-\citep{buijsman2012double, klymak2013parameterizing} who either numerically integrated or solved 
-mode-matching equations in two dimensions for internal wave field enclosed by ridges. In the later 
-realistic, three-dimensional simulation \citep{buijsman2014three} reported that conversion 
-increased by 4.5 for the double-ridge system in comparison to a single ridge case. Here no 
-experiments 
-Nevertheless, the lower bound can be obtained as ratio of the flux to the conversion, $F/C = 2.6$. 
-This estimate does not account for increase in conversion in comparison to non-resonant condition. 
-However, larger amplification at Luzon Strait also arises as the ridges are near-parallel which 
-promotes more wide-spread amplification. In Solander Trough slanting incidence of the waves 
-\fignmp{C3.fig:wv_fld_dist} lead to spatial variability of the enhancement.\\
+Throughout this investigation several remarks were made regarding similarity of the Macquarie Ridge 
+to Luzon Strait. Luzon Strait is a well studied site of strong internal tide generation that is 
+amplified by two near parallel ridges. The amplification process was addressed in work of 
+\citep{buijsman2012double, klymak2013parameterizing}\footnote{add ramp, mathew?} who either 
+numerically integrated or solved mode-matching equations in the two dimensions for internal wave 
+field enclosed by ridges. These  
+investigations referred to the generation in the strait as resonant because of the ridge separation 
+is close to half of the mode-1 wavelength. In the later realistic simulations 
+of \citep{buijsman2014three} it was further found that three dimensionality brought about even 
+higher amplification due to more in-phase coupling and different surface tide flow in comparison to 
+2D investigations. Contrary, 
+the Macquarie Ridge is oriented obliquely to the slopes of the Campbell Plateau, the separation 
+distance varies from $1/3$ in the north to $1$ in the south of the mode-1 wavelength. Furthermore, 
+the directional analysis (\ref{C3.sec:3d_var}) demonstrated that two-dimensional section 
+perspective is not applicable when the wave fields are not plane. Thus, in this study term 
+``resonant generation" was deliberately not used, instead the numerical results were investigated 
+through more general perspective of the coupling between local generation and remote wave initially 
+suggested by \citep{Kelly2010a}.\\
 
-It is also worth comparing the documented here variability with results of \cite{kerry2014impact} 
-who reported $10~\%$ change in the conversion rates for Luzon strait. This is the same as at the 
-Macquarie Ridge while one 
-expects, as a first order guess, linear scaling of variability with the amplification factor. 
-Apparently, the similar levels are because of different mechanisms. The study of 
-\cite{kerry2014impact} 
-emphasized role of far-field remote waves radiated by the Mariana arc as primary reason for the 
-changes. In this work driving mechanism of the variability was found to be in 
-adjustment of the standing wave via the slopes' reflection and stratification. Question arises as 
-why Luzon Strait 
-does not host similar process and exhibit large deviations being located near vigorous Kuroshio? 
-Reason can be 
-found in large 
-disparity 
-between the ridges' height as \cite{klymak2013parameterizing} concludes that the eastern ridge ``casts 
-a shadow" over the western. Their respective WKB-heights are 0.2 and 0.6. Following the previous 
-discussion on the asymmetry any changes in the dynamical properties of the higher eastern ridge 
-influence contribution of the western ridge which is smaller. Its depth also 
-inhibits strong effect of the upper ocean conditions. Hence, the eastern 
-ridge energy input should be steady if direct influence of stratification on the generation is 
-neglected. Though such inequality can produce noticeable shifts in the standing wave, i.e. in the 
-phase of baroclinic pressure and the node's position that can provide explanation of the field 
-observations of \cite{buijsman2014three}.
+The oblique orientation of the topographies as well leads to lower amplification of the 
+generation in comparison to Luzon Strait. In this study experiments to obtain conversion rates for 
+isolated Macquarie Ridge were not performed unlike to \citep{buijsman2014three}. Instead, the 
+amplification coefficient is estimated either from eq. \eqref{C3.eq:fl_fabry} giving $2.6$ or as 
+ratio of the numerical simulation results to the knife-edge prediction \fignmp[C3.fig:regr]{A} 
+suggesting an increase in $2$ times. For Luzon Strait the simulations of \citep{buijsman2014three} 
+revealed spatially variable amplification of the conversion with maximum value of $4.5$, but 
+average of about $3$.\\
+
+Variability of internal tides in Luzon Strait was studied by \cite{kerry2014impact} with numerical 
+simulations. Their result showed $\pm 10-15~\%$ change in the conversion rates which is similar 
+to the reported here level of variability. Unlike the Macquarie Ridge, primary mechanism was 
+attributed to arrival of far-field remote waves radiated from the Mariana arc. The background ocean 
+conditions seems to had secondary importance on the generation in this double-ridge system, which 
+is a bit surprising considering stronger amplification. Probable explanation can be found in 
+height disparity of the ridges located in Luzon Strait, their respective WKB-heights are 0.2 and 
+0.6, and the higher eastern ridge ``casts a shadow" over the western ridge 
+\citep{klymak2013parameterizing}. It is speculated that there is less feedback between the ridges 
+as the multiple reflection has lesser role in the amplification and its variability. Field 
+observations of 
+\cite{pickering2015structure} can serve as an illustration. They documented the  
+conversion at the taller eastern ridge was on $90~\%$ stationary. The presented here numerical 
+results showed highly variable conversion on the eastern side of the Macquarie Ridge that it can 
+deviate by a third, $\pm 0.15~GW$ from the mean $0.45~GW$ \fignmlp[C3.fig:stand_wave]{D}. However, 
+the variability decreases with time series length, for \sqm{TTIDE}-simulation the deviations 
+comprised only $15~\%$.\\
+
+The ridges' height difference at Luzon Strait also leads to highly asymmetrical energy fluxes and 
+formation of a progressive-standing wave (Nekrasov), i.e. energy flux vectors show progression of a 
+stronger wave. Experiments of \citep{buijsman2014three} clearly exhibited such pattern where the 
+waves radiated from the eastern ridge were dominant. Nevertheless, it is expected that similar to 
+the Macquarie Ridge any changes to the interfering components will cause spatial rearrangement of 
+the progressive-standing wave.
+
+\subsection{Conclusion}
+Generation of internal tides at the Macquarie Ridge demonstrated spatial and temporal variability 
+driven by the ocean conditions that trigger 
+adjustments in the double-ridge system. The ocean state characterized by distribution 
+of water masses is induced by dynamics of the frontal zone that has several time scales of 
+variability. 
+Some numerical experiments were carried out to test hypothesis on seasonal and interannual 
+variability in the internal tide generation in response to the frontal zone position. No evidences 
+were found of such dependence, but rather it was seen that variability is dictated by wind 
+impelling water mass advection and frontal filamentation. On the other hand, it is not clear if 
+oceanic eddies produced as a result of the front interaction with the Macquarie Ridge has any 
+impact. Therefore, the generation of the internal tidal beam varies on time scales dominant by 
+wind variability, i.e. several inertial periods. Under such scenario the transfer of the 
+semidiurnal barotropic energy into the baroclinic tides varies constantly. As it was shown some 
+of this nonstationarity is manifested in intensity of the internal tidal beam and hence, in Tasman 
+Sea internal tidal field with possible consequences to far field.\\
+
+This study has detailed aspects of the internal tide generation in the double-ridge setting when 
+remote waves have somewhat extreme contribution to the dynamics. Nevertheless, for less severe 
+interaction it is still expected that in presence of the remote signals the production of internal 
+tides is highly variable and has multifaceted dependence both on intrinsic internal-wave parameters 
+and the ocean properties. This further poses questions pertaining predictive description of the 
+internal tides and stationarity of their characteristics with no clear answer in sight.
 
 \section*{Appendices}
 
